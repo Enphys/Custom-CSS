@@ -22,10 +22,6 @@ html, body {
     left: -6px;
 }
 
-.container {
-    padding: 10px !important; 
-}
-
 a {
     color: #ffffff;
     text-decoration: none;
@@ -168,10 +164,10 @@ body, p, a, span {
 }
 
 #sidebar, .card {
-    background-color: fbebf4
+    background-color: c78ca1;
     border-color: #be849d;
     border-radius: 15px !important;
-    background: #fbebf4
+    background: #c78ca1;
 }
 
 .table .left {
