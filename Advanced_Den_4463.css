@@ -70,13 +70,13 @@ a {
 .alert-success {
     color: #deb6c7;
     background-color: #fff9ff;
-    border-color: #d9e6cd;
+    border-color: #deb6c7;
 }
 
 .alert-info {
     color: #deb6c7;
     background-color: #fbebf4;
-    border-color: #b9daea;
+    border-color: #eabad1;
 }
 
 /* Headers */
@@ -164,10 +164,10 @@ body, p, a, span {
 }
 
 #sidebar, .card {
-    background-color: c78ca1;
+    background-color: eed4e2;
     border-color: #be849d;
     border-radius: 15px !important;
-    background: #c78ca1;
+    background: #eed4e2;
 }
 
 .table .left {
