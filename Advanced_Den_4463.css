@@ -212,7 +212,7 @@ table.table-striped tr:nth-child(odd) {
     border-radius: 50% !important;
     height: 100%;
     width: 100%;
-    object-fit: cover !important;
+    object-fit: cover;
 }
 
 /* Adjust Text */
@@ -223,7 +223,7 @@ body, p, a, span {
 
 /* Sidebar */
 #sidebar {
-    background: transparent;
+    background: transparent !important;
     border: none !important; /* Optional: Removes border if needed */
     border-radius: 15px;
     color: #be849d;
