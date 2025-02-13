@@ -47,6 +47,7 @@ a {
 /* Home Tag Groupname */
 #header .breadcrumb-nav {
     background-color: #fcecf3;
+    border-radius: 15px;
 }
 .breadcrumb-item.active {
     color: #000000;
@@ -148,7 +149,7 @@ body, p, a, span {
 #main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
     background: #eed4e2;
     border: none;
-    padding: 10px;
+    padding: 10px !important;
     border-radius: 15px;
 }
 
