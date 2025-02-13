@@ -178,10 +178,8 @@ table.striped tr:nth-child(odd) {
 }
 
 /* Den Cards */
-#denCards .col-md-4.col-6.center {
+#main .card {
     background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
 }
 
 /* Wolf list */
