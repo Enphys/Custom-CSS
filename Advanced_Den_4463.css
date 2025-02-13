@@ -140,20 +140,14 @@ table.striped tr:nth-child(odd) {
     color: #fbebf4 !important;
 }
 
-table.table-striped tr:nth-child(even) td:not(.p-0) {
+table.table-striped tr:nth-child(even) {
     background-color: #fbebf4 !important;
+    color: #be849d !important;
 }
 
-table.table-striped tr:nth-child(odd) td:not(.p-0) {
+table.table-striped tr:nth-child(odd) {
     background-color: #eabad1 !important;
-}
-
-.p-0 .border-bottom {
-    border-bottom: none !important;
-}
-
-.p-0 {
-    padding: none !important;
+    color: #fbebf4 !important;
 }
 
 /* Wolf Headshot Borders */
@@ -219,6 +213,20 @@ table.table-striped tr:nth-child(odd) td:not(.p-0) {
     height: 100%;
     width: 100%;
     object-fit: cover !important;
+}
+
+/* Remove border-bottom and fix padding for wolf headshots */
+.p-0 .border-bottom,
+.p-2 .border-bottom {
+    border-bottom: none !important;
+}
+
+.p-0,
+.p-2 {
+    padding: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
 }
 
 /* Adjust Text */
