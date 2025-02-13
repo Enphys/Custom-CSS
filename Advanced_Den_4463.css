@@ -197,6 +197,7 @@ table.table-striped tr:nth-child(odd) {
     border-radius: 50% !important; /* Makes it circular */
     overflow: hidden; /* Hides anything outside the border */
     object-fit: cover; /* Keeps the image proportionate within the circle */
+    background-color: transparent;
 }
 
 /* Adjust Text */
