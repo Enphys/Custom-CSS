@@ -118,8 +118,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff9ff !important;
 }
 
-.nav-item {
-    background-color: #eed4e2
+#main.col-lg-9.order-lg-2 .nav-tabs .nav-item:nth-of-type(2) {
+    background-color: #eed4e2 !important;
 }
 
 /* Wolf Headshot Borders */
