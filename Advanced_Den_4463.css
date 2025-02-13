@@ -14,12 +14,14 @@ html, body {
 #sidebar.col-lg-3 {
     flex: 0 0 calc(25% - 11px);
     max-width: calc(25% - 11px);
+    padding: 10px !important;
 }
 
 #main.col-lg-9.order-lg-2,
 #sidebar.col-lg-3.order-lg-1 {
     position: relative;
     left: -6px;
+    padding: 10px !important;
 }
 
 a {
