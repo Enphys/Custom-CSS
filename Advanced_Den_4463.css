@@ -12,8 +12,8 @@ html, body {
 }
 
 #sidebar.col-lg-3 {
-    flex: 0 0 calc(25% - 11px) !important;
-    max-width: calc(25% - 11px) !important;
+    flex: 0 0 calc(25% - 11px) impo;
+    max-width: calc(25% - 11px);
     background: fbebf4;
 }
 
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main Content Area */
 #main {
-    background-color: rgba(255, 249, 255, 0.95);
+    background-color: #fbebf4;
     border-radius: 15px;
     padding: 1.5rem;
     box-shadow: 0 0 15px rgba(199, 140, 161, 0.4);
