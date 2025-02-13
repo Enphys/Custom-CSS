@@ -11,14 +11,15 @@ html, body {
     background: #fcecf3 !important;
 }
 
-.row.justify-content-end #main.col-lg-9.order-lg-2 {
-    flex: 0 0 calc(75% - 5px) !important;
-    max-width: calc(75% - 5px) !important;
+#sidebar.col-lg-3 {
+    flex: 0 0 calc(25% - 11px);
+    max-width: calc(25% - 11px);
 }
 
-#sidebar.col-lg-3 {
-    flex: 0 0 calc(25% - 5px);
-    max-width: calc(25% - 5px);
+#main.col-lg-9.order-lg-2,
+#sidebar.col-lg-3.order-lg-1 {
+    position: relative;
+    left: -6px;
 }
 
 a {
