@@ -11,9 +11,9 @@ html, body {
     background: #fcecf3 !important;
 }
 
-#main.col-lg-9 {
-    flex: 0 0 calc(75% - 5px);
-    max-width: calc(75% - 5px);
+#main.col-lg-9.order-lg-2 {
+    flex: 0 0 calc(75% - 5px) !important;
+    max-width: calc(75% - 5px) !important;
 }
 
 #sidebar.col-lg-3 {
