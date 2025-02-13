@@ -16,9 +16,9 @@ html, body {
 }
 
 #sidebar.col-lg-3 {
-    flex: 0 0 calc(25% - 11px) impo;
+    flex: 0 0 calc(25% - 11px) important;
     max-width: calc(25% - 11px);
-    background: fbebf4;
+    background: #fbebf4;
 }
 
 #main.col-lg-9.order-lg-2,
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main a {
-    color: be849d;
+    color: #be849d;
 }
 
 /* Pack name */
@@ -197,7 +197,22 @@ table.table-striped tr:nth-child(odd) {
     border-radius: 50% !important; /* Makes it circular */
     overflow: hidden; /* Hides anything outside the border */
     object-fit: cover; /* Keeps the image proportionate within the circle */
-    background-color: transparent;
+    background-color: transparent !important;
+}
+
+.p-0 img {
+    object-fit: cover !important;
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
+
+.pup img {
+    border-radius: 50% !important;
+    height: 100%;
+    width: 100%;
+    object-fit: cover !important;
 }
 
 /* Adjust Text */
@@ -232,10 +247,9 @@ body, p, a, span {
 }
 
 #sidebar, .card {
-    background-color: eed4e2;
+    background-color: #eed4e2;
     border-color: #be849d;
     border-radius: 15px !important;
-    background: #eed4e2;
 }
 
 .table .left {
