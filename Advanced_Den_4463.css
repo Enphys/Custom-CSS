@@ -12,73 +12,9 @@ html, body {
 }
 
 a {
-    color: #ffffff !important;
-    text-decoration: none !important;
-    transition: color 0.3s ease-in-out !important;
-}
-
-/* Active Notifications */
-.alert-success {
-    color: #deb6c7;
-    background-color: #fff9ff;
-    border-color: #d9e6cd;
-}
-
-.alert-info {
-    color: #deb6c7;
-    background-color: #fbebf4;
-    border-color: #b9daea;
-}
-
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Srisakdi', cursive;
-    color: #de90af;
-    text-transform: lowercase;
-}
-
-/* Main Content Area */
-#main {
-    background-color: rgba(255, 249, 255, 0.95);
-    border-radius: 15px;
-    padding: 1.5rem;
-    box-shadow: 0 0 15px rgba(199, 140, 161, 0.4);
-}
-
-/* Sidebar */
-#sidebar {
-    background-color: #fff9ff;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(199, 140, 161, 0.3);
-    color: #be849d;
-}
-
-#main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: #eed4e2 !important;
-    border: 2px solid #9b6d44 !important;
-    padding: 10px !important;
-    border-radius: 15px !important;
-}
-
-#sidebar, .card
-    background-color: fbebf4
-    border-color: #be849d;
-    border-radius: 15px !important;
-    width: calc(100% - 10px); /* Adjust as needed */
-    margin: 5px auto; /* Center if reduced width */
-    background: #fbebf4
-}
-
-.table .left {
-    background-color: #dfcaab !important; /* Adjust to match your theme */
-}
-
-.bg-tertiary {
-    background-color: #dfcaab !important; /* Adjust to match your theme */
-}
-
-.bottom {
-    background-color: #dfcaab !important; /* Adjust to match your theme */
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 /* Navbar */
@@ -118,6 +54,40 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 5px 10px rgba(199, 140, 161, 0.5);
 }
 
+/* Active Notifications */
+.alert-success {
+    color: #deb6c7;
+    background-color: #fff9ff;
+    border-color: #d9e6cd;
+}
+
+.alert-info {
+    color: #deb6c7;
+    background-color: #fbebf4;
+    border-color: #b9daea;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Srisakdi', cursive;
+    color: #de90af;
+    text-transform: lowercase;
+}
+
+/* Main Content Area */
+#main {
+    background-color: rgba(255, 249, 255, 0.95);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(199, 140, 161, 0.4);
+}
+
+/* Den and Profile tabs*/
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #be849d;
+    background-color: #fff9ff;
+}
+
 /* Wolf Headshot Borders */
 .card-img-top {
     border: 3px solid #de90af;
@@ -150,4 +120,40 @@ h1, h2, h3, h4, h5, h6 {
 body, p, a, span {
     font-size: 0.95rem;
     text-transform: lowercase;
+}
+
+/* Sidebar */
+#sidebar {
+    background-color: #fff9ff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(199, 140, 161, 0.3);
+    color: #be849d;
+}
+
+#main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
+    background: #eed4e2 !important;
+    border: 2px solid #9b6d44 !important;
+    padding: 10px !important;
+    border-radius: 15px !important;
+}
+
+#sidebar, .card
+    background-color: fbebf4
+    border-color: #be849d;
+    border-radius: 15px !important;
+    width: calc(100% - 10px); /* Adjust as needed */
+    margin: 5px auto; /* Center if reduced width */
+    background: #fbebf4
+}
+
+.table .left {
+    background-color: #dfcaab !important; /* Adjust to match your theme */
+}
+
+.bg-tertiary {
+    background-color: #dfcaab !important; /* Adjust to match your theme */
+}
+
+.bottom {
+    background-color: #dfcaab !important; /* Adjust to match your theme */
 }
