@@ -147,7 +147,7 @@ body, p, a, span {
 }
 
 #main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: #eed4e2;
+    background: #fbebf4;
     border: none;
     padding: 10px !important;
     border-radius: 15px;
