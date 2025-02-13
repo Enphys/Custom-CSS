@@ -4,11 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 /* General Settings */
-body {
+html, body {
     font-family: 'Ubuntu Mono', monospace;
     color: #be849d;
     cursor: url('https://64.media.tumblr.com/6c090b045688a1bd7be0048759431d86/ff0faf4c226d25cd-4a/s75x75_c1/a05b19d89808883383fa51db10080b631eeca99e.pnj'), auto;
-    background-color: #fcecf3;
+    background: #fcecf3 !important;
 }
 
 a {
