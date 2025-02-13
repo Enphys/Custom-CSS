@@ -17,6 +17,19 @@ a {
     transition: color 0.3s ease-in-out !important;
 }
 
+/* Active Notifications */
+.alert-success {
+    color: #deb6c7;
+    background-color: #fff9ff;
+    border-color: #d9e6cd;
+}
+
+.alert-info {
+    color: #deb6c7;
+    background-color: #fbebf4;
+    border-color: #b9daea;
+}
+
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Srisakdi', cursive;
@@ -78,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* WELCOME BACK */
 #header .navbar-status {
-    background-color: #de90af;
+    background-color: #eabad1;
     color: #fff;
     height: 37px;
     border-radius: 15px;
