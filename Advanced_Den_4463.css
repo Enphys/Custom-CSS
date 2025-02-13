@@ -11,7 +11,7 @@ html, body {
     background: #fcecf3 !important;
 }
 
-#main.col-lg-9.order-lg-2 {
+.row.justify-content-end #main.col-lg-9.order-lg-2 {
     flex: 0 0 calc(75% - 5px) !important;
     max-width: calc(75% - 5px) !important;
 }
@@ -146,7 +146,7 @@ body, p, a, span {
 
 #main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
     background: #eed4e2;
-    border: 2px solid #9b6d44;
+    border: none;
     padding: 10px;
     border-radius: 15px;
 }
