@@ -11,6 +11,10 @@ html, body {
     background: #fcecf3 !important;
 }
 
+#main.col-lg-9.order-lg-2 {
+    background-color: #fbebf4 !important;
+}
+
 #sidebar.col-lg-3 {
     flex: 0 0 calc(25% - 11px) impo;
     max-width: calc(25% - 11px);
