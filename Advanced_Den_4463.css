@@ -48,6 +48,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #sidebar, .card
+    background-color: fbebf4
+    border-color: #be849d;
     border-radius: 15px !important;
     width: calc(100% - 10px); /* Adjust as needed */
     margin: 5px auto; /* Center if reduced width */
@@ -68,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar */
 #header .navbar-main {
-    background-color: #c78ca1;
+    background-color: #eebad1;
     border-radius: 15px;
     text-transform: lowercase;
     color: #fff;
