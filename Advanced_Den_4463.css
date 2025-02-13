@@ -140,6 +140,16 @@ table.striped tr:nth-child(odd) {
     color: #fbebf4 !important;
 }
 
+table.table-striped tr:nth-child(even) {
+    background-color: #fbebf4 !important;
+    color: #be849d !important;
+}
+
+table.table-striped tr:nth-child(odd) {
+    background-color: #eabad1 !important;
+    color: #fbebf4 !important;
+}
+
 /* Wolf Headshot Borders */
 .card-img-top {
     border: 3px solid #de90af;
@@ -179,7 +189,7 @@ table.striped tr:nth-child(odd) {
 
 /* Den Cards */
 #main .card {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 /* Wolf list */
