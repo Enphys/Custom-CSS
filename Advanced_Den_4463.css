@@ -136,7 +136,7 @@ table.striped tr:nth-child(even) {
 }
 
 table.striped tr:nth-child(odd) {
-    background-color: #be849d !important;
+    background-color: #eabad1 !important;
     color: #fbebf4 !important;
 }
 
@@ -175,6 +175,20 @@ table.striped tr:nth-child(odd) {
 .circle-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Den Cards */
+#denCards {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Wolf list */
+.p-0 {
+    border-radius: 50% !important; /* Makes it circular */
+    overflow: hidden; /* Hides anything outside the border */
+    object-fit: cover; /* Keeps the image proportionate within the circle */
 }
 
 /* Adjust Text */
