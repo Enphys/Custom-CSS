@@ -12,11 +12,13 @@ html, body {
 }
 
 #main.col-lg-9 {
-    width: calc(100% - 5px) !important;
+    flex: 0 0 calc(75% - 5px);
+    max-width: calc(75% - 5px);
 }
 
 #sidebar.col-lg-3 {
-    width: calc(100% - 5px) !important;
+    flex: 0 0 calc(25% - 5px);
+    max-width: calc(25% - 5px);
 }
 
 a {
