@@ -16,7 +16,7 @@ html, body {
 }
 
 #sidebar.col-lg-3 {
-    flex: 0 0 calc(25% - 11px) important;
+    flex: 0 0 calc(25% - 11px) !important;
     max-width: calc(25% - 11px);
     background: #fbebf4;
 }
@@ -152,22 +152,9 @@ table.table-striped tr:nth-child(odd) td:not(.p-0) {
     border-bottom: none !important;
 }
 
-.p-0 {
-    padding: none !important;
-}
-
 /* Remove border-bottom and fix padding for wolf headshots */
-.p-0 .border-bottom,
-.p-2 .border-bottom {
-    border-bottom: none !important;
-}
-
-.p-0,
-.p-2 {
+.p-0 {
     padding: 0 !important;
-    outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
 }
 
 /* Wolf Headshot Borders */
@@ -228,7 +215,7 @@ table.table-striped tr:nth-child(odd) td:not(.p-0) {
     overflow: hidden !important;
 }
 
-.pup > img {
+.pup img {
     border-radius: 50% !important;
     height: 100%;
     width: 100%;
@@ -266,7 +253,7 @@ body, p, a, span {
     color: #ffffff; /* Hover color */
 }
 
-#sidebar, .card {
+#sidebar .card {
     background-color: #eed4e2;
     border-color: #be849d;
     border-radius: 15px !important;
