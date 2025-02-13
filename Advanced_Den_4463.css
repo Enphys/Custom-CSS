@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    color: #be849d !important;
+    color: #ffffff !important;
     text-decoration: none !important;
     transition: color 0.3s ease-in-out !important;
 }
@@ -47,8 +47,12 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px !important;
 }
 
-#main, .card
+#sidebar, .card
     border-radius: 15px !important;
+    width: calc(100% - 10px); /* Adjust as needed */
+    margin: 5px auto; /* Center if reduced width */
+    background: #fbebf4
+}
 
 .table .left {
     background-color: #dfcaab !important; /* Adjust to match your theme */
