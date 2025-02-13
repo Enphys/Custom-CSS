@@ -11,6 +11,12 @@ body {
     background-color: #fcecf3;
 }
 
+a {
+    color: #be849d !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease-in-out !important;
+}
+
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Srisakdi', cursive;
@@ -28,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sidebar */
 #sidebar {
-    background-color: #eed4e2;
+    background-color: #fff9ff;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(199, 140, 161, 0.3);
     color: #be849d;
@@ -40,6 +46,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px !important;
     border-radius: 15px !important;
 }
+
+#main, .card
+    border-radius: 15px !important;
 
 .table .left {
     background-color: #dfcaab !important; /* Adjust to match your theme */
