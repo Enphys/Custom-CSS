@@ -140,14 +140,12 @@ table.striped tr:nth-child(odd) {
     color: #fbebf4 !important;
 }
 
-table.table-striped tr:nth-child(even) {
+table.table-striped tr:nth-child(even) td:not(.p-0) {
     background-color: #fbebf4 !important;
-    color: #be849d !important;
 }
 
-table.table-striped tr:nth-child(odd) {
+table.table-striped tr:nth-child(odd) td:not(.p-0) {
     background-color: #eabad1 !important;
-    color: #fbebf4 !important;
 }
 
 /* Wolf Headshot Borders */
@@ -208,11 +206,11 @@ table.table-striped tr:nth-child(odd) {
     overflow: hidden !important;
 }
 
-.pup img {
+.pup > img {
     border-radius: 50% !important;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover !important;
 }
 
 /* Adjust Text */
