@@ -152,6 +152,10 @@ table.table-striped tr:nth-child(odd) td:not(.p-0) {
     border-bottom: none !important;
 }
 
+.p-0 {
+    padding: none !important;
+}
+
 /* Wolf Headshot Borders */
 .card-img-top {
     border: 3px solid #de90af;
