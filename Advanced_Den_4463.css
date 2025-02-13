@@ -124,7 +124,7 @@ body, p, a, span {
 
 /* Sidebar */
 #sidebar {
-    background: transparent !important;
+    background: transparent
     border: none !important; /* Optional: Removes border if needed */
     border-radius: 15px;
     color: #be849d;
