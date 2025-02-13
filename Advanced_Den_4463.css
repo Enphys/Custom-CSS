@@ -11,6 +11,14 @@ html, body {
     background: #fcecf3 !important;
 }
 
+#main.col-lg-9 {
+    width: calc(100% - 5px) !important;
+}
+
+#sidebar.col-lg-3 {
+    width: calc(100% - 5px) !important;
+}
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -155,8 +163,6 @@ body, p, a, span {
     background-color: fbebf4
     border-color: #be849d;
     border-radius: 15px !important;
-    width: calc(100% - 10px); /* Adjust as needed */
-    margin: 5px auto; /* Center if reduced width */
     background: #fbebf4
 }
 
@@ -169,5 +175,5 @@ body, p, a, span {
 }
 
 .bottom {
-    background-color: #dfcaab !important; /* Adjust to match your theme */
+    background-color: #be849d !important; /* Adjust to match your theme */
 }
