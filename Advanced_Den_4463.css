@@ -124,9 +124,10 @@ body, p, a, span {
 
 /* Sidebar */
 #sidebar {
-    background: none !important; /* Removes any default background */
+    background: transparent !important;
+    box-shadow: none !important; /* Optional: Removes any shadow */
+    border: none !important; /* Optional: Removes border if needed */
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(199, 140, 161, 0.3);
     color: #be849d;
 }
 
