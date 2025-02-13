@@ -148,6 +148,12 @@ table.table-striped tr:nth-child(odd) td:not(.p-0) {
     background-color: #eabad1 !important;
 }
 
+/* Completely remove backgrounds from wolf headshot cells */
+td.p-0 {
+    background-color: transparent !important;
+    background: none !important;
+}
+
 /* Wolf Headshot Borders */
 .card-img-top {
     border: 3px solid #de90af;
