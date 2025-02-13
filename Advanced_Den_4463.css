@@ -82,6 +82,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 15px rgba(199, 140, 161, 0.4);
 }
 
+#main a {
+    color: be849d;
+}
+
 /* Den and Profile tabs*/
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #be849d;
@@ -132,13 +136,6 @@ body, p, a, span {
 
 #sidebar .card
     border-radius: 15px !important;
-
-#main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: #eed4e2;
-    border: 2px solid #9b6d44;
-    padding: 10px;
-    border-radius: 15px;
-}
 
 #sidebar a {
     color: #eebad1; /* Link color */
