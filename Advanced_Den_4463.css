@@ -70,10 +70,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar */
 #header .navbar-main {
-    background-color: #eebad1;
+    background-color: #c78ca1;
     border-radius: 15px;
     text-transform: lowercase;
     color: #fff;
+}
+
+/* WELCOME BACK */
+#header .navbar-status {
+    background-color: #de90af;
+    color: #fff;
+    height: 37px;
+    border-radius: 15px;
+}
+
+/* Home Tag Groupname */
+#header .breadcrumb-nav {
+    background-color: #fcecf3;
+}
+.breadcrumb-item.active {
+    color: #000000;
 }
 
 /* Custom Buttons */
