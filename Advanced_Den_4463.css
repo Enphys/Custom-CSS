@@ -200,8 +200,11 @@ table.table-striped tr:nth-child(odd) {
     background-color: transparent !important;
 }
 
-.p-0 img {
-    border-radius: 50% !important;
+.pup img {
+    width: 60px !important; /* Set a smaller size for pups */
+    height: 60px !important; /* Maintain aspect ratio */
+    object-fit: cover !important; /* Maintain proportions within circle */
+    border-radius: 50% !important; /* Keep circular shape */
     overflow: hidden !important;
 }
 
@@ -223,14 +226,21 @@ table.table-striped tr:nth-child(odd) {
     background: transparent !important;
 }
 
-/* Completely Remove Background for Wolf Headshots (Adults and Pups) */
+/* Forcefully Remove All Backgrounds from Wolf Headshots (Adults & Pups) */
 .p-0, 
 .p-0 img, 
-.pup img {
+.pup, 
+.pup img, 
+td.p-0, 
+td.pup, 
+td.p-0 img, 
+td.pup img {
+    background-color: transparent !important; 
     background: none !important;
     box-shadow: none !important;
-    border-bottom: none !important;
+    border: none !important;
 }
+
 
 /* Adjust Text */
 body, p, a, span {
