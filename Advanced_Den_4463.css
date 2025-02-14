@@ -201,16 +201,12 @@ table.table-striped tr:nth-child(odd) {
 }
 
 .p-0 img {
-    object-fit: cover !important;
-    height: 100% !important;
-    width: 100% !important;
     border-radius: 50% !important;
     overflow: hidden !important;
 }
 
 .pup > img {
     border-radius: 50% !important;
-    object-fit: cover !important;
 }
 
 /* Remove border-bottom and fix padding for wolf headshots */
