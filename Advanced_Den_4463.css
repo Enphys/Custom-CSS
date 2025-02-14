@@ -193,54 +193,41 @@ table.table-striped tr:nth-child(odd) {
 }
 
 /* Wolf list */
-.p-0 {
-    border-radius: 50% !important; /* Makes it circular */
-    overflow: hidden; /* Hides anything outside the border */
-    object-fit: cover; /* Keeps the image proportionate within the circle */
-    background-color: transparent !important;
-}
-
-.pup img {
-    width: 60px !important; /* Set a smaller size for pups */
-    height: 60px !important; /* Maintain aspect ratio */
-    object-fit: cover !important; /* Maintain proportions within circle */
-    border-radius: 50% !important; /* Keep circular shape */
+.p-0 img {
+    width: 120px !important; 
+    height: 120px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
     overflow: hidden !important;
 }
 
-.pup > img {
+.pup img {
+    width: 80px !important;  
+    height: 80px !important; 
+    object-fit: cover !important;
     border-radius: 50% !important;
+    overflow: hidden !important;
 }
 
-/* Remove border-bottom and fix padding for wolf headshots */
-.p-0 .border-bottom,
-.p-2 .border-bottom {
-    border-bottom: none !important;
-}
-
-.p-0,
-.p-2 {
+.p-0, .pup {
     padding: 0 !important;
-    outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip-path: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 /* Forcefully Remove All Backgrounds from Wolf Headshots (Adults & Pups) */
-.p-0, 
-.p-0 img, 
-.pup, 
-.pup img, 
-td.p-0, 
-td.pup, 
-td.p-0 img, 
-td.pup img {
-    background-color: transparent !important; 
+.p-0, .p-0 img, .pup, .pup img, 
+td.p-0, td.pup, div.p-0, div.pup {
     background: none !important;
+    background-color: transparent !important;
     box-shadow: none !important;
     border: none !important;
+    outline: none !important;
 }
-
 
 /* Adjust Text */
 body, p, a, span {
