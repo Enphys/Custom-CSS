@@ -216,11 +216,13 @@ table.table-striped tr:nth-child(odd) td:not(.p-0) {
 }
 
 .pup img {
-    border-radius: 50% !important;
-    height: 100%;
-    width: 100%;
-    object-fit: cover !important;
+    width: 60px !important; /* Set a smaller size for pups */
+    height: 60px !important; /* Maintain aspect ratio */
+    object-fit: cover !important; /* Maintain proportions within circle */
+    border-radius: 50% !important; /* Keep circular shape */
+    overflow: hidden !important;
 }
+
 
 /* Adjust Text */
 body, p, a, span {
