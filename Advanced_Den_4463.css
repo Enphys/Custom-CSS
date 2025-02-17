@@ -144,7 +144,6 @@ table.table-striped.border-none.mt-3.mb-0 th a {
 
 .tbody {
     border: none;
-    
 }
 
 .card.mb-3 {
@@ -186,6 +185,7 @@ table.table-striped tr:nth-child(odd) {
     border: 3px solid #be849d;
 }
 
+/* Featured Wolf */
 .col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf img {
     border-radius: 50% !important; /* Makes it circular */
     overflow: hidden; /* Hides anything outside the border */
@@ -225,7 +225,7 @@ table.table-striped tr:nth-child(odd) {
 table.table-striped[data-cave-key] td.p-0 > a > img {
     border-radius: 50% !important; /* Makes the image circular */
     object-fit: cover !important;  /* Ensures the image scales correctly within the circle */
-    border: none !important;       /* Removes any default borders */
+    border: 2px solid #de90af !important;     /* Removes any default borders */
     background: none !important;   /* Removes any background color */
     width: 100% !important;        /* Ensures the image uses full space */
     height: 100% !important;       /* Ensures the image maintains its size */
