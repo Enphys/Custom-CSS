@@ -297,13 +297,38 @@ div.progress {
     background-color: #cfa75d !important; /* Muted yellow/orange */
 }
 
+.progress-bar.bg-primary
+    background-color: #4f6d8a !important;
+}
+
 .progress-bar.bg-danger {
     background-color: #c47777 !important; /* Muted red */
+}
+
+.progress-bar.bg-info {
+    background-color: #8ab6d6 !important;
 }
 
 /* Chat box */
 div.card-body.p-0.py-3 {
     border: none !important;
+}
+
+.s-chat-error_screen {
+    background: #d8d8d8; /* Chat not connected on this tab */
+    color: #4c4c4c;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #78a64b; /* Growl */
+    border-color: #527133;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #057cb3; /* Connect here instead */
+    border-color: #057cb3;
 }
 
 .table .left {
@@ -316,4 +341,10 @@ div.card-body.p-0.py-3 {
 
 .bottom {
     background-color: #be849d !important; /* Adjust to match your theme */
+}
+
+#footer {
+    background-color: #252525;
+    color: #e2e2e2;
+    text-align: center;
 }
