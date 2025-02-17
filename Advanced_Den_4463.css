@@ -249,8 +249,8 @@ body, p, a, span {
 
 /* Sidebar */
 #sidebar {
-    background: transparent !important;
-    border: none !important; /* Optional: Removes border if needed */
+    background: transparent !important; 
+    border: none !important;
     border-radius: 15px;
     color: #be849d;
 }
@@ -272,12 +272,11 @@ body, p, a, span {
     color: #ffffff; /* Hover color */
 }
 
-#sidebar .card {
+#sidebar > .card {
     background-color: #eed4e2 !important;
-    border: none !important;
-    border-bottom: 8px solid #be849d;
-    box-shadow: none !important;
+    border-color: #be849d !important;
     border-radius: 15px !important;
+    border-bottom: 8px solid #be849d;
 }
 
 /* Energy Hunger HP EXP */
