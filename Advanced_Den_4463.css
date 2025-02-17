@@ -1,5 +1,6 @@
 /* CSS for Wolvden Den Page - #4463 */
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 /* General Settings */
@@ -12,18 +13,6 @@ html, body {
 
 #main.col-lg-9.order-lg-2 {
     background-color: #fbebf4 !important;
-}
-
-#sidebar.col-lg-3 {
-    flex: 0 0 calc(25% - 11px) important;
-    max-width: calc(25% - 11px);
-    background: #fbebf4;
-}
-
-#main.col-lg-9.order-lg-2,
-#sidebar.col-lg-3.order-lg-1 {
-    position: relative;
-    left: -6px;
 }
 
 a {
@@ -89,7 +78,7 @@ a {
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu Mono', cursive;
+    font-family: 'Srisakdi', cursive;
     color: #de90af;
     text-transform: lowercase;
 }
@@ -146,7 +135,7 @@ table.table-striped.border-none.mt-3.mb-0 th a {
 }
 
 #main .card.mb-3 {
-    background-color: transparent;
+    background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
@@ -249,8 +238,8 @@ body, p, a, span {
 
 /* Sidebar */
 #sidebar {
-    background: transparent; 
-    border: none !important;
+    background: transparent !important;
+    border: none !important; /* Optional: Removes border if needed */
     border-radius: 15px;
     color: #be849d;
 }
@@ -272,11 +261,10 @@ body, p, a, span {
     color: #ffffff; /* Hover color */
 }
 
-#sidebar .card {
-    background-color: #eed4e2 !important;
-    border-color: #be849d !important;
+#sidebar, .card {
+    background-color: #eed4e2;
+    border-color: #be849d;
     border-radius: 15px !important;
-    border-bottom: 8px solid #be849d;
 }
 
 /* Energy Hunger HP EXP */
@@ -285,15 +273,15 @@ div.progress {
 }
 
 .progress-bar.bg-success {
-    background-color: #b7d4bc !important; /* Pale muted green */
+    background-color: #6faa84 !important; /* Muted green */
 }
 
 .progress-bar.bg-warning {
-    background-color: #e8d4ac !important; /* Pale muted yellow/orange */
+    background-color: #cfa75d !important; /* Muted yellow/orange */
 }
 
 .progress-bar.bg-danger {
-    background-color: #e5bcbc !important; /* Pale muted red */
+    background-color: #c47777 !important; /* Muted red */
 }
 
 /* Chat box */
