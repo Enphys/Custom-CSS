@@ -11,6 +11,24 @@ html, body {
 }
 
 /* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fcecf3; /* Lightest pink from palette */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c78ca1; /* Dark pink accent */
+    border-radius: 10px;
+    border: 2px solid #eed4e2; /* Soft background pink */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #be849d; /* Slightly darker pink */
+}
 
 #main.col-lg-9.order-lg-2 {
     background-color: #fbebf4 !important;
@@ -315,11 +333,6 @@ div.card-body.p-0.py-3 {
     border: none !important;
 }
 
-.s-chat-error_screen {
-    background: #fff9ff; /* Chat not connected on this tab */
-    color: #4c4c4c;
-}
-
 .btn-primary {
     color: #fff;
     background-color: #c78ca1; /* Growl */
@@ -342,6 +355,11 @@ div.card-body.p-0.py-3 {
 
 .bottom {
     background-color: #be849d !important; /* Adjust to match your theme */
+}
+
+/* Den page html allowed */
+.bg-bar-input {
+    background: #be849d;
 }
 
 #footer {
