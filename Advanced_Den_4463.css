@@ -1,6 +1,5 @@
 /* CSS for Wolvden Den Page - #4463 */
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 /* General Settings */
@@ -10,6 +9,8 @@ html, body {
     cursor: url('https://64.media.tumblr.com/6c090b045688a1bd7be0048759431d86/ff0faf4c226d25cd-4a/s75x75_c1/a05b19d89808883383fa51db10080b631eeca99e.pnj'), auto;
     background: #fcecf3 !important;
 }
+
+/* Scrollbar */
 
 #main.col-lg-9.order-lg-2 {
     background-color: #fbebf4 !important;
@@ -94,7 +95,7 @@ a {
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Srisakdi', cursive;
+    font-family: 'Ubuntu Mono', cursive;
     color: #de90af;
     text-transform: lowercase;
 }
@@ -315,20 +316,20 @@ div.card-body.p-0.py-3 {
 }
 
 .s-chat-error_screen {
-    background: #d8d8d8; /* Chat not connected on this tab */
+    background: #fff9ff; /* Chat not connected on this tab */
     color: #4c4c4c;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #78a64b; /* Growl */
-    border-color: #527133;
+    background-color: #c78ca1; /* Growl */
+    border-color: #a4687d;
 }
 
 .btn-info {
     color: #fff;
-    background-color: #057cb3; /* Connect here instead */
-    border-color: #057cb3;
+    background-color: #a4687d; /* Connect here instead */
+    border-color: #fff9ff;
 }
 
 .table .left {
@@ -344,7 +345,7 @@ div.card-body.p-0.py-3 {
 }
 
 #footer {
-    background-color: #252525;
+    background-color: #a4687d;
     color: #e2e2e2;
     text-align: center;
 }
