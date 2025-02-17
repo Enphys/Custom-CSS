@@ -221,14 +221,14 @@ table.table-striped tr:nth-child(odd) {
     border: none;
 }
 
-/* Forcefully Remove All Backgrounds from Wolf Headshots (Adults & Pups) */
-.p-0, .p-0 img, .pup, .pup img, td.p-0, td.pup, div.p-0, div.pup {
-    background: none !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: 2px solid #be849d !important;
-    outline: none !important;
-    border-radius: 50% !important;
+/* Wolf Headshots (Adults) */
+table.table-striped[data-cave-key] td.p-0 > a > img {
+    border-radius: 50% !important; /* Makes the image circular */
+    object-fit: cover !important;  /* Ensures the image scales correctly within the circle */
+    border: none !important;       /* Removes any default borders */
+    background: none !important;   /* Removes any background color */
+    width: 100% !important;        /* Ensures the image uses full space */
+    height: 100% !important;       /* Ensures the image maintains its size */
 }
 
 /* Adjust Text */
@@ -266,6 +266,11 @@ body, p, a, span {
     background-color: #eed4e2;
     border-color: #be849d;
     border-radius: 15px !important;
+}
+
+/* Chat box */
+div.card-body.p-0.py-3 {
+    border: none !important;
 }
 
 .table .left {
