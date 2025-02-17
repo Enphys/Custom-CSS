@@ -236,6 +236,12 @@ table.table-striped {
     border-collapse: collapse !important;
 }
 
+.table .bottom, .table tfoot td {
+    color: #be849d;
+    background-color: #be849d;
+    text-align: center;
+}
+
 /* Adjust Text */
 body, p, a, span {
     font-size: 0.95rem;
@@ -275,7 +281,20 @@ body, p, a, span {
 
 /* Energy Hunger HP EXP */
 div.progress {
-    background: #b3996f !important;
+    background: #ffffff !important;
+}
+
+.progress-bar.bg-success {
+    background-color: #6faa84 !important; /* Muted green */
+}
+
+.progress-bar.bg-warning {
+    background-color: #cfa75d !important; /* Muted yellow/orange */
+}
+
+.progress-bar.bg-danger {
+    background-color: #c47777 !important; /* Muted red */
+}
 
 /* Chat box */
 div.card-body.p-0.py-3 {
