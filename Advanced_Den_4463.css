@@ -18,7 +18,7 @@ html, body {
 #sidebar.col-lg-3 {
     flex: 0 0 calc(25% - 11px) important;
     max-width: calc(25% - 11px);
-    background: #fbebf4;
+    background-color: transparent;
 }
 
 #main.col-lg-9.order-lg-2,
@@ -254,7 +254,6 @@ body, p, a, span {
 
 /* Sidebar */
 #sidebar {
-    backround: transparent !important;
     border: none !important; /* Optional: Removes border if needed */
     border-radius: 15px;
     color: #be849d;
