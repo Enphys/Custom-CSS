@@ -124,6 +124,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Pack info box */
+.table th {
+    background-color: #be849d;
+    border-color; #be849d;
+    border-radius: 15px;
+}
+
+.table th a {
+    color: #fcecf3;
+}
+
 .card.mb-3 {
     background-color: transparent !important;
     border: none !important;
@@ -193,35 +203,12 @@ table.table-striped tr:nth-child(odd) {
 }
 
 /* Wolf list */
-.p-0 img {
-    width: 120px !important; 
-    height: 120px !important;
-    object-fit: cover !important;
-    border-radius: 50% !important;
-    overflow: hidden !important;
-}
-
-.pup img {
-    width: 80px !important;  
-    height: 80px !important; 
-    object-fit: cover !important;
-    border-radius: 50% !important;
-    overflow: hidden !important;
-}
-
-.p-0, .pup {
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: visible !important;
-    clip-path: none !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+.table td, .table th {
+    vertical-align: center;
 }
 
 /* Forcefully Remove All Backgrounds from Wolf Headshots (Adults & Pups) */
-.p-0, .p-0 img, .pup, .pup img, 
-td.p-0, td.pup, div.p-0, div.pup {
+.p-0, .p-0 img, .pup, .pup img, td.p-0, td.pup, div.p-0, div.pup {
     background: none !important;
     background-color: transparent !important;
     box-shadow: none !important;
