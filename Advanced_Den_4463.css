@@ -277,7 +277,7 @@ body, p, a, span {
 }
 
 #sidebar.col-lg-3.order-lg-1 .card {
-    background-color: #eed4e2 !important; /* Your desired background color */
+    background-color: #fbebf4 !important; /* Your desired background color */
     border-color: #be849d !important;    /* Your desired border color */
     border-radius: 15px !important;
     box-shadow: none !important;         /* Remove any unwanted shadows */
