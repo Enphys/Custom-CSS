@@ -146,7 +146,7 @@ table.table-striped.border-none.mt-3.mb-0 th a {
 }
 
 #main .card.mb-3 {
-    background-color: transparent !important;
+    background-color: transparent;
     border: none !important;
     box-shadow: none !important;
 }
@@ -272,7 +272,7 @@ body, p, a, span {
     color: #ffffff; /* Hover color */
 }
 
-#sidebar .card {
+#sidebar, .card {
     background-color: #eed4e2 !important;
     border-color: #be849d !important;
     border-radius: 15px !important;
