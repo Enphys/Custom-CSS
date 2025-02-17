@@ -185,7 +185,6 @@ table.table-striped tr:nth-child(odd) {
     border: 3px solid #be849d;
 }
 
-/* Featured Wolf */
 .col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf img {
     border-radius: 50% !important; /* Makes it circular */
     overflow: hidden; /* Hides anything outside the border */
@@ -221,14 +220,20 @@ table.table-striped tr:nth-child(odd) {
     border: none;
 }
 
-/* Wolf Headshots (Adults) */
+/* Wolf Headshots */
 table.table-striped[data-cave-key] td.p-0 > a > img {
     border-radius: 50% !important; /* Makes the image circular */
     object-fit: cover !important;  /* Ensures the image scales correctly within the circle */
-    border: 2px solid #de90af !important;     /* Removes any default borders */
+    border: none !important;       /* Removes any default borders */
     background: none !important;   /* Removes any background color */
     width: 100% !important;        /* Ensures the image uses full space */
     height: 100% !important;       /* Ensures the image maintains its size */
+}
+
+
+table.table-striped {
+    border: none !important;
+    border-collapse: collapse !important;
 }
 
 /* Adjust Text */
@@ -263,10 +268,15 @@ body, p, a, span {
 }
 
 #sidebar, .card {
-    background-color: #eed4e2;
+    background-color: #fbebf4 !important;
     border-color: #be849d;
     border-radius: 15px !important;
+    border-bottom: 8px solid #deb6c7;
 }
+
+/* Energy Hunger HP EXP */
+div.progress {
+    background: #b3996f !important;
 
 /* Chat box */
 div.card-body.p-0.py-3 {
