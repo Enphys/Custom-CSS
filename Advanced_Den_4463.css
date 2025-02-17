@@ -272,7 +272,7 @@ body, p, a, span {
     color: #ffffff; /* Hover color */
 }
 
-#sidebar .card {
+#sidebar, .card {
     background-color: #eed4e2;
     border-color: #be849d;
     border-radius: 15px !important;
