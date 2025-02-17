@@ -297,7 +297,7 @@ div.progress {
     background-color: #cfa75d !important; /* Muted yellow/orange */
 }
 
-.progress-bar.bg-primary
+.progress-bar.bg-primary {
     background-color: #4f6d8a !important;
 }
 
