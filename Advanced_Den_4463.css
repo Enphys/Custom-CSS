@@ -55,7 +55,7 @@ a {
     border-radius: 15px;
 }
 .breadcrumb-item.active {
-    color: #000000;
+    color: #c78ca1;
 }
 
 /* Custom Buttons */
@@ -130,8 +130,21 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
 }
 
+table.table-striped.border-none.mt-3.mb-0 {
+    border: none;
+}
+
+table.table-striped.border-none.mt-3.mb-0 th a {
+    color: #fcecf3 !important;
+}
+
 .table th a {
     color: #fcecf3;
+}
+
+.tbody {
+    border: none;
+    
 }
 
 .card.mb-3 {
@@ -205,6 +218,10 @@ table.table-striped tr:nth-child(odd) {
 /* Wolf list */
 .table td, .table th {
     vertical-align: center;
+}
+
+.post {
+    border: none;
 }
 
 /* Forcefully Remove All Backgrounds from Wolf Headshots (Adults & Pups) */
