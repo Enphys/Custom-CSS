@@ -218,9 +218,6 @@ table.table-striped tr:nth-child(odd) {
 /* Wolf list */
 .table td, .table th {
     vertical-align: center;
-}
-
-.post {
     border: none;
 }
 
@@ -229,8 +226,9 @@ table.table-striped tr:nth-child(odd) {
     background: none !important;
     background-color: transparent !important;
     box-shadow: none !important;
-    border: none !important;
+    border: 2px solid #be849d !important;
     outline: none !important;
+    border-radius: 50% !important;
 }
 
 /* Adjust Text */
