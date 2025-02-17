@@ -1,6 +1,5 @@
 /* CSS for Wolvden Den Page - #4463 */
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 /* General Settings */
@@ -90,7 +89,7 @@ a {
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Srisakdi', cursive;
+    font-family: 'Ubuntu Mono', cursive;
     color: #de90af;
     text-transform: lowercase;
 }
@@ -273,7 +272,7 @@ body, p, a, span {
     color: #ffffff; /* Hover color */
 }
 
-#sidebar, .card {
+#sidebar .card {
     background-color: #eed4e2;
     border-color: #be849d;
     border-radius: 15px !important;
@@ -285,15 +284,15 @@ div.progress {
 }
 
 .progress-bar.bg-success {
-    background-color: #6faa84 !important; /* Muted green */
+    background-color: #b7d4bc !important; /* Pale muted green */
 }
 
 .progress-bar.bg-warning {
-    background-color: #cfa75d !important; /* Muted yellow/orange */
+    background-color: #e8d4ac !important; /* Pale muted yellow/orange */
 }
 
 .progress-bar.bg-danger {
-    background-color: #c47777 !important; /* Muted red */
+    background-color: #e5bcbc !important; /* Pale muted red */
 }
 
 /* Chat box */
