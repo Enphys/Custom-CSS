@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 table.table-striped.border-none.mt-3.mb-0 {
-    border: none;
+    border: none !important;
 }
 
 table.table-striped.border-none.mt-3.mb-0 th a {
@@ -268,10 +268,9 @@ body, p, a, span {
 }
 
 #sidebar, .card {
-    background-color: #fbebf4 !important;
+    background-color: #eed4e2;
     border-color: #be849d;
     border-radius: 15px !important;
-    border-bottom: 8px solid #deb6c7;
 }
 
 /* Energy Hunger HP EXP */
