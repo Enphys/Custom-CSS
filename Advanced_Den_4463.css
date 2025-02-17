@@ -249,7 +249,7 @@ body, p, a, span {
 
 /* Sidebar */
 #sidebar {
-    background: transparent;
+    background: transparent !important;
     border: none !important; /* Optional: Removes border if needed */
     border-radius: 15px;
     color: #be849d;
@@ -274,7 +274,9 @@ body, p, a, span {
 
 #sidebar .card {
     background-color: #eed4e2 !important;
+    border: none !important;
     border-bottom: 8px solid #be849d;
+    box-shadow: none !important;
     border-radius: 15px !important;
 }
 
