@@ -206,7 +206,7 @@ table.table-striped tr:nth-child(odd) {
 }
 
 /* Leaf-Shaped Lead Wolf Profile */
-div.col-xl-3.col-sm-7.text-center > .card.mb-3 > .card-img-top {
+.card.mb-3 img.card-img-top {
     clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 20% 100%, 0% 35%);
     -webkit-clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 20% 100%, 0% 35%);
     object-fit: cover;
