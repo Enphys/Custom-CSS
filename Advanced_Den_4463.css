@@ -242,7 +242,7 @@ table.table-striped[data-cave-key] td.p-0 > a > img {
 }
 
 img.border-bottom.p-2, .img.border-bottom {
-    border: 3px solid #de90af;
+    border: 3px solid #de90af !important;
 }
 
 table.table-striped {
