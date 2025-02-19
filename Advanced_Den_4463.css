@@ -143,11 +143,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff9ff !important;
 }
 
-ul.nav.nav-tabs {
+ul.nav.nav-tabs .nav-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-ul.nav.nav-tabs:hover {
+ul.nav.nav-tabs .nav-item:hover {
     transform: translateY(-3px); /* Lifts the element */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for a 3D effect */
 }
@@ -220,21 +220,6 @@ table.table-striped tr:nth-child(odd) {
     object-fit: cover; /* Keeps the image proportionate within the circle */
 }
 
-/* Circular 3D Boxes */
-.circle-box {
-    display: inline-block;
-    width: 120px;
-    height: 120px;
-    background-color: #fbebf4;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-}
-.circle-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
 /* Den Cards */
 #main .card {
     background-color: transparent;
@@ -256,7 +241,7 @@ table.table-striped[data-cave-key] td.p-0 > a > img {
     height: 100% !important;       /* Ensures the image maintains its size */
 }
 
-.img.border-bottom.p-2, .img.border-bottom {
+img.border-bottom.p-2, .img.border-bottom {
     border: 3px solid #de90af;
 }
 
