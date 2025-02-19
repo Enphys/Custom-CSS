@@ -247,8 +247,10 @@ table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom {
     object-fit: cover !important;
     border: 3px solid #de90af !important;
     background: none !important;
-    width: 100% !important;
-    height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
 }
 
 /* Puppy wolf images */
@@ -257,8 +259,10 @@ table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom.p-2 {
     object-fit: cover !important;
     border: 2px solid #de90af !important; /* Slightly smaller border */
     background: none !important;
-    width: 56px !important;
-    height: 56px !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
 }
 
 table.table-striped {
