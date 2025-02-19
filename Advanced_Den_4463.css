@@ -249,16 +249,18 @@ table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom {
     background: none !important;
     width: 56px !important;
     height: 56px !important;
+    padding: 2px !important; /* Adjusts alignment */
 }
 
 /* Puppy wolf images */
 table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom.p-2 {
     border-radius: 50% !important;
-    object-fit: contain !important; /* Prevents stretching */
+    object-fit: cover !important; /* Keeps image within frame */
     border: 3px solid #de90af !important; /* Matches adult border */
     background: none !important;
-    width: 56px !important; /* Keeps size the same as adults */
-    height: 56px !important; /* Keeps size the same as adults */
+    width: 44px !important; /* Original puppy image size */
+    height: 44px !important; /* Original puppy image size */
+    margin: 6px !important; /* Adjusts spacing to align with adults */
 }
 
 table.table-striped {
