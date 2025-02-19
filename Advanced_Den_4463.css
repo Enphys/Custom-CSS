@@ -216,6 +216,37 @@ table.table-striped tr:nth-child(odd) {
     border-radius: 50%;
 }
 
+/* Change the images of Dynasty Overview Breeding etc */
+/* Pack Dynasty */
+a[href*="/dynasty/"] .card-img-top {
+    content: url('https://i.imgur.com/bb7J8Ij.png') !important;
+}
+
+/* Pack Overview */
+a[href*="/pack-overview/"] .card-img-top {
+    content: url('https://i.imgur.com/SmCayKw.png') !important;
+}
+
+/* Breeding */
+a[href*="/breed/"] .card-img-top {
+    content: url('https://i.imgur.com/ml5E84o.png') !important;
+}
+
+/* Pupsitting */
+a[href*="/pup-sitting/"] .card-img-top {
+    content: url('https://i.imgur.com/3TE9jio.png') !important;
+}
+
+/* Nesting */
+a[href*="/nesting/"] .card-img-top {
+    content: url('https://i.imgur.com/W50RaFk.png') !important;
+}
+
+/* Socializing */
+a[href*="/socializing/"] .card-img-top {
+    content: url('https://i.imgur.com/IrUiW7G.png') !important;
+}
+
 .col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf img {
     border-radius: 50% !important; /* Makes it circular */
     overflow: hidden; /* Hides anything outside the border */
