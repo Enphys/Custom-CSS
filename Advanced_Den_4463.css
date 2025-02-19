@@ -219,32 +219,32 @@ table.table-striped tr:nth-child(odd) {
 /* Change the images of Dynasty Overview Breeding etc */
 /* Pack Dynasty */
 a[href*="/dynasty/"] .card-img-top {
-    content: url('https://i.imgur.com/bb7J8Ij.png') !important;
+    content: url('https://i.imgur.com/eBO97pg.png') !important;
 }
 
 /* Pack Overview */
 a[href*="/pack-overview/"] .card-img-top {
-    content: url('https://i.imgur.com/SmCayKw.png') !important;
+    content: url('https://i.imgur.com/hb0Wg3p.png') !important;
 }
 
 /* Breeding */
 a[href*="/breed/"] .card-img-top {
-    content: url('https://i.imgur.com/ml5E84o.png') !important;
+    content: url('https://i.imgur.com/hqTArq7.png') !important;
 }
 
 /* Pupsitting */
 a[href*="/pup-sitting/"] .card-img-top {
-    content: url('https://i.imgur.com/3TE9jio.png') !important;
+    content: url('https://i.imgur.com/OpM3XOR.png') !important;
 }
 
 /* Nesting */
 a[href*="/nesting/"] .card-img-top {
-    content: url('https://i.imgur.com/W50RaFk.png') !important;
+    content: url('https://i.imgur.com/1rbkZM7.png') !important;
 }
 
 /* Socializing */
 a[href*="/socializing/"] .card-img-top {
-    content: url('https://i.imgur.com/IrUiW7G.png') !important;
+    content: url('https://i.imgur.com/ZtQEQFh.png') !important;
 }
 
 .col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf img {
