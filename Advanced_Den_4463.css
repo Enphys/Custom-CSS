@@ -249,7 +249,8 @@ table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom {
     background: none !important;
     width: 56px !important;
     height: 56px !important;
-    padding: 2px !important; /* Adjusts alignment */
+    padding: 0 !important; /* Remove unnecessary padding */
+    margin: 0 !important; /* Ensures alignment */
 }
 
 /* Puppy wolf images */
@@ -260,7 +261,8 @@ table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom.p-2 {
     background: none !important;
     width: 44px !important; /* Original puppy image size */
     height: 44px !important; /* Original puppy image size */
-    margin: 6px !important; /* Adjusts spacing to align with adults */
+    padding: 0 !important; /* Remove unnecessary padding */
+    margin: 0 auto !important; /* Centering, if needed */
 }
 
 table.table-striped {
