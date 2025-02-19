@@ -247,22 +247,18 @@ table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom {
     object-fit: cover !important;
     border: 3px solid #de90af !important;
     background: none !important;
-    width: auto !important;
-    height: auto !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
+    width: 56px !important;
+    height: 56px !important;
 }
 
 /* Puppy wolf images */
 table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom.p-2 {
     border-radius: 50% !important;
     object-fit: cover !important;
-    border: 2px solid #de90af !important; /* Slightly smaller border */
+    border: 2px solid #de90af !important; /* Slightly thinner border to match proportionally */
     background: none !important;
-    width: auto !important;
-    height: auto !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
+    width: 44px !important;
+    height: 44px !important;
 }
 
 table.table-striped {
