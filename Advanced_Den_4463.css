@@ -148,6 +148,10 @@ ul.nav.nav-tabs .nav-item {
     border-radius: 15px;
 }
 
+ul.nav.nav-tabs .nav-link.active {
+    border-radius: 15px;
+}
+
 ul.nav.nav-tabs .nav-item:hover {
     transform: translateY(-3px); /* Lifts the element */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for a 3D effect */
