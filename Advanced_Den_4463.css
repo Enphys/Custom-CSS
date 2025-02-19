@@ -241,8 +241,13 @@ table.table-striped[data-cave-key] td.p-0 > a > img {
     height: 100% !important;       /* Ensures the image maintains its size */
 }
 
-img.border-bottom.p-2, .img.border-bottom {
-    border: 3px solid #de90af !important;
+table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom {
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 3px solid #de90af !important; /* Your chosen border color */
+    background: none !important;
+    width: 56px !important; /* Ensure it fits within the designated space */
+    height: 56px !important;
 }
 
 table.table-striped {
