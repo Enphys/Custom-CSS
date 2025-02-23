@@ -222,32 +222,32 @@ table.table-striped tr:nth-child(odd) {
 }
 
 /* Pack Dynasty */
-#denCards a[href="/dynasty/"] .card-img-top {
+a[href*="/dynasty/"] .card-img-top {
     content: url('https://i.imgur.com/eBO97pg.png') !important;
 }
 
 /* Pack Overview */
-#denCards a[href="/pack-overview/"] .card-img-top {
+a[href*="/pack-overview/"] .card-img-top {
     content: url('https://i.imgur.com/hb0Wg3p.png') !important;
 }
 
 /* Breeding */
-#denCards a[href^="/breed/"] .card-img-top {
+a[href*="/breed/"] .card-img-top {
     content: url('https://i.imgur.com/hqTArq7.png') !important;
 }
 
 /* Pupsitting */
-#denCards a[href="/pup-sitting/"] .card-img-top {
+img.card-img-top[alt="Pupsitting"] {
     content: url('https://i.imgur.com/OpM3XOR.png') !important;
 }
 
 /* Nesting */
-#denCards a[href="/nesting/"] .card-img-top {
+img.card-img-top[alt="Nesting"] {
     content: url('https://i.imgur.com/1rbkZM7.png') !important;
 }
 
 /* Socializing */
-#denCards a[href="/socializing/"] .card-img-top {
+img.card-img-top[alt="Socializing"] {
     content: url('https://i.imgur.com/ZtQEQFh.png') !important;
 }
 
