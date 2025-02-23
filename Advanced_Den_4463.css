@@ -210,8 +210,8 @@ table.table-striped tr:nth-child(odd) {
     color: #fbebf4 !important;
 }
 
-/* Wolf Headshot Borders */
-.card-img-top {
+/* Lead Wolf Headshot Border */
+.row .col-xl-3 .col-sm-7.text-center .card.mb-3 img.card-img-top {
     border: 3px solid #de90af;
     border-radius: 50%;
 }
