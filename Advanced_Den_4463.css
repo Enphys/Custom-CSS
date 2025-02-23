@@ -237,7 +237,7 @@ a[href*="/breed/"] .card-img-top {
 }
 
 /* Pupsitting */
-a[href*="/pupsitting/"] .card-img-top {
+a[href*="/pup-sitting/"] .card-img-top {
     content: url('https://i.imgur.com/OpM3XOR.png') !important;
 }
 
