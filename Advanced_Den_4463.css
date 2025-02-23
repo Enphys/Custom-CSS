@@ -210,13 +210,17 @@ table.table-striped tr:nth-child(odd) {
     color: #fbebf4 !important;
 }
 
-/* Lead Wolf Headshot Border */
-.row .col-xl-3 .col-sm-7.text-center .card.mb-3 img.card-img-top {
+/* Wolf Headshot Borders */
+.card-img-top {
     border: 3px solid #de90af;
     border-radius: 50%;
 }
 
 /* Change the images of Dynasty Overview Breeding etc */
+#denCards .card-img-top {
+    border: none !important;
+}
+
 /* Pack Dynasty */
 a[href*="/dynasty/"] .card-img-top {
     content: url('https://i.imgur.com/eBO97pg.png') !important;
