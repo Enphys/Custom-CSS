@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #main.col-lg-9.order-lg-2 {
     background: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
 }
 
 /* Scrollbar */
@@ -78,7 +80,7 @@ a {
 .button {
     background-color: #c78ca1;
     color: #fff;
-    border-radius: 50px;
+    border-: 50px;
     padding: 8px 16px;
     transition: all 0.3s ease;
 }
@@ -336,7 +338,6 @@ body, p, a, span {
 /* Sidebar */
 #sidebar {
     border: none !important; /* Optional: Removes border if needed */
-    border-radius: 15px;
     color: #be849d;
 }
 
@@ -344,7 +345,6 @@ body, p, a, span {
     background: rgba(247, 205, 95, 0.7) !important; /* 70% opacity */
     border: none;
     padding: 10px !important;
-    border-radius: 15px;
 }
 
 #sidebar a {
@@ -355,6 +355,10 @@ body, p, a, span {
 
 #sidebar a:hover {
     color: #ffffff; /* Hover color */
+}
+
+#sidebar.col-lg-3 {
+    background-color: transparent !important;
 }
 
 #sidebar.col-lg-3.order-lg-1 .card {
