@@ -22,6 +22,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #main.col-lg-9.order-lg-2 {
     background: none !important;
+    transform: scale(0.95); /* 95% of its original size */
+    transform-origin: center; /* Ensures it scales from the center */
 }
 
 /* Scrollbar */
@@ -323,7 +325,7 @@ body, p, a, span {
 }
 
 #main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: transparent;
+    background: rgba(242, 156, 66, 0.6) !important; /* 60% opacity */
     border: none;
     padding: 10px !important;
     border-radius: 15px;
