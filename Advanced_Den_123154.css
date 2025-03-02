@@ -12,6 +12,8 @@ html, body, p, span, li, a {
 body {
     background: url(https://i.pinimg.com/736x/25/db/a5/25dba5de6d092d0198d239b42166235d.jpg) center center fixed;
     background-size: 100%;
+    font-weight: bold;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
@@ -171,7 +173,7 @@ ul.nav.nav-tabs .nav-link.active {
 
 /* Pack info box */
 .table th {
-    background-color: #f8c798;
+    background-color: #fe8d64;
 }
 
 table.table-striped.border-none.mt-3.mb-0 {
@@ -212,7 +214,7 @@ table.table-striped tr:nth-child(even) {
 }
 
 table.table-striped tr:nth-child(odd) {
-    background-color: #f8c798 !important;
+    background-color: #fe8d64 !important;
     color: #fcf2ec !important;
 }
 
