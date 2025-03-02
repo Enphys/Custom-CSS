@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700; /* Adjust for boldness */
     letter-spacing: 1px; /* Slight spacing for elegance */
-    color: fe8d64;
+    color: #fe8d64;
 }
 
 #main.col-lg-9.order-lg-2 {
@@ -96,7 +96,7 @@ a {
 .alert-info {
     color: #252525;
     background-color: #f8c798;
-    border-color: #eabad1;
+    border-color: #f8c798;
 }
 
 .alert-info .alert-link {
@@ -183,14 +183,8 @@ table.table-striped tr:nth-child(even) {
 }
 
 table.table-striped tr:nth-child(odd) {
-    background-color: #f7cd5f !important;
+    background-color: #f8c798 !important;
     color: #fcf2ec !important;
-}
-
-/* Wolf Headshot Borders */
-.card-img-top {
-    border: 3px solid #de90af;
-    border-radius: 50%;
 }
 
 /* Change the images of Dynasty Overview Breeding etc */
@@ -316,7 +310,7 @@ body, p, a, span {
 }
 
 #main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: rgba(211, 186, 122, 0.6) !important; /* 60% opacity */
+    background: rgba(226, 202, 142, 0.6) !important; /* 60% opacity */
     border: none;
     padding: 10px !important;
     border-radius: 15px;
