@@ -125,20 +125,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Adjust spacing between images and text */
+    gap: 15px; /* Adjust spacing between images and text */
     text-align: center;
-    font-size: 42px; /* Adjust as needed */
+    font-size: 42px; /* Keeps the text size unchanged */
 }
 
 #main h1::before, 
 #main h1::after {
     content: "";
     display: inline-block;
-    width: 50px;  /* Adjust size as needed */
-    height: 50px;
+    width: 80px;  /* Increased size */
+    height: 80px; /* Increased size */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    flex-shrink: 0; /* Prevents images from shrinking */
 }
 
 #main h1::before {
@@ -338,7 +339,7 @@ body, p, a, span {
 }
 
 #main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: rgba(226, 202, 142, 0.6) !important; /* 60% opacity */
+    background: rgba(247, 205, 95, 0.6) !important; /* 60% opacity */
     border: none;
     padding: 10px !important;
     border-radius: 15px;
