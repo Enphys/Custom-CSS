@@ -142,9 +142,7 @@ ul.nav.nav-tabs .nav-link.active {
 
 /* Pack info box */
 .table th {
-    background-color: #be849d;
-    border-color; #be849d;
-    border-radius: 15px;
+    background-color: #f8c798;
 }
 
 table.table-striped.border-none.mt-3.mb-0 {
@@ -152,11 +150,11 @@ table.table-striped.border-none.mt-3.mb-0 {
 }
 
 table.table-striped.border-none.mt-3.mb-0 th a {
-    color: #fcecf3 !important;
+    color: #fcf2ec !important;
 }
 
 .table th a {
-    color: #fcecf3;
+    color: #fcf2ec;
 }
 
 .tbody {
@@ -170,23 +168,23 @@ table.table-striped.border-none.mt-3.mb-0 th a {
 }
 
 table.striped tr:nth-child(even) {
-    background-color: #fbebf4 !important;
-    color: #be849d !important;
+    background-color: #f8c798 !important;
+    color: #f0704d !important;
 }
 
 table.striped tr:nth-child(odd) {
-    background-color: #eabad1 !important;
-    color: #fbebf4 !important;
+    background-color: #f7cd5f !important;
+    color: #fcf2ec !important;
 }
 
 table.table-striped tr:nth-child(even) {
-    background-color: #fbebf4 !important;
-    color: #be849d !important;
+    background-color: #f8c798 !important;
+    color: #f0704d !important;
 }
 
 table.table-striped tr:nth-child(odd) {
-    background-color: #eabad1 !important;
-    color: #fbebf4 !important;
+    background-color: #f7cd5f !important;
+    color: #fcf2ec !important;
 }
 
 /* Wolf Headshot Borders */
@@ -318,7 +316,7 @@ body, p, a, span {
 }
 
 #main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: rgba(250, 238, 206, 0.6) !important; /* 60% opacity */
+    background: rgba(211, 186, 122, 0.6) !important; /* 60% opacity */
     border: none;
     padding: 10px !important;
     border-radius: 15px;
