@@ -22,8 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #main.col-lg-9.order-lg-2 {
     background: none !important;
-    transform: scale(0.95); /* 95% of its original size */
-    transform-origin: center; /* Ensures it scales from the center */
 }
 
 /* Scrollbar */
@@ -138,13 +136,8 @@ ul.nav.nav-tabs .nav-link.active {
     border-radius: 15px;
 }
 
-ul.nav.nav-tabs .nav-item:hover {
-    transform: translateY(-3px); /* Lifts the element */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for a 3D effect */
-}
-
 #main.col-lg-9.order-lg-2 .nav-tabs .nav-item:nth-of-type(2) {
-    background-color: #eed4e2 !important;
+    background-color: #f8c798 !important;
 }
 
 /* Pack info box */
@@ -325,7 +318,7 @@ body, p, a, span {
 }
 
 #main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: rgba(242, 156, 66, 0.6) !important; /* 60% opacity */
+    background: rgba(250, 238, 206, 0.6) !important; /* 60% opacity */
     border: none;
     padding: 10px !important;
     border-radius: 15px;
