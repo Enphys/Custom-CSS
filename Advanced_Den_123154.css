@@ -10,13 +10,18 @@ html, body, p, span, li, a {
 }
 
 body {
-    background: url(https://i.pinimg.com/736x/a2/35/8b/a2358b7523f652f7db73b746a159dc84.jpg) center center fixed;
+    background: url(https://i.pinimg.com/736x/25/db/a5/25dba5de6d092d0198d239b42166235d.jpg) center center fixed;
     background-size: 100%;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700; /* Adjust for boldness */
     letter-spacing: 1px; /* Slight spacing for elegance */
+    color: fe8d64;
+}
+
+#main.col-lg-9.order-lg-2 {
+    background: none !important;
 }
 
 /* Scrollbar */
@@ -83,19 +88,19 @@ a {
 
 /* Active Notifications */
 .alert-success {
-    color: #deb6c7;
-    background-color: #fff9ff;
+    color: #252525;
+    background-color: #f8c798;
     border-color: #deb6c7;
 }
 
 .alert-info {
-    color: #be849d;
-    background-color: #eed4e2;
+    color: #252525;
+    background-color: #f8c798;
     border-color: #eabad1;
 }
 
 .alert-info .alert-link {
-    color: #be849d;
+    color: #f08e73;
 }
 
 /* Main Content Area */
@@ -112,8 +117,7 @@ a {
 
 /* Pack name */
 #denCards .card-header {
-    color: #de90af;
-    font-weight: bold;
+    color: #ef704d;
     border-radius: 15px;
 }
 
@@ -319,7 +323,7 @@ body, p, a, span {
 }
 
 #main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: #eed4e2;
+    background: transparent;
     border: none;
     padding: 10px !important;
     border-radius: 15px;
