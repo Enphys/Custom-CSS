@@ -4,7 +4,7 @@
 
 /* ===== CUSTOM CURSOR ===== */
 * {
-  cursor: url("https://64.media.tumblr.com/5d25c746da3108e32c5cd0247d6b389b/3808fc8c9ef5c820-24/s75x75_c1/422b35d2a69518bdbd525790b570dd024d8f7893.pnj") 16 16, auto !important;
+  cursor: url("https://64.media.tumblr.com/5d25c746da3108e32c5cd0247d6b389b/3808fc8c9ef5c820-24/s75x75_c1/422b35d2a69518bdbd525790b570dd024d8f7893.pnj") 0 0, auto !important;
 }
 
 /* ===== GWI MA PALETTE ===== */
@@ -73,31 +73,60 @@ body{
 }
 
 /* ===== BIRD AND TIGER ===== */
-/* ===== FLOATING SIDE OVERLAYS ===== */
-.overlay-left, .overlay-right {
+/* ===== SIDE OVERLAYS (full-page, floating) ===== */
+:root{
+  --side-left-w: 220px;           /* left image width */
+  --side-right-w: 200px;          /* right image width */
+  --float-range: 18px;            /* how far they bob */
+  --float-speed: 4s;              /* 1 up + 1 down = 2s; here we use 4s for slower */
+}
+
+/* draw the images as fixed overlays so they’re on top everywhere */
+body::before,
+body::after{
+  content:"";
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  width: 200px;           /* adjust size */
-  height: auto;
-  z-index: 9999;          /* make sure they’re on top */
-  pointer-events: none;   /* so they don’t block clicks */
-  animation: floatY 4s ease-in-out infinite;
+  z-index: 99999;                 /* above everything */
+  pointer-events: none;           /* don’t block clicks */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
+  animation: sideFloat var(--float-speed) ease-in-out infinite;
 }
 
-.overlay-left {
+/* LEFT */
+body::before{
   left: 10px;
+  width: var(--side-left-w);
+  aspect-ratio: 2 / 3;            /* 400x600 */
+  background-image: url("https://64.media.tumblr.com/dc2b7dd7b9d0dd342c22fee68b6a4e3c/c077c6fe72461af3-0d/s400x600/d82d96ae8c3e7064e1804dda919e65b55972cc5e.pnj");
   animation-direction: alternate;
 }
 
-.overlay-right {
+/* RIGHT */
+body::after{
   right: 10px;
-  animation-direction: alternate-reverse; /* moves opposite */
+  width: var(--side-right-w);
+  aspect-ratio: 5 / 8;            /* 250x400 */
+  background-image: url("https://64.media.tumblr.com/ace939396545b484a333d591dd95274c/c077c6fe72461af3-58/s250x400/061bc11ad71f433bf54b5bee6f9440848211320e.pnj");
+  animation-direction: alternate-reverse; /* opposite motion */
 }
 
-@keyframes floatY {
+@keyframes sideFloat{
   from { transform: translateY(-50%) translateY(0); }
-  to   { transform: translateY(-50%) translateY(-20px); }
+  to   { transform: translateY(-50%) translateY(calc(-1 * var(--float-range))); }
+}
+
+/* Mobile: shrink so they don’t cover content */
+@media (max-width: 768px){
+  :root{
+    --side-left-w: 150px;
+    --side-right-w: 140px;
+    --float-range: 12px;
+  }
 }
 
 /* ===== CREDIT IN BREADCRUMB ===== */
