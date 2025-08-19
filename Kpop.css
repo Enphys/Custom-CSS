@@ -74,26 +74,32 @@ body{
 }
 
 /* ===== LINKS ===== */
-a{
-  color: var(--accent-cyan); font-weight:700; text-decoration:none;
+a {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 1s ease, text-decoration-color 1s ease; /* smoother */
 }
-a:hover{
+a:hover {
   color: var(--accent-pink);
   text-decoration: underline dotted !important;
-  transition-duration:.5s;
 }
 
 /* ===== HEADER / FOOTER ===== */
 #header .navbar-main, #footer{
-  background: linear-gradient(90deg, rgba(62,230,255,.16), rgba(125,86,255,.16));
-  border-radius:30px 30px 0 0;
-  border:1px solid var(--stroke-lite);
+  background: linear-gradient(90deg, rgba(255,79,184,.18), rgba(138,91,255,.18));
+  border-radius: 30px 30px 0 0;
+  border: 1px solid var(--stroke-lite);
 }
-#header .navbar-main .nav-link, #header .navbar-main .nav-link .fa{ color: var(--ink); }
+#header .navbar-main .nav-link, #header .navbar-main .nav-link .fa{
+  color: var(--ink);
+}
 #header .navbar-main .nav-link:hover,
 #header .navbar-main .nav-link:hover .fa,
 #footer a:hover, #footer nav .nav-item .nav-link:hover{
-  color: rgba(255,255,255,.7); text-decoration:none !important; transition-duration:.5s;
+  color: rgba(255,255,255,.65);
+  text-decoration: none !important;
+  transition-duration: .5s;
 }
 
 /* ===== STATUS STRIP ===== */
