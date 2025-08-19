@@ -258,7 +258,7 @@ div.card.text-center>img{ border-radius:30px; }
 #main{ background: rgba(30,24,56,0.35); border-radius:30px 30px 0 0; }
 #sidebar{ background: transparent; }
 
-/* ======= BACKGROUND IMAGE FOR THE MAIN DEN TABLE (your screenshot area) ======= */
+/* ======= BACKGROUND IMAGE FOR THE MAIN DEN TABLE ======= */
 /* Targets: <table class="table table-striped border-none mt-3 mb-0"> */
 table.table.table-striped.border-none.mt-3.mb-0{
   position: relative;
@@ -292,6 +292,28 @@ table.striped{ background: rgba(30,24,56,0.35); border-radius:30px; }
 .w-50 div a img{
   border-radius:20px !important;
   border:3px solid var(--accent-violet);
+}
+
+/* Wolf thumbnails inside any cave table */
+table[data-cave-key^="cave-"] img {
+  border-radius: 12px;                 /* slightly rounded corners */
+  border: 3px solid var(--accent-violet);
+  display: block;                      /* removes stray inline gaps */
+}
+
+/* remove the unwanted white line from Bootstrap's .border-bottom */
+table[data-cave-key^="cave-"] img.border-bottom {
+  border-bottom: 0 !important;
+}
+
+/* if any <td> received border-bottom, neutralize it too (safety) */
+table[data-cave-key^="cave-"] td.border-bottom {
+  border-bottom: 0 !important;
+}
+
+/* optional: subtle glow on hover */
+table[data-cave-key^="cave-"] img:hover {
+  box-shadow: 0 0 10px rgba(125,86,255,.45);
 }
 
 /* Row shading & cells */
