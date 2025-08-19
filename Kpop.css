@@ -1,448 +1,321 @@
-/* CSS for Wolvden Den Page - Kpop Demon Hunters */
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@300;400;700&display=swap');
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Shalimar&display=swap');
+
+/* ===== THEME PALETTE (K-Pop Demon Hunters) ===== */
+:root{
+  --ink: rgba(238,240,255,0.96);          /* main text */
+  --ink-muted: rgba(200,205,235,0.92);
 
-/* General Settings */
-html, body, p, span, li, a {
-    font-family: 'Shalimar', cursive;
-    font-size: 20px; /* Adjust for readability */
-    line-height: 1.6; /* Better spacing */
+  --bg-1: #0a0813;                        /* page bg */
+  --panel: rgba(20,18,35,0.82);           /* cards/panels */
+  --panel-soft: rgba(28,24,50,0.65);
+  --panel-light: rgba(34,30,60,0.55);
+
+  --accent-pink: #ff4fb8;
+  --accent-violet: #8a5bff;
+  --accent-cyan: #39e1ff;
+
+  --stroke-dark: rgba(16,14,28,1);
+  --stroke-lite: rgba(255,255,255,0.18);
 }
 
-body {
-    background: url(https://64.media.tumblr.com/70ffeb0f9e31c2f4351664ee2f4faad8/75685a36180ad592-72/s1280x1920/190f901c833df5f40d205f4040974f563611b969.pnj) center center fixed;
-    background-size: 100%;
-    font-weight: bold;
-}
-
-h1, h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #fe8d64;
-}
-
-h3, h4, h5 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #fe8d64;
-}
-
-h6 {
-    font-family: 'Shalimar', cursive; /* default back to body font */
-    font-weight: bold;
-    color: #fe8d64;
-}
-
-#main.col-lg-9.order-lg-2 {
-    background: none !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    background: #fcecf3;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #c78ca1;
-    border-radius: 10px;
-    border: 2px solid #eed4e2;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #be849d;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-/* Navbar */
-#header .navbar-main {
-    background-color: #ee704c;
-    color: #fff;
-}
-
-/* WELCOME BACK */
-#header .navbar-status {
-    background-color: #f29c42;
-    color: #fff;
-    height: 30px;
-}
-
-/* Home Tag Groupname */
-#header .breadcrumb-nav {
-    background-color: #f7cd60;
-}
-
-.breadcrumb-item.active {
-    color: #fe8d64;
-}
-
-/* Custom Buttons */
-.button {
-    background-color: #c78ca1;
-    color: #fff;
-    border-: 50px;
-    padding: 8px 16px;
-    transition: all 0.3s ease;
-}
-
-.button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 10px rgba(199, 140, 161, 0.5);
-}
-
-/* Active Notifications */
-.alert-success {
-    color: #252525;
-    background-color: #f8c798;
-    border-color: #deb6c7;
-}
-
-.alert-info {
-    color: #252525;
-    background-color: #f8c798;
-    border-color: #f8c798;
-}
-
-.alert-info .alert-link {
-    color: #f08e73;
-}
-
-/* Main Content Area */
-#main {
-    background-color: #f7cd60;
-    border-radius: 15px;
-    border: 2px dotted rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 15px rgba(199, 140, 161, 0.4);
-}
-
-#main a {
-    color: #ee704c;
-}
-
-/* Pack name */
-#denCards .card-header {
-    color: #ef704d;
-    border-radius: 15px;
-}
-
-#main h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* Adjust spacing between images and text */
-    text-align: center;
-    font-size: 42px; /* Keeps the text size unchanged */
-}
-
-#main h1::before, 
-#main h1::after {
-    content: "";
-    display: inline-block;
-    width: 160px;  /* Doubled from 80px */
-    height: 160px; /* Doubled from 80px */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-shrink: 0; /* Prevents images from shrinking */
-}
-
-#main h1::before {
-    background-image: url('https://f2.toyhou.se/file/f2-toyhou-se/images/96444504_VtgoHUyLqWUUMBP.png');
-}
-
-#main h1::after {
-    background-image: url('https://f2.toyhou.se/file/f2-toyhou-se/images/96444490_bLJb5ZgQCC1fWq7.png?1740655544');
-}
-
-/* Den and Profile tabs*/
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #be849d;
-    background-color: #fff9ff !important;
-}
-
-ul.nav.nav-tabs .nav-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 15px;
-}
-
-ul.nav.nav-tabs .nav-link.active {
-    border-radius: 15px;
-}
-
-#main.col-lg-9.order-lg-2 .nav-tabs .nav-item:nth-of-type(2) {
-    background-color: #f8c798 !important;
-}
-
-/* Pack info box */
-.table th {
-    background-color: #fe8d64;
-}
-
-table.table-striped.border-none.mt-3.mb-0 {
-    border: none !important;
-}
-
-table.table-striped.border-none.mt-3.mb-0 th a {
-    color: #fcf2ec !important;
-}
-
-.table th a {
-    color: #fcf2ec;
-}
-
-.tbody {
-    border: none;
-}
-
-#main.col-lg-9.order-lg-2 .card.mb-3 {
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-table.striped tr:nth-child(even) {
-    background-color: #f8c798 !important;
-    color: #f0704d !important;
-}
-
-table.striped tr:nth-child(odd) {
-    background-color: #f7cd5f !important;
-    color: #fcf2ec !important;
-}
-
-table.table-striped tr:nth-child(even) {
-    background-color: #f8c798 !important;
-    color: #f0704d !important;
-}
-
-table.table-striped tr:nth-child(odd) {
-    background-color: #fe8d64 !important;
-    color: #fcf2ec !important;
-}
-
-/* Change the images of Dynasty Overview Breeding etc */
-#denCards .card-img-top {
-    border: none !important;
-    width: 200px !important; /* Adjust width as needed */
-    height: 150px !important; /* Adjust height as needed */
-    object-fit: cover !important; /* Ensures images fill the area without distortion */
-    display: block; /* Removes any inline spacing issues */
-    margin: 0 auto; /* Centers the images */
-}
-
-/* Pack Dynasty */
-a[href*="/dynasty/"] .card-img-top {
-    content: url('https://i.imgur.com/eBO97pg.png') !important;
-}
-
-/* Pack Overview */
-a[href*="/pack-overview/"] .card-img-top {
-    content: url('https://i.imgur.com/hb0Wg3p.png') !important;
-}
-
-/* Breeding */
-a[href*="/breed/"] .card-img-top {
-    content: url('https://i.imgur.com/hqTArq7.png') !important;
-}
-
-/* Pupsitting */
-img.card-img-top[alt="Pupsitting"] {
-    content: url('https://i.imgur.com/OpM3XOR.png') !important;
-}
-
-/* Nesting */
-img.card-img-top[alt="Nesting"] {
-    content: url('https://i.imgur.com/1rbkZM7.png') !important;
-}
-
-/* Socializing */
-img.card-img-top[alt="Socializing"] {
-    content: url('https://i.imgur.com/ZtQEQFh.png') !important;
-}
-
-.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf img {
-    border-radius: 50% !important; /* Makes it circular */
-    overflow: hidden; /* Hides anything outside the border */
-    border: 3px solid #be849d !important; /* Optional: Add a border */
-    width: 120px !important; /* Same as current width */
-    height: 120px !important; /* Make height equal to width for a perfect circle */
-    object-fit: cover; /* Keeps the image proportionate within the circle */
-}
-
-/* Den Cards */
-#main .card {
-    background-color: transparent;
-}
-
-/* Wolf list */
-.table td, .table th {
-    vertical-align: center;
-    border: none;
-}
-
-/* Wolf Headshots */
-table.table-striped[data-cave-key] td.p-0 > a > img {
-    border-radius: 50% !important; /* Makes the image circular */
-    object-fit: cover !important;  /* Ensures the image scales correctly within the circle */
-    border: none !important;       /* Removes any default borders */
-    background: none !important;   /* Removes any background color */
-    width: 100% !important;        /* Ensures the image uses full space */
-    height: 100% !important;       /* Ensures the image maintains its size */
-}
-
-/* Adult wolf images */
-table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom {
-    border-radius: 50% !important;
-    object-fit: cover !important;
-    border: 3px solid #de90af !important;
-    background: none !important;
-    width: 56px !important;
-    height: 56px !important;
-    padding: 0 !important; /* Remove unnecessary padding */
-    margin: 0 !important; /* Ensures alignment */
-}
-
-/* Puppy wolf images */
-table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom.p-2 {
-    border-radius: 50% !important;
-    object-fit: cover !important; /* Keeps image within frame */
-    border: 3px solid #de90af !important; /* Matches adult border */
-    background: none !important;
-    width: 44px !important; /* Original puppy image size */
-    height: 44px !important; /* Original puppy image size */
-    padding: 0 !important; /* Remove unnecessary padding */
-    margin: 0 auto !important; /* Centering, if needed */
-}
-
-table.table-striped {
-    border: none !important;
-    border-collapse: collapse !important;
-}
-
-.table .bottom, .table tfoot td {
-    color: #be849d;
-    background-color: #be849d;
-    text-align: center;
-}
-
-td.bottom {
-    border-radius: 15px;
-}
-
-/* Adjust Text */
-body, p, a, span {
-    font-size: 0.9rem;
-    text-transform: lowercase;
-}
-
-/* Sidebar */
-#sidebar {
-    border: none !important; /* Optional: Removes border if needed */
-    color: #be849d;
-}
-
-#main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
-    background: rgba(247, 205, 95, 0.7) !important; /* 70% opacity */
-    border: none;
-    padding: 10px !important;
-}
-
-#sidebar a {
-    color: #eebad1; /* Link color */
-    text-decoration: none; /* Removes underline */
-    transition: color 0.3s ease-in-out;
-}
-
-#sidebar a:hover {
-    color: #ffffff; /* Hover color */
-}
-
-#sidebar.col-lg-3 {
-    background-color: transparent !important;
-}
-
-#sidebar.col-lg-3.order-lg-1 .card {
-    background-color: #fbebf4 !important; /* Your desired background color */
-    border-color: #be849d !important;    /* Your desired border color */
-    border-radius: 15px !important;
-    box-shadow: none !important;         /* Remove any unwanted shadows */
-    border-bottom: 8px solid #be849d !important; /* Add bottom border if needed */
-}
-
-/* Energy Hunger HP EXP */
-div.progress {
-    background: #ffffff !important;
-}
-
-.progress-bar.bg-success {
-    background-color: #6faa84 !important; /* Muted green */
-}
-
-.progress-bar.bg-warning {
-    background-color: #cfa75d !important; /* Muted yellow/orange */
-}
-
-.progress-bar.bg-primary {
-    background-color: #4f6d8a !important;
-}
-
-.progress-bar.bg-danger {
-    background-color: #c47777 !important; /* Muted red */
-}
-
-.progress-bar.bg-info {
-    background-color: #8ab6d6 !important;
-}
-
-/* Chat box */
-div.card-body.p-0.py-3 {
-    border: none !important;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #c78ca1; /* Growl */
-    border-color: #a4687d;
-}
-
-.btn-info {
-    color: #fff;
-    background-color: #a4687d; /* Connect here instead */
-    border-color: #fff9ff;
-}
-
-.table .left {
-    background-color: #dfcaab !important; /* Adjust to match your theme */
-}
-
-.bg-tertiary {
-    background-color: #dfcaab !important; /* Adjust to match your theme */
-}
-
-.bottom {
-    background-color: #be849d !important; /* Adjust to match your theme */
-}
-
-/* Den page html allowed */
-.bg-bar-input {
-    background: #be849d;
-}
-
-#footer {
-    background-color: #a4687d;
-    color: #e2e2e2;
-    text-align: center;
+/* ===== HEADINGS ===== */
+h1,
+h2{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  text-align: center;
+  color: var(--ink);
+}
+
+h1{ font-size: 40px; }
+h2{ font-size: 28px; }
+
+/* ===== GLOBAL TEXT ===== */
+*{
+  font-family: 'Shalimar', cursive;
+  color: var(--ink);
+}
+
+/* ===== IMAGES (greyscale hover) ===== */
+img{ -webkit-filter: grayscale(40%); filter: grayscale(40%); }
+img:hover{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition-duration: .5s;
+}
+
+/* Currency icons */
+.icon-beetle-silver, .icon-silver-cone,
+.icon-beetle-gold, .icon-gold-cone,
+img.mr-2, .icon{
+  filter: grayscale(40%);
+}
+.icon-beetle-silver:hover, .icon-silver-cone:hover,
+.icon-beetle-gold:hover, .icon-gold-cone:hover,
+img.mr-2:hover, .icon:hover{
+  filter: grayscale(0%);
+}
+
+/* ===== PAGE BACKGROUND ===== */
+body{
+  background:
+    radial-gradient(1200px 500px at 0% 0%, rgba(255,79,184,.14), transparent 60%),
+    radial-gradient(900px 480px at 100% 0%, rgba(138,91,255,.12), transparent 60%),
+    radial-gradient(900px 520px at 50% 100%, rgba(57,225,255,.10), transparent 60%),
+    var(--bg-1);
+  background-position: center;
+  background-size: cover !important;
+}
+
+/* ===== BREADCRUMB CREDIT ===== */
+.breadcrumb::after{
+  content:'CSS by #3609';
+  position:absolute; right:35px;
+  font-weight:bold; color: var(--ink-muted);
+}
+
+/* ===== LINKS ===== */
+a{
+  color: var(--accent-cyan);
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover{
+  color: var(--accent-pink);
+  text-decoration: underline dotted !important;
+  transition-duration: .5s;
+}
+
+/* ===== HEADER / FOOTER BARS ===== */
+#header .navbar-main, #footer{
+  background: linear-gradient(90deg, rgba(255,79,184,.18), rgba(138,91,255,.18));
+  border-radius: 30px 30px 0 0;
+  border: 1px solid var(--stroke-lite);
+}
+#header .navbar-main .nav-link, #header .navbar-main .nav-link .fa{
+  color: var(--ink);
+}
+#header .navbar-main .nav-link:hover,
+#header .navbar-main .nav-link:hover .fa,
+#footer a:hover, #footer nav .nav-item .nav-link:hover{
+  color: rgba(255,255,255,.65);
+  text-decoration: none !important;
+  transition-duration: .5s;
+}
+
+/* ===== STATUS BAR ===== */
+.navbar-status{
+  background-color: var(--panel) !important;
+  color: var(--ink) !important;
+  border-radius: 0 0 30px 30px;
+}
+.navbar-status a,
+.btn-group-vertical>.btn, .btn-group>.btn{
+  color: var(--ink) !important;
+}
+
+/* ===== BREADCRUMB STRIP ===== */
+#header .breadcrumb-nav{ background-color: transparent; }
+.breadcrumb-item.active{ color: var(--ink); }
+#bookmarkPage.fas.fa-bookmark.text-danger{ color: var(--accent-violet) !important; }
+
+/* ===== ALERTS ===== */
+.alert{
+  background: var(--panel);
+  color: var(--ink);
+  border: none; border-radius: 30px; text-align: center;
+}
+.alert a{ color: var(--ink) !important; }
+.alert a:hover{ color: rgba(255,255,255,.6) !important; transition-duration: .5s; }
+
+/* ===== DEN / PROFILE TABS ===== */
+.nav-tabs{ justify-content:center; border:none; }
+.nav-tabs .nav-link{
+  background-color: var(--panel-soft);
+  color: var(--ink);
+  border: 1px solid var(--stroke-lite);
+  border-radius: 30px;
+}
+.nav-tabs .nav-link:hover{
+  background-color: var(--panel-light);
+  color: var(--ink);
+  border: 1px solid var(--accent-cyan);
+  transition-duration:.5s;
+}
+.nav-tabs .nav-link.active{
+  background: linear-gradient(90deg, rgba(57,225,255,.15), rgba(138,91,255,.15));
+  color: var(--ink);
+  border: 1px solid var(--accent-cyan);
+}
+
+/* ===== MAIN CARDS ===== */
+#main .card{
+  background-color: var(--panel);
+  border: 1px solid var(--stroke-lite);
+  border-radius: 30px;
+}
+#denCards .card-header{
+  background: linear-gradient(90deg, rgba(255,79,184,.22), rgba(138,91,255,.18));
+  border: none; border-radius: 0 0 30px 30px;
+}
+div.card.text-center>img{ border-radius:30px; }
+
+/* ===== MAIN / SIDEBAR PANELS ===== */
+#main{
+  background: rgba(34,30,60,0.35);
+  border-radius:30px 30px 0 0;
+}
+#sidebar{ background: transparent; }
+
+/* ===== TABLES ===== */
+.table{ background-color: transparent; border:none; }
+table.striped{
+  background: rgba(34,30,60,0.35);
+  border-radius:30px;
+}
+.table th{
+  background: linear-gradient(90deg, #301a54, #241a45);
+  color: var(--ink);
+  font-size: 20px !important;
+  font-family: 'Oswald', sans-serif;
+  border-radius:30px;
+}
+#lblPackLeaderTitle{
+  color: var(--ink) !important;
+  font-family: 'Oswald', sans-serif;
+}
+.table th a{ color: var(--ink); font-family: 'Oswald', sans-serif; }
+.table th a:hover{ color: rgba(255,255,255,.65); }
+
+/* Wolf images */
+.table .row .card a img,
+.featured-wolf img,
+.w-50 > a img,
+.w-50 div a img{
+  border-radius: 20px !important;
+  border: 3px solid var(--accent-violet);
+}
+
+/* Subheaders / left cells */
+.table .subheader{ background-color: transparent; }
+.table .left{
+  background-color: rgba(34,30,60,0.35);
+  border-radius:30px;
+}
+.table-striped tbody tr:nth-of-type(odd){ background-color: transparent; }
+.table td.bottom{ background-color: transparent; }
+.bg-dark{ background-color: transparent !important; }
+.bg-light{
+  background-color: rgba(34,30,60,0.35) !important;
+  border-radius:20px;
+}
+
+/* Sidebar cards */
+#sidebar .card{
+  background: rgba(34,30,60,0.35);
+  border-color: var(--accent-violet);
+  border-radius:30px;
+}
+
+/* Progress bars */
+.progress{ background: rgba(34,30,60,0.35) !important; border-radius:30px; }
+.bg-warning, #main .bg-success{ background-color: #6f69b6 !important; border-radius:30px; }
+#sidebar .bg-danger, .bg-primary{ background-color: #5a56a6 !important; border-radius:30px; }
+#sidebar .bg-info, #main .bg-danger{ background-color: #4b4a80 !important; border-radius:30px; }
+#sidebar .bg-success, #main .bg-info{ background-color: #3c3a6b !important; border-radius:30px; }
+
+/* ===== CHAT ===== */
+#chatMessagePinned.s-chat-message__pinned{
+  background: var(--panel); color: var(--ink) !important; border:none; padding:5px;
+}
+.s-chat-message:nth-child(odd){
+  background: rgba(34,30,60,0.35); color: var(--ink) !important;
+}
+.s-chat-message:nth-child(even){
+  background: rgba(34,30,60,0.18); color: var(--ink) !important;
+}
+#txtChatContainer #lblCharacterCounter{ color: var(--ink); }
+#txtChatContainer a{ color: var(--accent-cyan); }
+.s-chat-sidebar #label_currentChannel{
+  color: var(--ink) !important; background-color: rgba(34,30,60,0.35) !important;
+  border-radius:30px; border:none;
+}
+.s-chat-sidebar #fraChatChannelMenu{
+  color: var(--ink) !important; background-color: rgba(34,30,60,0.35) !important; border:none;
+}
+.s-chat-sidebar #fraChatChannelMenu:hover{
+  color: var(--ink) !important; background-color: rgba(34,30,60,0.55) !important; border:none;
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active,
+#fra_chatContainer .channelMenu .channelSwitcher{
+  color: var(--ink) !important; background-color: rgba(34,30,60,0.35) !important;
+}
+.s-chat-message_timestamp{ color: var(--ink-muted); }
+.s-chat-sidebar #chatMessageContainer{ border:none; border-radius:30px; }
+#fra_chatContainer #txtChatInput{
+  color: var(--ink) !important; background-color: rgba(34,30,60,0.35) !important;
+  border-radius:30px; border:none;
+}
+
+/* ===== EDITOR / FORMS ===== */
+.btn.btn-htmlinput{ background: rgba(34,30,60,0.35); border:none; }
+.bg-bar-input{ background: transparent; }
+.form-control, select.form-control{
+  color: var(--ink) !important; background-color: rgba(34,30,60,0.35) !important;
+  border:none; border-radius:30px;
+}
+select.form-control:hover{ border:none; }
+
+.dropdown-menu.show{
+  background-color: rgba(34,30,60,0.35); border-radius:30px;
+}
+.dropdown-item:hover{ background-color: rgba(34,30,60,0.55); }
+.dropdown-divider{ border:none; }
+
+/* ===== BUTTONS ===== */
+.btn-primary, .btn-success,
+.btn-warning, .btn-danger, .btn-info{
+  background: linear-gradient(90deg, rgba(57,225,255,.18), rgba(138,91,255,.18)) !important;
+  color: var(--ink) !important; border:none; font-weight:bold; box-shadow:none; border-radius:30px;
+}
+.btn-primary:hover, .btn-primary:focus,
+.btn-success:hover, .btn-success:focus,
+.btn-warning:hover, .btn-warning:focus,
+.btn-danger:hover, .btn-danger:focus,
+.btn-info:hover, .btn-info:focus{
+  background: linear-gradient(90deg, rgba(255,79,184,.28), rgba(138,91,255,.28)) !important;
+  color: var(--ink) !important; border:none; transition-duration:.5s;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar{ background: rgba(34,30,60,0.35); width: 8px; }
+::-webkit-scrollbar-thumb{ background: var(--accent-violet); border-radius:30px; }
+
+/* ===== BOX LAYOUTS ===== */
+.boxcontainer{ background:none; height:auto; padding:0; display:flex; justify-content:center; }
+
+/* Hover-expand cards */
+.Box1, .Box2, .Box3, .Box4, .Box5, .Box6{
+  color: var(--ink);
+  background: rgba(34,30,60,0.38);
+  border-bottom: 4px solid var(--accent-violet);
+  border-radius: 30px;
+  margin: 5px; overflow: hidden; transition: .5s; padding: 15px; text-align: center;
+}
+.Box1{ height:55px; width:92%; }
+.Box2{ height:55px; width:42%; }
+.Box3{ height:55px; width:24%; }
+.Box4{ height:180px; width:24%; overflow:auto; }
+.Box5{ height:180px; width:42%; overflow:auto; }
+.Box6{ height:180px; width:92%; overflow:auto; }
+.Box1:hover, .Box2:hover, .Box3:hover{ overflow-y:auto; height:180px; }
+
+/* ===== CURSOR (optional) ===== */
+*{ cursor: url(https://cur.cursors-4u.net/holidays/hol-3/hol263.cur), auto !important; }
+
+/* ===== Snowflake (kept from template) ===== */
+.snowflake{
+  color:#fff; font-size:1em; font-family:Arial; text-shadow:0 0 1px #000;
 }
