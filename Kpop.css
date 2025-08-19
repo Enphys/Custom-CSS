@@ -75,9 +75,9 @@ body{
 /* ===== BIRD AND TIGER ===== */
 /* ===== SIDE OVERLAYS (full-page, floating) ===== */
 :root{
-  --side-left-w: 220px;           /* left image width */
-  --side-right-w: 200px;          /* right image width */
-  --float-range: 28px;            /* how far they bob */
+  --side-left-w: 180px;           /* left image width */
+  --side-right-w: 180px;          /* right image width */
+  --float-range: 35px;            /* how far they bob */
   --float-speed: 2s;              /* 1 up + 1 down = 2s; here we use 4s for slower */
 }
 
@@ -104,6 +104,8 @@ body::before{
   aspect-ratio: 2 / 3;            /* 400x600 */
   background-image: url("https://64.media.tumblr.com/39ea100becfd2bd0655b944a0a21e37d/ad13789b0ba87eb8-f1/s400x600/4fadbb1f43ef536bf34b592397df0255beeb2717.pnj");
   animation-direction: alternate;
+  top: 50%;
+  transform: translateY(-45%);
 }
 
 /* RIGHT */
@@ -113,6 +115,8 @@ body::after{
   aspect-ratio: 5 / 8;            /* 250x400 */
   background-image: url("https://64.media.tumblr.com/50f8666903b152d6d7cedf366bb5de46/ad13789b0ba87eb8-aa/s250x400/0df3afc10f2365a348b25e0c9b374e015d563aef.pnj");
   animation-direction: alternate-reverse; /* opposite motion */
+  top: 50%;
+  transform: translateY(-45%);
 }
 
 @keyframes sideFloat{
