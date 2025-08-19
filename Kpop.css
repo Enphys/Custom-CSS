@@ -1,9 +1,10 @@
 /* ===== FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
 
-/* ===== CURSOR ===== */
+
+/* ===== CUSTOM CURSOR ===== */
 * {
-    cursor: url(https://64.media.tumblr.com/5d25c746da3108e32c5cd0247d6b389b/3808fc8c9ef5c820-24/s75x75_c1/422b35d2a69518bdbd525790b570dd024d8f7893.pnj), auto !important;
+  cursor: url("https://64.media.tumblr.com/5d25c746da3108e32c5cd0247d6b389b/3808fc8c9ef5c820-24/s75x75_c1/422b35d2a69518bdbd525790b570dd024d8f7893.pnj") 16 16, auto !important;
 }
 
 /* ===== GWI MA PALETTE ===== */
@@ -72,6 +73,32 @@ body{
 }
 
 /* ===== BIRD AND TIGER ===== */
+/* ===== FLOATING SIDE OVERLAYS ===== */
+.overlay-left, .overlay-right {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;           /* adjust size */
+  height: auto;
+  z-index: 9999;          /* make sure they’re on top */
+  pointer-events: none;   /* so they don’t block clicks */
+  animation: floatY 4s ease-in-out infinite;
+}
+
+.overlay-left {
+  left: 10px;
+  animation-direction: alternate;
+}
+
+.overlay-right {
+  right: 10px;
+  animation-direction: alternate-reverse; /* moves opposite */
+}
+
+@keyframes floatY {
+  from { transform: translateY(-50%) translateY(0); }
+  to   { transform: translateY(-50%) translateY(-20px); }
+}
 
 /* ===== CREDIT IN BREADCRUMB ===== */
 .breadcrumb::after{
@@ -297,7 +324,3 @@ select.form-control:hover{ border:none; }
 
 /* Optional fun: gold accents (e.g., hover over links in headers) */
 .table th a:hover{ color: var(--accent-gold); }
-
-/* ===== Optional cursor & snowflake kept from template ===== */
-*{ cursor: url(https://cur.cursors-4u.net/holidays/hol-3/hol263.cur), auto !important; }
-.snowflake{ color:#fff; font-size:1em; font-family:Arial; text-shadow:0 0 1px #000; }
