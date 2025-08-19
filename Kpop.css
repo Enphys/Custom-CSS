@@ -67,37 +67,55 @@ body{
 }
 
 /* ===== BIRD AND TIGER ===== */
-<!-- Left Image -->
-<div class="float bl">
-  <img src="https://64.media.tumblr.com/dc2b7dd7b9d0dd342c22fee68b6a4e3c/c077c6fe72461af3-0d/s400x600/d82d96ae8c3e7064e1804dda919e65b55972cc5e.pnj" 
-       alt="" style="width:150px;" class="floating-left">
-</div>
+<style>
+  /* Make the H1 a positioning context and leave room for side art */
+  #main h1 {
+    position: relative;
+    padding: 0 90px;                /* space for the left/right images */
+  }
 
-<!-- Right Image -->
-<div class="float br">
-  <img src="https://64.media.tumblr.com/ace939396545b484a333d591dd95274c/c077c6fe72461af3-58/s250x400/061bc11ad71f433bf54b5bee6f9440848211320e.pnj" 
-       alt="" style="width:150px;" class="floating-right">
-</div>
+  /* common look for both sides */
+  #main h1::before,
+  #main h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;                    /* adjust size as you like */
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;           /* don’t block clicks */
+    filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
+  }
 
-@keyframes floatUpDown {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
-}
+  /* LEFT image */
+  #main h1::before {
+    left: 8px;
+    background-image: url("https://64.media.tumblr.com/dc2b7dd7b9d0dd342c22fee68b6a4e3c/c077c6fe72461af3-0d/s400x600/d82d96ae8c3e7064e1804dda919e65b55972cc5e.pnj");
+    animation: floatY 2s ease-in-out infinite alternate;  /* up 1s, down 1s */
+  }
 
-@keyframes floatDownUp {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(15px); }
-  100% { transform: translateY(0); }
-}
+  /* RIGHT image */
+  #main h1::after {
+    right: 8px;
+    background-image: url("https://64.media.tumblr.com/ace939396545b484a333d591dd95274c/c077c6fe72461af3-58/s250x400/061bc11ad71f433bf54b5bee6f9440848211320e.pnj");
+    animation: floatY 2s ease-in-out infinite alternate;
+    animation-delay: 1s;            /* half-cycle offset -> opposite motion */
+  }
 
-.floating-left {
-  animation: floatUpDown 3s ease-in-out infinite;
-}
+  /* float animation */
+  @keyframes floatY {
+    from { transform: translateY(-50%); }
+    to   { transform: translateY(calc(-50% - 12px)); }
+  }
 
-.floating-right {
-  animation: floatDownUp 3s ease-in-out infinite;
-}
+  /* Responsiveness: shrink side art on smaller screens */
+  @media (max-width: 768px) {
+    #main h1 { padding: 0 64px; }
+    #main h1::before, #main h1::after { width: 56px; height: 84px; }
+  }
+</style>
 
 /* ===== CREDIT IN BREADCRUMB ===== */
 .breadcrumb::after{
