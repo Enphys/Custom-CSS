@@ -102,7 +102,7 @@ body::before{
   left: 10px;
   width: var(--side-left-w);
   aspect-ratio: 2 / 3;            /* 400x600 */
-  background-image: url("https://64.media.tumblr.com/64f940daab82608ddb16b5064279bcda/97daf03388da37be-e6/s400x600/f5365f7192a105cd96a4d19ff85741fa65511dd3.pnj");
+  background-image: url("https://64.media.tumblr.com/39ea100becfd2bd0655b944a0a21e37d/ad13789b0ba87eb8-f1/s400x600/4fadbb1f43ef536bf34b592397df0255beeb2717.pnj");
   animation-direction: alternate;
 }
 
@@ -111,7 +111,7 @@ body::after{
   right: 10px;
   width: var(--side-right-w);
   aspect-ratio: 5 / 8;            /* 250x400 */
-  background-image: url("https://64.media.tumblr.com/2327df5197887b5ede0f2ecd94e7a6f3/97daf03388da37be-6b/s250x400/cb22690836ba89ffa81d597bb22a53e180aa160b.pnj");
+  background-image: url("https://64.media.tumblr.com/50f8666903b152d6d7cedf366bb5de46/ad13789b0ba87eb8-aa/s250x400/0df3afc10f2365a348b25e0c9b374e015d563aef.pnj");
   animation-direction: alternate-reverse; /* opposite motion */
 }
 
