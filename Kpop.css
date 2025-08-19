@@ -379,3 +379,10 @@ select.form-control:hover{ border:none; }
   color: var(--accent-pink) !important;
   text-decoration: underline dotted !important;
 }
+
+/* STOP SIDE OVERLAYS INSIDE THE CHAT SIDEBAR IFRAME */
+body.no-overflow::before,
+body.no-overflow::after {
+  content: none !important;   /* removes the pseudo elements */
+  display: none !important;
+}
