@@ -77,8 +77,8 @@ body{
 :root{
   --side-left-w: 220px;           /* left image width */
   --side-right-w: 200px;          /* right image width */
-  --float-range: 18px;            /* how far they bob */
-  --float-speed: 4s;              /* 1 up + 1 down = 2s; here we use 4s for slower */
+  --float-range: 28px;            /* how far they bob */
+  --float-speed: 2s;              /* 1 up + 1 down = 2s; here we use 4s for slower */
 }
 
 /* draw the images as fixed overlays so they’re on top everywhere */
