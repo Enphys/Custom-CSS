@@ -66,9 +66,45 @@ body{
   background-size: cover !important;
 }
 
+/* ===== FLOATING IMAGES ===== */
+<!-- Left Image -->
+<div class="float bl">
+  <img src="https://64.media.tumblr.com/dc2b7dd7b9d0dd342c22fee68b6a4e3c/c077c6fe72461af3-0d/s400x600/d82d96ae8c3e7064e1804dda919e65b55972cc5e.pnj" 
+       alt="" style="width:150px;" class="floating-left">
+</div>
+
+<!-- Right Image -->
+<div class="float br">
+  <img src="https://64.media.tumblr.com/ace939396545b484a333d591dd95274c/c077c6fe72461af3-58/s250x400/061bc11ad71f433bf54b5bee6f9440848211320e.pnj" 
+       alt="" style="width:150px;" class="floating-right">
+</div>
+
+<style>
+@keyframes floatUpDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes floatDownUp {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(15px); }
+  100% { transform: translateY(0); }
+}
+
+.floating-left {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+.floating-right {
+  animation: floatDownUp 3s ease-in-out infinite;
+}
+</style>
+
+
 /* ===== CREDIT IN BREADCRUMB ===== */
 .breadcrumb::after{
-  content:'CSS by #3609';
+  content:'CSS by #134637';
   position:absolute; right:35px;
   font-weight:bold; color: var(--ink-muted);
 }
