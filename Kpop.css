@@ -66,7 +66,7 @@ body{
   background-size: cover !important;
 }
 
-/* ===== FLOATING IMAGES ===== */
+/* ===== BIRD AND TIGER ===== */
 <!-- Left Image -->
 <div class="float bl">
   <img src="https://64.media.tumblr.com/dc2b7dd7b9d0dd342c22fee68b6a4e3c/c077c6fe72461af3-0d/s400x600/d82d96ae8c3e7064e1804dda919e65b55972cc5e.pnj" 
@@ -79,7 +79,6 @@ body{
        alt="" style="width:150px;" class="floating-right">
 </div>
 
-<style>
 @keyframes floatUpDown {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-15px); }
@@ -99,8 +98,6 @@ body{
 .floating-right {
   animation: floatDownUp 3s ease-in-out infinite;
 }
-</style>
-
 
 /* ===== CREDIT IN BREADCRUMB ===== */
 .breadcrumb::after{
