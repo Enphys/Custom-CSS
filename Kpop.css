@@ -205,6 +205,25 @@ a:hover {
     color: #ff39b6 !important;
   }
 
+/* ===== CAVE TABLES ===== */
+table[data-cave-key^="cave-"] {
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(255,57,182,.08),   /* faint magenta */
+      rgba(125,86,255,.08),   /* faint violet */
+      rgba(62,230,255,.08)    /* faint cyan */
+    );
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Make sure table text stays sharp */
+table[data-cave-key^="cave-"] td,
+table[data-cave-key^="cave-"] th {
+  background-color: transparent !important;
+}
+
 /* ===== DEN / PROFILE TABS ===== */
 .nav-tabs{ justify-content:center; border:none; }
 .nav-tabs .nav-link{
