@@ -84,6 +84,17 @@ a:hover {
   color: var(--accent-pink);
   text-decoration: underline dotted !important;
 }
+#fraDenHTML a {
+  color: var(--accent-cyan) !important;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 1s ease, text-decoration-color 1s ease;
+}
+
+#fraDenHTML a:hover {
+  color: var(--accent-pink) !important;
+  text-decoration: underline dotted !important;
+}
 
 /* ===== HEADER / FOOTER ===== */
 #header .navbar-main, #footer{
@@ -123,6 +134,9 @@ a:hover {
 }
 .alert a{ color: var(--ink) !important; }
 .alert a:hover{ color: rgba(255,255,255,.6) !important; transition-duration:.5s; }
+.alert.alert-danger.text-center {
+    color: #ff39b6 !important;
+  }
 
 /* ===== DEN / PROFILE TABS ===== */
 .nav-tabs{ justify-content:center; border:none; }
