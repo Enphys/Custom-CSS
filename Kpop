@@ -1,0 +1,448 @@
+/* CSS for Wolvden Den Page - Kpop Demon Hunters */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@300;400;700&display=swap');
+
+/* General Settings */
+html, body, p, span, li, a {
+    font-family: 'Shalimar', cursive;
+    font-size: 20px; /* Adjust for readability */
+    line-height: 1.6; /* Better spacing */
+}
+
+body {
+    background: url(https://64.media.tumblr.com/70ffeb0f9e31c2f4351664ee2f4faad8/75685a36180ad592-72/s1280x1920/190f901c833df5f40d205f4040974f563611b969.pnj) center center fixed;
+    background-size: 100%;
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fe8d64;
+}
+
+h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fe8d64;
+}
+
+h6 {
+    font-family: 'Shalimar', cursive; /* default back to body font */
+    font-weight: bold;
+    color: #fe8d64;
+}
+
+#main.col-lg-9.order-lg-2 {
+    background: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fcecf3;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c78ca1;
+    border-radius: 10px;
+    border: 2px solid #eed4e2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #be849d;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Navbar */
+#header .navbar-main {
+    background-color: #ee704c;
+    color: #fff;
+}
+
+/* WELCOME BACK */
+#header .navbar-status {
+    background-color: #f29c42;
+    color: #fff;
+    height: 30px;
+}
+
+/* Home Tag Groupname */
+#header .breadcrumb-nav {
+    background-color: #f7cd60;
+}
+
+.breadcrumb-item.active {
+    color: #fe8d64;
+}
+
+/* Custom Buttons */
+.button {
+    background-color: #c78ca1;
+    color: #fff;
+    border-: 50px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(199, 140, 161, 0.5);
+}
+
+/* Active Notifications */
+.alert-success {
+    color: #252525;
+    background-color: #f8c798;
+    border-color: #deb6c7;
+}
+
+.alert-info {
+    color: #252525;
+    background-color: #f8c798;
+    border-color: #f8c798;
+}
+
+.alert-info .alert-link {
+    color: #f08e73;
+}
+
+/* Main Content Area */
+#main {
+    background-color: #f7cd60;
+    border-radius: 15px;
+    border: 2px dotted rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(199, 140, 161, 0.4);
+}
+
+#main a {
+    color: #ee704c;
+}
+
+/* Pack name */
+#denCards .card-header {
+    color: #ef704d;
+    border-radius: 15px;
+}
+
+#main h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between images and text */
+    text-align: center;
+    font-size: 42px; /* Keeps the text size unchanged */
+}
+
+#main h1::before, 
+#main h1::after {
+    content: "";
+    display: inline-block;
+    width: 160px;  /* Doubled from 80px */
+    height: 160px; /* Doubled from 80px */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0; /* Prevents images from shrinking */
+}
+
+#main h1::before {
+    background-image: url('https://f2.toyhou.se/file/f2-toyhou-se/images/96444504_VtgoHUyLqWUUMBP.png');
+}
+
+#main h1::after {
+    background-image: url('https://f2.toyhou.se/file/f2-toyhou-se/images/96444490_bLJb5ZgQCC1fWq7.png?1740655544');
+}
+
+/* Den and Profile tabs*/
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #be849d;
+    background-color: #fff9ff !important;
+}
+
+ul.nav.nav-tabs .nav-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+ul.nav.nav-tabs .nav-link.active {
+    border-radius: 15px;
+}
+
+#main.col-lg-9.order-lg-2 .nav-tabs .nav-item:nth-of-type(2) {
+    background-color: #f8c798 !important;
+}
+
+/* Pack info box */
+.table th {
+    background-color: #fe8d64;
+}
+
+table.table-striped.border-none.mt-3.mb-0 {
+    border: none !important;
+}
+
+table.table-striped.border-none.mt-3.mb-0 th a {
+    color: #fcf2ec !important;
+}
+
+.table th a {
+    color: #fcf2ec;
+}
+
+.tbody {
+    border: none;
+}
+
+#main.col-lg-9.order-lg-2 .card.mb-3 {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+table.striped tr:nth-child(even) {
+    background-color: #f8c798 !important;
+    color: #f0704d !important;
+}
+
+table.striped tr:nth-child(odd) {
+    background-color: #f7cd5f !important;
+    color: #fcf2ec !important;
+}
+
+table.table-striped tr:nth-child(even) {
+    background-color: #f8c798 !important;
+    color: #f0704d !important;
+}
+
+table.table-striped tr:nth-child(odd) {
+    background-color: #fe8d64 !important;
+    color: #fcf2ec !important;
+}
+
+/* Change the images of Dynasty Overview Breeding etc */
+#denCards .card-img-top {
+    border: none !important;
+    width: 200px !important; /* Adjust width as needed */
+    height: 150px !important; /* Adjust height as needed */
+    object-fit: cover !important; /* Ensures images fill the area without distortion */
+    display: block; /* Removes any inline spacing issues */
+    margin: 0 auto; /* Centers the images */
+}
+
+/* Pack Dynasty */
+a[href*="/dynasty/"] .card-img-top {
+    content: url('https://i.imgur.com/eBO97pg.png') !important;
+}
+
+/* Pack Overview */
+a[href*="/pack-overview/"] .card-img-top {
+    content: url('https://i.imgur.com/hb0Wg3p.png') !important;
+}
+
+/* Breeding */
+a[href*="/breed/"] .card-img-top {
+    content: url('https://i.imgur.com/hqTArq7.png') !important;
+}
+
+/* Pupsitting */
+img.card-img-top[alt="Pupsitting"] {
+    content: url('https://i.imgur.com/OpM3XOR.png') !important;
+}
+
+/* Nesting */
+img.card-img-top[alt="Nesting"] {
+    content: url('https://i.imgur.com/1rbkZM7.png') !important;
+}
+
+/* Socializing */
+img.card-img-top[alt="Socializing"] {
+    content: url('https://i.imgur.com/ZtQEQFh.png') !important;
+}
+
+.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf img {
+    border-radius: 50% !important; /* Makes it circular */
+    overflow: hidden; /* Hides anything outside the border */
+    border: 3px solid #be849d !important; /* Optional: Add a border */
+    width: 120px !important; /* Same as current width */
+    height: 120px !important; /* Make height equal to width for a perfect circle */
+    object-fit: cover; /* Keeps the image proportionate within the circle */
+}
+
+/* Den Cards */
+#main .card {
+    background-color: transparent;
+}
+
+/* Wolf list */
+.table td, .table th {
+    vertical-align: center;
+    border: none;
+}
+
+/* Wolf Headshots */
+table.table-striped[data-cave-key] td.p-0 > a > img {
+    border-radius: 50% !important; /* Makes the image circular */
+    object-fit: cover !important;  /* Ensures the image scales correctly within the circle */
+    border: none !important;       /* Removes any default borders */
+    background: none !important;   /* Removes any background color */
+    width: 100% !important;        /* Ensures the image uses full space */
+    height: 100% !important;       /* Ensures the image maintains its size */
+}
+
+/* Adult wolf images */
+table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom {
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 3px solid #de90af !important;
+    background: none !important;
+    width: 56px !important;
+    height: 56px !important;
+    padding: 0 !important; /* Remove unnecessary padding */
+    margin: 0 !important; /* Ensures alignment */
+}
+
+/* Puppy wolf images */
+table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom.p-2 {
+    border-radius: 50% !important;
+    object-fit: cover !important; /* Keeps image within frame */
+    border: 3px solid #de90af !important; /* Matches adult border */
+    background: none !important;
+    width: 44px !important; /* Original puppy image size */
+    height: 44px !important; /* Original puppy image size */
+    padding: 0 !important; /* Remove unnecessary padding */
+    margin: 0 auto !important; /* Centering, if needed */
+}
+
+table.table-striped {
+    border: none !important;
+    border-collapse: collapse !important;
+}
+
+.table .bottom, .table tfoot td {
+    color: #be849d;
+    background-color: #be849d;
+    text-align: center;
+}
+
+td.bottom {
+    border-radius: 15px;
+}
+
+/* Adjust Text */
+body, p, a, span {
+    font-size: 0.9rem;
+    text-transform: lowercase;
+}
+
+/* Sidebar */
+#sidebar {
+    border: none !important; /* Optional: Removes border if needed */
+    color: #be849d;
+}
+
+#main, .container, .box, .content, .main-content, .inner-content, .forum-table, .forum-post, .chat-message {
+    background: rgba(247, 205, 95, 0.7) !important; /* 70% opacity */
+    border: none;
+    padding: 10px !important;
+}
+
+#sidebar a {
+    color: #eebad1; /* Link color */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease-in-out;
+}
+
+#sidebar a:hover {
+    color: #ffffff; /* Hover color */
+}
+
+#sidebar.col-lg-3 {
+    background-color: transparent !important;
+}
+
+#sidebar.col-lg-3.order-lg-1 .card {
+    background-color: #fbebf4 !important; /* Your desired background color */
+    border-color: #be849d !important;    /* Your desired border color */
+    border-radius: 15px !important;
+    box-shadow: none !important;         /* Remove any unwanted shadows */
+    border-bottom: 8px solid #be849d !important; /* Add bottom border if needed */
+}
+
+/* Energy Hunger HP EXP */
+div.progress {
+    background: #ffffff !important;
+}
+
+.progress-bar.bg-success {
+    background-color: #6faa84 !important; /* Muted green */
+}
+
+.progress-bar.bg-warning {
+    background-color: #cfa75d !important; /* Muted yellow/orange */
+}
+
+.progress-bar.bg-primary {
+    background-color: #4f6d8a !important;
+}
+
+.progress-bar.bg-danger {
+    background-color: #c47777 !important; /* Muted red */
+}
+
+.progress-bar.bg-info {
+    background-color: #8ab6d6 !important;
+}
+
+/* Chat box */
+div.card-body.p-0.py-3 {
+    border: none !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #c78ca1; /* Growl */
+    border-color: #a4687d;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #a4687d; /* Connect here instead */
+    border-color: #fff9ff;
+}
+
+.table .left {
+    background-color: #dfcaab !important; /* Adjust to match your theme */
+}
+
+.bg-tertiary {
+    background-color: #dfcaab !important; /* Adjust to match your theme */
+}
+
+.bottom {
+    background-color: #be849d !important; /* Adjust to match your theme */
+}
+
+/* Den page html allowed */
+.bg-bar-input {
+    background: #be849d;
+}
+
+#footer {
+    background-color: #a4687d;
+    color: #e2e2e2;
+    text-align: center;
+}
