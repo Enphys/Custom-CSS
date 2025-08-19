@@ -295,25 +295,42 @@ table.striped{ background: rgba(30,24,56,0.35); border-radius:30px; }
 }
 
 /* Wolf thumbnails inside any cave table */
-table[data-cave-key^="cave-"] img {
-  border-radius: 12px;                 /* slightly rounded corners */
-  border: 3px solid var(--accent-violet);
-  display: block;                      /* removes stray inline gaps */
-}
+/* === Wolvden cave thumbnails — sized, bordered, slightly rounded === */
 
-/* remove the unwanted white line from Bootstrap's .border-bottom */
-table[data-cave-key^="cave-"] img.border-bottom {
+/* Base rule for ALL cave headshots */
+table.table-striped[data-cave-key] td.p-0 > a > img {
+  /* kill the default thin bottom rule and any padding */
+  border: none !important;
   border-bottom: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  /* your look */
+  border-radius: 10px !important;                /* slightly rounded corners */
+  border: 3px solid var(--accent-violet) !important;
+  object-fit: cover !important;                  /* fill the frame cleanly */
+  background: none !important;
+  display: block;                                /* avoids stray gaps */
 }
 
-/* if any <td> received border-bottom, neutralize it too (safety) */
-table[data-cave-key^="cave-"] td.border-bottom {
-  border-bottom: 0 !important;
+/* Adult wolves (56×56 cell, image has .border-bottom on Wolvden) */
+table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom {
+  width: 56px !important;
+  height: 56px !important;
+  /* ensure no extra line is drawn by Bootstrap */
+  border-bottom: 3px solid var(--accent-violet) !important;
 }
 
-/* optional: subtle glow on hover */
-table[data-cave-key^="cave-"] img:hover {
-  box-shadow: 0 0 10px rgba(125,86,255,.45);
+/* Puppies (Wolvden adds .p-2, the visible face is ~44×44) */
+table.table-striped[data-cave-key] td.p-0 > a > img.border-bottom.p-2 {
+  width: 44px !important;
+  height: 44px !important;
+  border-bottom: 3px solid var(--accent-violet) !important;
+}
+
+/* (Optional) soft glow on hover */
+table.table-striped[data-cave-key] td.p-0 > a > img:hover {
+  box-shadow: 0 0 10px rgba(125, 86, 255, .45);
 }
 
 /* Row shading & cells */
