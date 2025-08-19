@@ -353,3 +353,29 @@ select.form-control:hover{ border:none; }
 
 /* Optional fun: gold accents (e.g., hover over links in headers) */
 .table th a:hover{ color: var(--accent-gold); }
+
+/* === Sidebar chat: fix font + remove grayscale === */
+#fraSidebarChat,
+#fraSidebarChat * {
+  font-family: 'Raleway', sans-serif !important;   /* correct font */
+  color: var(--ink) !important;                     /* keep your theme color */
+}
+
+/* kill the global grayscale just inside chat */
+#fraSidebarChat img,
+#fraSidebarChat .icon,
+#fraSidebarChat img.mr-2 {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* keep link styling consistent inside chat */
+#fraSidebarChat a { 
+  color: var(--accent-cyan) !important;
+  text-decoration: none;
+  transition: color 1s ease, text-decoration-color 1s ease;
+}
+#fraSidebarChat a:hover { 
+  color: var(--accent-pink) !important;
+  text-decoration: underline dotted !important;
+}
