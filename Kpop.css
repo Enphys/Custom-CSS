@@ -333,6 +333,26 @@ table.table-striped[data-cave-key] td.p-0 > a > img:hover {
   box-shadow: 0 0 10px rgba(125, 86, 255, .45);
 }
 
+/* Style all dropdown menus on cave tables (and globally if needed) */
+select.form-control {
+  background-color: #d6c9d9 !important; /* medium violet-gray */
+  color: #3b2e3e !important;            /* dark text for contrast */
+  border: 2px solid #be849d !important; /* your accent violet */
+  border-radius: 8px !important;        /* slight rounding */
+  padding: 4px 8px !important;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  appearance: none;                     /* removes default arrow (varies by browser) */
+}
+
+/* Optional: hover + focus effect */
+select.form-control:hover,
+select.form-control:focus {
+  background-color: #c8b6cc !important; /* a touch darker */
+  border-color: #a4687d !important;     /* deeper accent */
+  outline: none !important;
+}
+
 /* Row shading & cells */
 .table .subheader{ background-color: transparent; }
 .table .left{ background-color: rgba(30,24,56,0.35); border-radius:30px; }
