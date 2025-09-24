@@ -188,3 +188,55 @@ select.form-control option{
 
 /* ============ IMAGES (no grayscale; keep it simple) ============ */
 img{ filter: none !important; }
+
+/* === Profile editor toolbar & checkboxes visibility fixes === */
+
+/* Toolbar container */
+#fraHTMLInputBar,
+.bg-bar-input{
+  background: var(--panel);
+  border: 1px solid var(--stroke-lite);
+  border-radius: 14px;
+}
+
+/* Individual toolbar buttons (Bold/Italic/etc.) */
+#fraHTMLInputBar .btn.btn-htmlinput{
+  background: var(--panel-soft) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--stroke-lite) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+#fraHTMLInputBar .btn.btn-htmlinput:hover{
+  background: var(--panel) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent-hover) !important;
+}
+#fraHTMLInputBar .btn.btn-htmlinput .fa,
+#fraHTMLInputBar .btn.btn-htmlinput i{
+  color: inherit !important;      /* make icons follow button color */
+  filter: none !important;
+}
+
+/* Make the big white option card non-white */
+.bg-light{
+  background: rgba(255,255,255,0.07) !important;  /* subtle glass */
+  color: var(--ink) !important;
+  border-radius: 16px !important;
+}
+
+/* Checkboxes/radios: give them a theme color so they aren’t white-on-white */
+input[type="checkbox"],
+input[type="radio"]{
+  accent-color: var(--accent);     /* modern browsers */
+}
+
+/* Tiny scrollbar in the HTML textarea inside the editor */
+#txtProfileHTML, #txtProfileHTML *{
+  scrollbar-color: var(--accent) rgba(0,0,0,0.25); /* firefox */
+}
+#txtProfileHTML::-webkit-scrollbar{ width: 8px; background: rgba(0,0,0,0.25); }
+#txtProfileHTML::-webkit-scrollbar-thumb{
+  background: var(--accent); border-radius: 10px; border: 2px solid rgba(0,0,0,0.25);
+}
+#txtProfileHTML::-webkit-scrollbar-thumb:hover{ background: var(--accent-hover); }
