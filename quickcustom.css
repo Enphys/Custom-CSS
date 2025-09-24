@@ -1,4 +1,12 @@
 /* ============ SIMPLE WOLVDEN THEME (background-first, light accents) ============ */
+
+/* ===== CREDIT IN BREADCRUMB ===== */
+.breadcrumb::after{
+  content:'CSS by #134637';
+  position:absolute; right:35px;
+  font-weight:bold; color: var(--ink-muted);
+}
+
 /* Swap colors below if needed after you see it on-page */
 :root{
   --ink: rgba(255,255,255,0.95);      /* primary text on dark */
