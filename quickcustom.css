@@ -282,3 +282,16 @@ input[type="radio"]{
 .s-chat-sidebar #label_currentChannel:focus {
   color: var(--accent-hover) !important;
 }
+
+/* === Chat message text fix === */
+.s-chat-message_content {
+  color: #b0b0b0 !important;   /* darker gray for readability */
+}
+
+/* Optional: make links inside chat stand out */
+.s-chat-message_content a {
+  color: var(--accent) !important;
+}
+.s-chat-message_content a:hover {
+  color: var(--accent-hover) !important;
+}
