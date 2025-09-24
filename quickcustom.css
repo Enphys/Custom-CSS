@@ -170,8 +170,21 @@ select.form-control option{
 .dropdown-item:hover{ background: rgba(255,255,255,0.06); }
 
 /* ============ SCROLLBAR (optional, minimal) ============ */
-::-webkit-scrollbar{ width: 8px; background: rgba(0,0,0,0.20); }
-::-webkit-scrollbar-thumb{ background: rgba(255,255,255,0.25); border-radius: 10px; }
+/* ============ SCROLLBAR FIX ============ */
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(0,0,0,0.25); /* track (behind the thumb) */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent); /* visible accent */
+  border-radius: 10px;
+  border: 2px solid rgba(0,0,0,0.25); /* optional contrast border */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover); /* brighter on hover */
+}
 
 /* ============ IMAGES (no grayscale; keep it simple) ============ */
 img{ filter: none !important; }
