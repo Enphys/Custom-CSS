@@ -5,7 +5,7 @@
   content:'CSS by #134637';
   position:absolute; right:35px;
   font-weight:bold;
-  color: var(--ink);   /* darker than ink-muted */
+  color: #888888;   /* medium-dark gray */
 }
 
 /* Swap colors below if needed after you see it on-page */
