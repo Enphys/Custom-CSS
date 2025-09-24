@@ -240,3 +240,32 @@ input[type="radio"]{
   background: var(--accent); border-radius: 10px; border: 2px solid rgba(0,0,0,0.25);
 }
 #txtProfileHTML::-webkit-scrollbar-thumb:hover{ background: var(--accent-hover); }
+
+/* === Account Settings table fix === */
+#main table.table{
+  background: var(--panel) !important;   /* dark semi-transparent */
+  color: var(--ink) !important;
+  border: 1px solid var(--stroke-lite) !important;
+  border-radius: 16px !important;
+}
+
+#main table.table th,
+#main table.table td{
+  background: transparent !important;   /* keep text legible, let panel show */
+  color: var(--ink) !important;
+  border: none !important;
+}
+
+/* Inputs inside the table */
+#main table.table input,
+#main table.table select{
+  background: var(--panel-soft) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--stroke-lite) !important;
+  border-radius: 12px !important;
+}
+#main table.table input:focus,
+#main table.table select:focus{
+  border-color: var(--accent) !important;
+  outline: none !important;
+}
