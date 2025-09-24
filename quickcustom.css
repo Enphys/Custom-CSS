@@ -270,33 +270,9 @@ input[type="radio"]{
   outline: none !important;
 }
 
-/* === Chat channel header fix === */
-#fraSidebarChat #label_currentChannel,
-#fraSidebarChat .channelMenu,
-#fraSidebarChat .channelMenu .channelSwitcher {
-  background: var(--panel) !important;
-  color: var(--ink) !important;
-  border: 1px solid var(--stroke-lite) !important;
-  border-radius: 12px !important;
+/* === Chat channel label text fix === */
+.s-chat-sidebar #label_currentChannel{
+  color: var(--ink-muted) !important;   /* softer gray */
   font-weight: 600;
-}
-
-/* Active channel looks accented */
-#fraSidebarChat .channelMenu .channelSwitcher.active {
-  background: var(--panel-soft) !important;
-  border-color: var(--accent) !important;
-  color: var(--accent-hover) !important;
-}
-
-/* Dropdown inside chat (channel list) */
-#fraSidebarChat #fraChatChannelMenu {
-  background: var(--panel) !important;
-  color: var(--ink) !important;
-  border: 1px solid var(--stroke-lite) !important;
-  border-radius: 12px !important;
-}
-#fraSidebarChat #fraChatChannelMenu button:hover,
-#fraSidebarChat #fraChatChannelMenu .channelSwitcher:hover {
-  background: rgba(255,255,255,0.07) !important;
-  color: var(--accent-hover) !important;
+  text-shadow: none !important;
 }
