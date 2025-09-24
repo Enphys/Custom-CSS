@@ -1,0 +1,177 @@
+/* ============ SIMPLE WOLVDEN THEME (background-first, light accents) ============ */
+/* Swap colors below if needed after you see it on-page */
+:root{
+  --ink: rgba(255,255,255,0.95);      /* primary text on dark */
+  --ink-muted: rgba(230,230,240,0.75);
+
+  /* neutral dark glass for panels over photos */
+  --panel: rgba(12,14,18,0.70);
+  --panel-soft: rgba(12,14,18,0.55);
+
+  /* one accent for links/lines; adjust if the image calls for something else */
+  --accent: #8fcad4;                  /* soft teal-blue */
+  --accent-hover: #b1e0e7;
+
+  /* thin borders (barely visible) */
+  --stroke-lite: rgba(255,255,255,0.15);
+}
+
+/* Optional: light, readable font pair (kept minimal) */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Raleway:wght@400;600&display=swap');
+
+/* ============ BACKGROUND IMAGE ============ */
+body{
+  /* photo + subtle dark overlay for readability */
+  background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("https://cdn.myportfolio.com/ca15e4cb-04b0-42d7-8fbf-c77bcd80bfd2/0e034c5c-4e16-40d2-90dd-d4e59c5c6eaa_rw_1920.jpg?h=7a77afc18a4e53749311c5b5a6a7f8d6")
+      no-repeat center / cover fixed;
+  color: var(--ink);
+  font-family: 'Raleway', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* ============ HEADERS (very light styling) ============ */
+h1, h2{
+  font-family: 'Oswald', sans-serif;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  text-align: center;
+}
+h1{ font-size: 34px; }
+h2{ font-size: 24px; }
+
+/* ============ GLOBAL LINKS ============ */
+a{
+  color: var(--accent);
+  text-decoration: none;
+  transition: color .25s ease, text-decoration-color .25s ease;
+  font-weight: 600;
+}
+a:hover{
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-hover);
+}
+
+/* ============ TOP NAV / FOOTER / STATUS ============ */
+#header .navbar-main,
+#footer,
+.navbar-status{
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--stroke-lite);
+  border-radius: 14px;
+}
+#header .navbar-main .nav-link,
+#header .navbar-main .nav-link .fa,
+#footer a,
+.navbar-status a{
+  color: var(--ink);
+}
+#header .navbar-main .nav-link:hover,
+#header .navbar-main .nav-link:hover .fa,
+#footer a:hover{
+  color: var(--accent-hover);
+  text-decoration: none !important;
+}
+
+/* Breadcrumb stays clean; small credit optional—uncomment if you want it */
+/*
+.breadcrumb::after{
+  content:'CSS by Enphys';
+  margin-left: 8px;
+  color: var(--ink-muted);
+  font-weight: 600;
+}
+*/
+
+/* ============ MAIN / SIDEBAR PANELS ============ */
+#main .card,
+#sidebar .card,
+.alert{
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--stroke-lite);
+  border-radius: 16px;
+}
+#main{ background: var(--panel-soft); border-radius: 16px; }
+#sidebar{ background: transparent; }
+.alert a{ color: var(--accent) !important; }
+.alert a:hover{ color: var(--accent-hover) !important; }
+
+/* ============ TABS ============ */
+.nav-tabs{ border: none; justify-content: center; }
+.nav-tabs .nav-link{
+  background: var(--panel-soft);
+  color: var(--ink);
+  border: 1px solid var(--stroke-lite);
+  border-radius: 16px;
+}
+.nav-tabs .nav-link.active{
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+/* ============ TABLES (light touch) ============ */
+.table{ background: transparent; border: none; }
+.table th{
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--stroke-lite);
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px !important;
+}
+.table-striped tbody tr:nth-of-type(odd){ background-color: rgba(0,0,0,0.10); }
+.table td.bottom,
+.bg-dark{ background: transparent !important; }
+
+/* Den wolf thumbs: keep default shape, add subtle border that matches accent */
+table.table-striped[data-cave-key] td.p-0 > a > img{
+  border-radius: 10px !important;
+  border: 2px solid rgba(143,202,212,0.45) !important; /* uses accent tone */
+}
+
+/* ============ BUTTONS / FORMS (subtle) ============ */
+.btn,
+.btn-primary, .btn-success, .btn-warning, .btn-danger, .btn-info{
+  background: var(--panel);
+  color: var(--ink) !important;
+  border: 1px solid var(--stroke-lite);
+  border-radius: 16px;
+  box-shadow: none !important;
+}
+.btn:hover,
+.btn:focus{
+  border-color: var(--accent);
+  color: var(--accent-hover) !important;
+}
+
+.form-control, select.form-control{
+  color: var(--ink) !important;
+  background: var(--panel-soft) !important;
+  border: 1px solid var(--stroke-lite) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+select.form-control option{
+  background: #101319;
+  color: var(--ink);
+}
+
+/* Dropdown menus (e.g., cave filters) */
+.dropdown-menu.show{
+  background: var(--panel);
+  border: 1px solid var(--stroke-lite);
+  border-radius: 12px;
+}
+.dropdown-item{ color: var(--ink); }
+.dropdown-item:hover{ background: rgba(255,255,255,0.06); }
+
+/* ============ SCROLLBAR (optional, minimal) ============ */
+::-webkit-scrollbar{ width: 8px; background: rgba(0,0,0,0.20); }
+::-webkit-scrollbar-thumb{ background: rgba(255,255,255,0.25); border-radius: 10px; }
+
+/* ============ IMAGES (no grayscale; keep it simple) ============ */
+img{ filter: none !important; }
