@@ -270,9 +270,15 @@ input[type="radio"]{
   outline: none !important;
 }
 
-/* === Chat channel label text fix === */
-.s-chat-sidebar #label_currentChannel{
-  color: var(--ink-muted) !important;   /* softer gray */
+/* === Chat channel label text fix (darker gray) === */
+.s-chat-sidebar #label_currentChannel {
+  color: #b0b0b0 !important;   /* medium-dark gray */
   font-weight: 600;
   text-shadow: none !important;
+}
+
+/* On hover/active, brighten a bit with accent */
+.s-chat-sidebar #label_currentChannel:hover,
+.s-chat-sidebar #label_currentChannel:focus {
+  color: var(--accent-hover) !important;
 }
