@@ -258,8 +258,8 @@ table.striped{
   font-family:'Oswald', sans-serif;
 }
 
-/* REMOVE the background behind the lead wolf image */
-.card-body.pt-1.pb-1 {
+/* Nuclear option: remove ALL background on lead wolf card body */
+#main .card-body {
   background: transparent !important;
   box-shadow: none !important;
   border: none !important;
