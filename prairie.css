@@ -247,7 +247,7 @@ div.card.text-center>img{ border-radius:30px; }
 table.table.table-striped.border-none.mt-3.mb-0{
   position: relative;
   background:
-    linear-gradient(rgba(7,12,10,.6), rgba(7,12,10,.7)),
+    linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.7)),
     url("https://64.media.tumblr.com/fa58a0b32caa04d48bf6fda04ae634c2/bc19f698e302665a-ef/s2048x3072/a38855aadbab45d7c303f039bfdaf6ef4913146f.pnj");
   background-position: center bottom;
   background-size: cover;
