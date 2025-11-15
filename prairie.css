@@ -307,27 +307,27 @@ table.table-striped[data-cave-key] td.p-0 > a > img:hover {
 /* Row shading & cells */
 .table .subheader{ background-color: transparent; }
 .table .left{
-  background-color: rgba(10,32,20,0.65);
+  background-color: rgba(255,255,255,0.55);
   border-radius:30px;
 }
 .table-striped tbody tr:nth-of-type(odd){ background-color: transparent; }
 .table td.bottom{ background-color: transparent; }
 .bg-dark{ background-color: transparent !important; }
 .bg-light{
-  background-color: rgba(10,32,20,0.55) !important;
+  background-color: rgba(255,255,255,0.55) !important;
   border-radius:20px;
 }
 
 /* Sidebar cards */
 #sidebar .card{
-  background: rgba(10,32,20,0.65);
+  background: rgba(255,255,255,0.55);
   border-color: var(--accent-violet);
   border-radius:30px;
 }
 
 /* Progress bars */
 .progress{
-  background: rgba(10,32,20,0.55) !important;
+  background: rgba(255,255,255,0.55)) !important;
   border-radius:30px;
 }
 .bg-warning, #main .bg-success{
@@ -355,33 +355,33 @@ table.table-striped[data-cave-key] td.p-0 > a > img:hover {
   padding:5px;
 }
 .s-chat-message:nth-child(odd){
-  background: rgba(10,32,20,0.65);
+  background: rgba(255,255,255,0.55);
   color: var(--ink)!important;
 }
 .s-chat-message:nth-child(even){
-  background: rgba(10,32,20,0.45);
+  background: rgba(255,255,255,0.55);
   color: var(--ink)!important;
 }
 #txtChatContainer #lblCharacterCounter{ color: var(--ink); }
 #txtChatContainer a{ color: var(--accent-cyan); }
 .s-chat-sidebar #label_currentChannel{
   color: var(--ink)!important;
-  background-color: rgba(10,32,20,0.65)!important;
+  background-color: rgba(255,255,255,0.55)!important;
   border-radius:30px;
   border:none;
 }
 .s-chat-sidebar #fraChatChannelMenu{
   color: var(--ink)!important;
-  background-color: rgba(10,32,20,0.65)!important;
+  background-color: rgba(255,255,255,0.55)!important;
   border:none;
 }
 .s-chat-sidebar #fraChatChannelMenu:hover{
-  background-color: rgba(10,32,20,0.85)!important;
+  background-color: rgba(255,255,255,0.55)!important;
 }
 #fra_chatContainer .channelMenu .channelSwitcher.active,
 #fra_chatContainer .channelMenu .channelSwitcher{
   color: var(--ink)!important;
-  background-color: rgba(10,32,20,0.65)!important;
+  background-color: rgba(255,255,255,0.55)!important;
 }
 .s-chat-message_timestamp{ color: var(--ink-muted); }
 .s-chat-sidebar #chatMessageContainer{
@@ -390,35 +390,35 @@ table.table-striped[data-cave-key] td.p-0 > a > img:hover {
 }
 #fra_chatContainer #txtChatInput{
   color: var(--ink)!important;
-  background-color: rgba(10,32,20,0.65)!important;
+  background-color: rgba(255,255,255,0.55)!important;
   border-radius:30px;
   border:none;
 }
 
 /* ===== EDITOR / FORMS ===== */
 .btn.btn-htmlinput{
-  background: rgba(10,32,20,0.65);
+  background: rgba(255,255,255,0.55);
   border:none;
 }
 .bg-bar-input{ background: transparent; }
 .form-control,
 select.form-control{
   color: var(--ink)!important;
-  background-color: rgba(10,32,20,0.65)!important;
+  background-color: rgba(255,255,255,0.55)!important;
   border:none;
   border-radius:30px;
 }
 select.form-control:hover{ border:none; }
 .dropdown-menu.show{
-  background-color: rgba(10,32,20,0.80);
+  background-color: rgba(255,255,255,0.55);
   border-radius:30px;
 }
 .dropdown-item:hover{
-  background-color: rgba(10,32,20,0.95);
+  background-color: rgba(255,255,255,0.55);
 }
 .dropdown-divider{ border:none; }
 
-:root{ --dropdown-bg: rgba(10,32,20,0.65); }
+:root{ --dropdown-bg: rgba(255,255,255,0.55); }
 
 select.form-control{
   background-color: var(--dropdown-bg) !important;
@@ -462,7 +462,7 @@ select.form-control option{
 
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar{
-  background: rgba(10,32,20,0.65);
+  background: rgba(255,255,255,0.55);
   width:8px;
 }
 ::-webkit-scrollbar-thumb{
@@ -480,7 +480,7 @@ select.form-control option{
 }
 .Box1, .Box2, .Box3, .Box4, .Box5, .Box6{
   color: var(--ink);
-  background: rgba(10,32,20,0.70);
+  background: rgba(255,255,255,0.55);
   border-bottom: 4px solid #8cc2ff;
   border-radius: 30px;
   margin: 5px;
