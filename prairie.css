@@ -82,7 +82,7 @@ body{
   position:absolute;
   right:35px;
   font-weight:bold;
-  color: var(--ink-muted);
+  color: #2C3863;
 }
 
 /* ===== LINKS ===== */
