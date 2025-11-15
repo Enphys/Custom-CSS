@@ -517,7 +517,7 @@ select.form-control option{
 #fraSidebarChat,
 #fraSidebarChat * {
   font-family: 'Raleway', sans-serif !important;
-  color: var(--ink) !important;
+  color: #539352 !important;
 }
 
 #fraSidebarChat .s-chat-message__pinned {
