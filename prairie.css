@@ -1,5 +1,5 @@
 /* ===== FONTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&family=Nunito:wght@400;600;700&display=swap');
 
 /* ===== PRAIRIE PALETTE ===== */
 :root{
@@ -21,7 +21,7 @@
 
 /* ===== HEADINGS ===== */
 h1, h2{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Baloo 2', 'Oswald', sans-serif;
   text-transform: uppercase;
   letter-spacing: .02em;
   text-align: center;
@@ -37,7 +37,7 @@ h2{ font-size: 28px; }
 
 /* ===== GLOBAL TEXT ===== */
 *{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito', 'Raleway', sans-serif;
   color: var(--ink);
 }
 
