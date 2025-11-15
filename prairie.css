@@ -28,8 +28,7 @@ h1, h2{
   color: var(--ink);
 }
 h1{
-  font-size: 40px;
-  background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.7));
+  font-size: 40px;;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
