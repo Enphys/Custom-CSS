@@ -94,19 +94,11 @@ a {
   text-decoration: none;
   transition: color 1s ease, text-decoration-color 1s ease;
 }
-a:hover {
-  color: var(--accent-gold);
-  text-decoration: underline dotted !important;
-}
 #fraDenHTML a {
   color: var(--accent-cyan) !important;
   font-weight: 700;
   text-decoration: none;
   transition: color 1s ease, text-decoration-color 1s ease;
-}
-#fraDenHTML a:hover {
-  color: var(--accent-gold) !important;
-  text-decoration: underline dotted !important;
 }
 
 /* ===== HEADER / FOOTER ===== */
@@ -144,8 +136,7 @@ a:hover {
 /* ===== BREADCRUMB BAR ===== */
 #header .breadcrumb-nav{ background-color: transparent; }
 .breadcrumb-item.active{ color: var(--ink); }
-#bookmarkPage.fas.fa-bookmark.text-danger{
-  color: var(--accent-gold) !important;
+#bookmarkPage.fas.fa-bookmark.text-danger;
 }
 
 /* ===== ALERTS ===== */
@@ -202,7 +193,6 @@ table[data-cave-key^="cave-"] th {
     rgba(149,201,61,.18)
   );
   color: var(--ink);
-  border:1px solid var(--accent-gold);
 }
 
 /* ===== MAIN CARDS ===== */
@@ -261,7 +251,6 @@ table.striped{
   color: var(--ink);
   font-family:'Oswald', sans-serif;
 }
-.table th a:hover{ color: var(--accent-gold); }
 
 /* Wolf frames */
 .table .row .card a img,
@@ -500,9 +489,6 @@ select.form-control option{
   height:180px;
 }
 
-/* Optional fun: gold accents (e.g., hover over links in headers) */
-.table th a:hover{ color: var(--accent-gold); }
-
 /* === Sidebar chat: fix font + remove grayscale === */
 #fraSidebarChat,
 #fraSidebarChat * {
@@ -525,7 +511,6 @@ select.form-control option{
   transition: color 1s ease, text-decoration-color 1s ease;
 }
 #fraSidebarChat a:hover {
-  color: var(--accent-gold) !important;
   text-decoration: underline dotted !important;
 }
 
