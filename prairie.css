@@ -130,7 +130,7 @@ a:hover {
 
 /* ===== STATUS STRIP ===== */
 .navbar-status{
-  background-color: rgba(55, 95, 135, 0.55) !important;
+  background-color: #3E7BBF !important;
   color: #2C3863 !important;
   border-radius:0 0 30px 30px;
 }
