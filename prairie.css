@@ -362,8 +362,8 @@ table.table-striped[data-cave-key] td.p-0 > a > img:hover {
 
 /* ===== CHAT ===== */
 #chatMessagePinned.s-chat-message__pinned{
-  background: #539352 ;
-  color: var(--ink)!important;
+  background: ##CCCCFF ;
+  color: #2C3863!important;
   border:none;
   padding:5px;
 }
