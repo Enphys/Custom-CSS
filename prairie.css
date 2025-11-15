@@ -454,7 +454,7 @@ select.form-control option{
   ) !important;
   color: var(--ink) !important;
   border:none;
-  font-weight:bold;
+  font-family: 'Fredoka One', sans-serif !important;
   box-shadow:none;
   border-radius:30px;
 }
