@@ -87,14 +87,25 @@ body{
 
 /* ===== LINKS ===== */
 a {
-  color: var(--accent-cyan);
-  font-weight: 700;
-  text-decoration: none;;
-}
-#fraDenHTML a {
-  color: var(--accent-cyan) !important;
+  color: #2C3863;
   font-weight: 700;
   text-decoration: none;
+  transition: color .5s ease;   /* smooth fade */
+}
+
+a:hover {
+  color: #ffffff;               /* fades to white */
+}
+
+#fraDenHTML a {
+  color: #2C3863 !important;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .5s ease !important;
+}
+
+#fraDenHTML a:hover {
+  color: #ffffff !important;
 }
 
 /* ===== HEADER / FOOTER ===== */
