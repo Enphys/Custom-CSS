@@ -334,7 +334,7 @@ table.table-striped[data-cave-key] td.p-0 > a > img:hover {
 /* Sidebar cards */
 #sidebar .card{
   background: rgba(255,255,255,0.55);
-  border-color: var(--accent-violet);
+  border-color: rgba(255,255,255,0.45);
   border-radius:30px;
 }
 
