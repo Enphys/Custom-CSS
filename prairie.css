@@ -258,9 +258,10 @@ table.striped{
   font-family:'Oswald', sans-serif;
 }
 
-/* Remove the empty strip under the lead wolf image */
-#main .card-body.pt-1.pb-1{
-  display: none !important;
+#main .card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* Wolf thumbnails inside any cave table */
