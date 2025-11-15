@@ -243,7 +243,7 @@ table.striped{
   border-radius:30px;
 }
 .table th{
-  background: linear-gradient(90deg, #244c31, #3BD23D);
+  background: #95c93d;
   color: var(--ink);
   font-size: 20px !important;
   font-family: 'Oswald', sans-serif;
