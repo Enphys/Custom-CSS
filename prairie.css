@@ -1,12 +1,6 @@
 /* ===== FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
 
-
-/* ===== CUSTOM CURSOR ===== */
-* {
-  cursor: url("https://64.media.tumblr.com/5d25c746da3108e32c5cd0247d6b389b/3808fc8c9ef5c820-24/s75x75_c1/422b35d2a69518bdbd525790b570dd024d8f7893.pnj") 0 0, auto !important;
-}
-
 /* ===== PRAIRIE PALETTE ===== */
 :root{
   --ink: rgba(18, 38, 26, 0.96);
@@ -87,66 +81,6 @@ body{
   background-position: center;
   background-size: cover !important;
   background-attachment: fixed;
-}
-
-/* ===== SIDE OVERLAYS (full-page, floating) ===== */
-:root{
-  --side-left-w: 180px;
-  --side-right-w: 180px;
-  --float-range: 35px;
-  --float-speed: 4s;
-}
-
-/* draw the images as fixed overlays so they’re on top everywhere */
-body::before,
-body::after{
-  content:"";
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 99999;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
-  animation: sideFloat var(--float-speed) ease-in-out infinite;
-}
-
-/* LEFT – swap to your prairie character art if you want */
-body::before{
-  left: 10px;
-  width: var(--side-left-w);
-  aspect-ratio: 2 / 3;
-  background-image: url("https://64.media.tumblr.com/39ea100becfd2bd0655b944a0a21e37d/ad13789b0ba87eb8-f1/s400x600/4fadbb1f43ef536bf34b592397df0255beeb2717.pnj");
-  animation-direction: alternate;
-  top: 50%;
-  transform: translateY(-45%);
-}
-
-/* RIGHT */
-body::after{
-  right: 10px;
-  width: var(--side-right-w);
-  aspect-ratio: 5 / 8;
-  background-image: url("https://64.media.tumblr.com/50f8666903b152d6d7cedf366bb5de46/ad13789b0ba87eb8-aa/s250x400/0df3afc10f2365a348b25e0c9b374e015d563aef.pnj");
-  animation-direction: alternate-reverse;
-  top: 50%;
-  transform: translateY(-45%);
-}
-
-@keyframes sideFloat{
-  from { transform: translateY(-50%) translateY(0); }
-  to   { transform: translateY(-50%) translateY(calc(-1 * var(--float-range))); }
-}
-
-/* Mobile: shrink so they don’t cover content */
-@media (max-width: 768px){
-  :root{
-    --side-left-w: 150px;
-    --side-right-w: 140px;
-    --float-range: 12px;
-  }
 }
 
 /* ===== CREDIT IN BREADCRUMB ===== */
