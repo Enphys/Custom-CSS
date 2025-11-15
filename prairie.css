@@ -244,7 +244,7 @@ table.striped{
   border-radius:30px;
 }
 .table th{
-  background: linear-gradient(90deg, #244c31, #315e3f);
+  background: linear-gradient(90deg, #244c31, #3BD23D);
   color: var(--ink);
   font-size: 20px !important;
   font-family: 'Oswald', sans-serif;
@@ -526,4 +526,25 @@ body.no-overflow::before,
 body.no-overflow::after {
   content: none !important;
   display: none !important;
+}
+
+/* nav-tabs buttons: make them light, not dark */
+.nav-tabs .nav-link {
+  background-color: rgba(255,255,255,0.45) !important;
+  border: 1px solid rgba(255,255,255,0.4) !important;
+  color: #2C3863 !important;
+}
+
+/* hover state */
+.nav-tabs .nav-link:hover {
+  background-color: rgba(255,255,255,0.65) !important;
+  color: #2C3863 !important;
+  border: 1px solid rgba(255,255,255,0.55) !important;
+}
+
+/* active tab (the selected one) */
+.nav-tabs .nav-link.active {
+  background-color: rgba(255,255,255,0.85) !important;
+  color: #2C3863 !important;
+  border: 1px solid rgba(255,255,255,0.7) !important;
 }
