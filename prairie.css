@@ -168,6 +168,12 @@ a:hover {
   color: var(--accent-pink) !important;
 }
 
+.alert-info {
+    color: #03405d;
+    background-color: #eff7fa;
+    border-color: #cee8f0;
+}
+
 /* ===== CAVE TABLES ===== */
 table[data-cave-key^="cave-"] {
   position: relative;
