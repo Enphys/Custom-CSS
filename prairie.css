@@ -25,13 +25,12 @@ h1, h2{
   text-transform: uppercase;
   letter-spacing: .02em;
   text-align: center;
-  color: var(--ink);
+  color: #2C3863;
 }
 h1{
   font-size: 40px;;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
   text-shadow: 0 0 10px rgba(255,255,255,.35);
 }
 h2{ font-size: 28px; }
