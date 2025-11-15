@@ -89,14 +89,12 @@ body{
 a {
   color: var(--accent-cyan);
   font-weight: 700;
-  text-decoration: none;
-  transition: color 1s ease, text-decoration-color 1s ease;
+  text-decoration: none;;
 }
 #fraDenHTML a {
   color: var(--accent-cyan) !important;
   font-weight: 700;
   text-decoration: none;
-  transition: color 1s ease, text-decoration-color 1s ease;
 }
 
 /* ===== HEADER / FOOTER ===== */
