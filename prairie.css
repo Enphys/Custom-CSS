@@ -520,6 +520,10 @@ select.form-control option{
   color: var(--ink) !important;
 }
 
+#fraSidebarChat .s-chat-message__pinned {
+    background-color: #539352 !important;
+}
+
 /* kill the global grayscale just inside chat */
 #fraSidebarChat img,
 #fraSidebarChat .icon,
