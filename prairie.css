@@ -148,18 +148,23 @@ a:hover {
 
 /* ===== ALERTS ===== */
 .alert{
-  background: var(--panel);
+  background: rgba(255,255,255,0.45) !important;   /* soft white glass */
   color: var(--ink);
-  border:none;
-  border-radius:30px;
-  text-align:center;
+  border: none !important;
+  border-radius: 40px !important;                  /* more rounded */
+  text-align: center;
 }
-.alert a{ color: var(--ink) !important; }
+
+.alert a{
+  color: var(--ink) !important;
+}
+
 .alert a:hover{
-  color: rgba(255,255,255,.8) !important;
-  transition-duration:.5s;
+  color: rgba(255,255,255,0.8) !important;
+  transition-duration: .5s;
 }
-.alert.alert-danger.text-center {
+
+.alert.alert-danger.text-center{
   color: var(--accent-pink) !important;
 }
 
