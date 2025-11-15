@@ -259,15 +259,6 @@ table.striped{
   font-family:'Oswald', sans-serif;
 }
 
-/* Wolf frames */
-.table .row .card a img,
-.featured-wolf img,
-.w-50 > a img,
-.w-50 div a img{
-  border-radius:20px !important;
-  border:3px solid var(--accent-violet);
-}
-
 /* Wolf thumbnails inside any cave table */
 table.table-striped[data-cave-key] td.p-0 > a > img {
   border: none !important;
