@@ -569,3 +569,38 @@ body.no-overflow::after {
   color: #2C3863 !important;
   border: 1px solid rgba(255,255,255,0.7) !important;
 }
+
+/* ===== SIDE OVERLAYS (full-page, floating) ===== */
+:root{
+  --side-left-w: 180px;           /* left image width */
+  --side-right-w: 180px;          /* right image width */
+  --float-range: 35px;            /* how far they bob */
+  --float-speed: 2s;              /* 1 up + 1 down = 2s; here we use 4s for slower */
+}
+
+/* draw the images as fixed overlays so they’re on top everywhere */
+body::before,
+body::after{
+  content:"";
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999;                 /* above everything */
+  pointer-events: none;           /* don’t block clicks */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
+  animation: sideFloat var(--float-speed) ease-in-out infinite;
+}
+
+/* LEFT */
+body::before{
+  left: 10px;
+  width: var(--side-left-w);
+  aspect-ratio: 2 / 3;            /* 400x600 */
+  background-image: url("https://64.media.tumblr.com/a767e603497c98dcfe97a216464a811d/96c03871e4c3ee26-4f/s75x75_c1/d9b5f23215460014dc4e2eac093493942bb093f1.pnj");
+  animation-direction: alternate;
+  top: 50%;
+  transform: translateY(-45%);
+}
