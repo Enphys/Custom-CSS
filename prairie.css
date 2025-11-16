@@ -598,9 +598,23 @@ body::after{
 body::before{
   left: 10px;
   width: var(--side-left-w);
-  aspect-ratio: 2 / 3;            /* 400x600 */
+  aspect-ratio: 1 / 3;            /* 400x600 */
   background-image: url("https://64.media.tumblr.com/a767e603497c98dcfe97a216464a811d/96c03871e4c3ee26-4f/s75x75_c1/d9b5f23215460014dc4e2eac093493942bb093f1.pnj");
   animation-direction: alternate;
   top: 50%;
   transform: translateY(-45%);
+}
+
+@keyframes sideFloat{
+  from { transform: translateY(-50%) translateY(0); }
+  to   { transform: translateY(-50%) translateY(calc(-1 * var(--float-range))); }
+}
+
+/* Mobile: shrink so they don’t cover content */
+@media (max-width: 768px){
+  :root{
+    --side-left-w: 150px;
+    --side-right-w: 140px;
+    --float-range: 12px;
+  }
 }
