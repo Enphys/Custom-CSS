@@ -597,9 +597,11 @@ body::after{
 /* LEFT */
 body::before{
   left: 10px;
-  width: var(--side-left-w);
-  aspect-ratio: 1 / 5;            /* 400x600 */
+  width: auto;                     /* use original width */
+  height: auto;                    /* use original height */
+  aspect-ratio: auto;              /* stop forcing proportions */
   background-image: url("https://64.media.tumblr.com/a767e603497c98dcfe97a216464a811d/96c03871e4c3ee26-4f/s75x75_c1/d9b5f23215460014dc4e2eac093493942bb093f1.pnj");
+  background-size: auto;           /* use original image size */
   animation-direction: alternate;
   top: 50%;
   transform: translateY(-45%);
