@@ -799,8 +799,3 @@ body::after {
         background-position: 50% 100%, 50% 100%;
     }
 }
-
-#main, #sidebar, #header, #footer {
-    position: relative;
-    z-index: 5;
-}
