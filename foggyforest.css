@@ -753,6 +753,27 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
+:root{
+  --float-range: 35px;
+  --float-speed: 2s;
+}
+
+/* draw the images as fixed overlays so they’re on top everywhere */
+body::before,
+body::after{
+  content:"";
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
+  animation: sideFloat var(--float-speed) ease-in-out infinite;
+}
+
 body::before {
     content: "";
     position: fixed;
@@ -793,7 +814,7 @@ body::before {
     animation: fogFloat 10s ease-in-out infinite alternate;
 }
 
-@keyframes fogFloat {
+@keyframes sideFloat {
     from { transform: translateX(-40px) translateY(0px); }
     to   { transform: translateX(40px) translateY(-20px); }
 }
