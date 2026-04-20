@@ -753,6 +753,11 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
+#main, #sidebar, #header, #footer {
+    position: relative;
+    z-index: 5;
+}
+
 body::after {
     content: "";
     position: fixed;
@@ -763,39 +768,24 @@ body::after {
     pointer-events: none;
     z-index: 0;
 
-    background:
-        radial-gradient(circle at 50% 100%,
-            rgba(210, 235, 235, 0.35) 0%,
-            rgba(160, 200, 200, 0.18) 35%,
-            rgba(100, 140, 140, 0.08) 60%,
-            rgba(0, 0, 0, 0) 100%
-        ),
-        repeating-radial-gradient(circle at 50% 100%,
-            rgba(255, 255, 255, 0.07) 0px,
-            rgba(255, 255, 255, 0.02) 18px,
-            rgba(255, 255, 255, 0.00) 38px
-        );
-
-    background-size: 100% 100%, 220% 220%;
-    background-position: 50% 100%, 50% 100%;
+    background: radial-gradient(circle at 50% 100%,
+        rgba(210, 235, 235, 0.35) 0%,
+        rgba(160, 200, 200, 0.18) 35%,
+        rgba(100, 140, 140, 0.08) 60%,
+        rgba(0, 0, 0, 0) 100%
+    );
 
     filter: blur(18px);
     opacity: 0.85;
 
-    animation: fogWaves 14s ease-in-out infinite;
+    animation: fogDrift 10s ease-in-out infinite alternate;
 }
 
-@keyframes fogWaves {
+@keyframes fogDrift {
     0% {
-        transform: translateX(0px) translateY(0px);
-        background-position: 50% 100%, 50% 100%;
-    }
-    50% {
-        transform: translateX(-20px) translateY(6px);
-        background-position: 50% 100%, 55% 92%;
+        transform: translateX(-15px) translateY(0px);
     }
     100% {
-        transform: translateX(0px) translateY(0px);
-        background-position: 50% 100%, 50% 100%;
+        transform: translateX(15px) translateY(-6px);
     }
 }
