@@ -753,10 +753,6 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
-body {
-    position: relative;
-}
-
 body::before {
     content: "";
     position: fixed;
@@ -790,17 +786,14 @@ body::before {
             rgba(0,0,0,0) 75%
         );
 
+    background-repeat: no-repeat;
     filter: blur(18px);
     opacity: 0.9;
 
-    animation: fogRoll 12s ease-in-out infinite alternate;
+    animation: fogFloat 10s ease-in-out infinite alternate;
 }
 
-@keyframes fogRoll {
-    0% {
-        transform: translateX(-30px) translateY(0px);
-    }
-    100% {
-        transform: translateX(30px) translateY(-12px);
-    }
+@keyframes fogFloat {
+    from { transform: translateX(-40px) translateY(0px); }
+    to   { transform: translateX(40px) translateY(-20px); }
 }
