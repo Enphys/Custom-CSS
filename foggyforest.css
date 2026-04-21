@@ -753,57 +753,33 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
-/* FOG BUBBLE 1 */
-:root{
-  --float-range: 35px;
-  --float-speed: 2s;
-}
-
-body::before{
-  transform: translateY(-50%);
-  width: 75px;
-  height: 75px;
-  animation-direction: alternate;
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    bottom: -5vh;
-    left: -5vh;
-    width: 40%;
-    height: 35vh;
-    pointer-events: none;
-    z-index: 0;
-
-    background: radial-gradient(circle at 50% 100%,
+/* Container for the image */
+.wave-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: radial-gradient(circle at 50% 100%,
         rgba(210, 235, 235, 0.35) 0%,
         rgba(160, 200, 200, 0.18) 35%,
         rgba(100, 140, 140, 0.08) 60%,
         rgba(0, 0, 0, 0) 100%
-    );
-
-    filter: blur(18px);
-    opacity: 0.9;
+    ); no-repeat center center;
+  background-size: cover;
 }
 
-body::before,
-body::after{
-  content:"";
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 99999;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
-  animation: sideFloat var(--float-speed) ease-in-out infinite;
+/* The rolling wave overlay */
+.wave-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 200%; /* Must be wider than container to roll */
+  height: 100px;
+  background: url('https://svgwave.in') repeat-x; /* Use a wave SVG */
+  animation: roll 5s linear infinite;
 }
 
-/* float animation */
-@keyframes sideFloat{
-  from { transform: translateY(-50%) translateY(0); }
-  to   { transform: translateY(-50%) translateY(calc(-1 * var(--float-range))); }
+/* Keyframes to move the wave horizontally */
+@keyframes roll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Half width to loop perfectly */
 }
