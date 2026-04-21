@@ -757,8 +757,8 @@ body::after {
     content: "";
     position: fixed;
     bottom: 10%;
-    left: 10%;
-    width: 40%;
+    left: 10px;
+    width: 50%;
     height: 35vh;
     pointer-events: none;
     z-index: 0;
