@@ -297,7 +297,7 @@ div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf i
 div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf img:hover {
     border-radius: 50%;
     transition: 0.35s;
-    border: 2px dashed #4E7E79ff;
+    border: 2px dashed #FFAA1D;
 }
 div.w-50:nth-child(1) > div:nth-child(2) {
     border: none!important;
