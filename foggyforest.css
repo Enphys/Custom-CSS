@@ -797,12 +797,11 @@ div.card.bg-light.border {
   transform: translateZ(0);
 }
 
-
 @keyframes fogDrift {
   from {
     background-position: 0% 100%, 0% 100%, 0% 100%;
   }
   to {
-    background-position: 200% 100%, 150% 100%, 100% 100%;
+    background-position: 100% 100%, 80% 100%, 60% 100%;
   }
 }
