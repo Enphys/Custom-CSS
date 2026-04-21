@@ -756,53 +756,37 @@ div.card.bg-light.border {
 /* ===== FOG OVERLAY (DOES NOT AFFECT PAGE LAYOUT) ===== */
 
 .fog-layer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-
   width: 100%;
-  height: 45vh;
-
-  pointer-events: none;
-  z-index: 0;
-
-  /* softer fog palette instead of yellow/purple */
-  background-color: transparent;
+  height: 100%;
 
   background-image:
-  radial-gradient(ellipse at 20% 90%,
-    rgba(210, 235, 235, 0.35) 0%,
-    rgba(160, 200, 200, 0.18) 35%,
-    rgba(0, 0, 0, 0) 70%),
+    radial-gradient(ellipse at 20% 90%,
+      rgba(210, 235, 235, 0.35) 0%,
+      rgba(160, 200, 200, 0.18) 35%,
+      rgba(0, 0, 0, 0) 70%),
 
-  radial-gradient(ellipse at 60% 95%,
-    rgba(190, 225, 225, 0.28) 0%,
-    rgba(140, 180, 180, 0.14) 40%,
-    rgba(0, 0, 0, 0) 75%),
+    radial-gradient(ellipse at 60% 95%,
+      rgba(190, 225, 225, 0.28) 0%,
+      rgba(140, 180, 180, 0.14) 40%,
+      rgba(0, 0, 0, 0) 75%),
 
-  radial-gradient(ellipse at 85% 90%,
-    rgba(210, 240, 240, 0.22) 0%,
-    rgba(120, 160, 160, 0.12) 45%,
-    rgba(0, 0, 0, 0) 80%);
-
-  background-repeat: repeat-x;
-  background-size: 100% 100%;
+    radial-gradient(ellipse at 85% 90%,
+      rgba(210, 240, 240, 0.22) 0%,
+      rgba(120, 160, 160, 0.12) 45%,
+      rgba(0, 0, 0, 0) 80%);
 
   filter: blur(14px);
   opacity: 0.9;
 
-  animation: fogDrift 5s linear infinite, fogPulse 12s ease-in-out infinite;
-
-  will-change: background-position;
-  transform: translateZ(0);
+  animation: fogPulse 12s ease-in-out infinite;
 }
 
 @keyframes fogDrift {
   from {
-    background-position: 0 100%, 0 100%, 0 100%;
+    transform: translateX(0);
   }
   to {
-    background-position: -200% 100%, -200% 100%, -200% 100%;
+    transform: translateX(-10%);
   }
 }
 
@@ -813,4 +797,19 @@ div.card.bg-light.border {
   50% {
     transform: translateZ(0) scale(1.03);
   }
+}
+
+.fog-wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 45vh;
+
+  pointer-events: none;
+  z-index: 0;
+
+  animation: fogDrift 12s linear infinite;
+  will-change: transform;
 }
