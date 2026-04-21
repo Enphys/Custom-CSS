@@ -788,7 +788,7 @@ div.card.bg-light.border {
   background-repeat: repeat-x;
   background-size: 120% 100%;
 
-  filter: blur(18px);
+  filter: blur(25px);
   opacity: 0.9;
 
   animation: fogDrift 5s linear infinite;
@@ -805,10 +805,4 @@ div.card.bg-light.border {
 
 .fog-layer {
   animation: fogDrift 35s linear infinite !important;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .fog-layer {
-    animation: none;
-  }
 }
