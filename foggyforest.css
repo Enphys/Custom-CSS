@@ -816,10 +816,5 @@ div.card.bg-light.border {
   position: fixed;
   inset: 0;
   background: red;
-  animation: fogDrift 3s linear infinite;
-}
-
-@keyframes fogDrift {
-  from { transform: translateX(0); }
-  to { transform: translateX(200px); }
+  animation: fogDrift 2s linear infinite;
 }
