@@ -797,6 +797,28 @@ div.card.bg-light.border {
   transform: translateZ(0);
 }
 
+.fog-layer::before,
+.fog-layer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: inherit;
+  background-size: inherit;
+  background-repeat: repeat-x;
+
+  animation: fogDrift 30s linear infinite;
+}
+
+.fog-layer::after {
+  transform: translateX(100%);
+}
+
+@keyframes fogDrift {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
 @keyframes fogDrift {
   from {
     background-position: 0 100%, 0 100%, 0 100%;
