@@ -753,11 +753,11 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
-/* ===== BASE FOG STYLE ===== */
+/* ===== BASE FOG ===== */
 .fog {
   position: fixed;
-  bottom: -10vh;
-  width: 40vw;
+  bottom: 0;
+  width: 45vw;
   height: 35vh;
   pointer-events: none;
   z-index: 0;
@@ -775,49 +775,38 @@ div.card.bg-light.border {
   animation: fogFloat 18s ease-in-out infinite;
 }
 
-/* ===== POSITIONING (your 4 “bubbles”) ===== */
-.fog1 {
-  left: -10%;
-  animation-delay: 0s;
-}
+/* ===== POSITIONING (even spacing, no transforms) ===== */
+.fog1 { left: -15%; animation-delay: 0s; }
+.fog2 { left: 15%;  animation-delay: -4s; }
+.fog3 { left: 45%;  animation-delay: -9s; }
+.fog4 { left: 75%;  animation-delay: -13s; }
 
-.fog2 {
-  left: 20%;
-  animation-delay: -4s;
-}
-
-.fog3 {
-  left: 50%;
-  transform: translateX(-50%);
-  animation-delay: -9s;
-}
-
-.fog4 {
-  right: -10%;
-  animation-delay: -13s;
-}
-
-/* ===== MOTION ===== */
+/* ===== ANIMATION (ONLY Y MOVEMENT HERE) ===== */
 @keyframes fogFloat {
   0% {
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
     opacity: 0.75;
   }
   50% {
-    transform: translateY(-25px) scale(1.05);
+    transform: translateY(-25px);
     opacity: 0.95;
   }
   100% {
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
     opacity: 0.75;
   }
 }
 
-/* ===== MOBILE TUNING ===== */
+/* ===== MOBILE FIX ===== */
 @media (max-width: 768px) {
   .fog {
-    width: 60vw;
+    width: 70vw;
     height: 30vh;
     filter: blur(14px);
   }
+
+  .fog1 { left: -25%; }
+  .fog2 { left: 5%; }
+  .fog3 { left: 35%; }
+  .fog4 { left: 65%; }
 }
