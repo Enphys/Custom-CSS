@@ -804,5 +804,5 @@ div.card.bg-light.border {
 }
 
 .fog-layer {
-  animation: fogDrift 20s linear infinite !important;
+  animation: fogDrift 10s linear infinite;
 }
