@@ -753,63 +753,7 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
-/* ===== FOG OVERLAY (DOES NOT AFFECT PAGE LAYOUT) ===== */
-
 .fog-layer {
-  position: absolute;
-  inset: 0;
-
-  background-image:
-    radial-gradient(ellipse at 20% 90%,
-      rgba(210, 235, 235, 0.35) 0%,
-      rgba(160, 200, 200, 0.18) 35%,
-      rgba(0, 0, 0, 0) 70%),
-
-    radial-gradient(ellipse at 60% 95%,
-      rgba(190, 225, 225, 0.28) 0%,
-      rgba(140, 180, 180, 0.14) 40%,
-      rgba(0, 0, 0, 0) 75%),
-
-    radial-gradient(ellipse at 85% 90%,
-      rgba(210, 240, 240, 0.22) 0%,
-      rgba(120, 160, 160, 0.12) 45%,
-      rgba(0, 0, 0, 0) 80%);
-
-  filter: blur(14px);
-  opacity: 0.85;
-
-  animation: fogMove 18s linear infinite;
-  will-change: transform;
-}
-
-@keyframes fogDrift {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-10%);
-  }
-}
-
-@keyframes fogPulse {
-  0%, 100% {
-    transform: translateZ(0) scale(1);
-  }
-  50% {
-    transform: translateZ(0) scale(1.03);
-  }
-}
-
-@keyframes fogMove {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.fog-wrapper {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -819,9 +763,11 @@ div.card.bg-light.border {
 
   pointer-events: none;
   z-index: 0;
-  overflow: hidden;
-}
 
-.fog-layer:nth-child(2) {
-  animation-delay: -9s;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/036/048/962/small/fog-smoke-design-clean-alpha-free-png.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+
+  opacity: 0.35; /* adjust this for strength */
 }
