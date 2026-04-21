@@ -753,6 +753,12 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
+/* FOG BUBBLE 1 */
+:root{
+  --float-range: 35px;
+  --float-speed: 2s;
+}
+
 body::after {
     content: "";
     position: fixed;
@@ -772,4 +778,10 @@ body::after {
 
     filter: blur(18px);
     opacity: 0.9;
+}
+
+/* float animation */
+@keyframes sideFloat{
+  from { transform: translateY(-50%) translateY(0); }
+  to   { transform: translateY(-50%) translateY(calc(-1 * var(--float-range))); }
 }
