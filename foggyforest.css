@@ -755,45 +755,43 @@ div.card.bg-light.border {
 
 .fog-layer {
   position: fixed;
-  left: -20%;
+  left: 0;
   bottom: 0;
 
-  width: 140%;
-  height: 60vh;
+  width: 200%;
+  height: 45vh;
 
   pointer-events: none;
   z-index: 0;
+  overflow: hidden;
 
-  background:
+  background-image:
     radial-gradient(ellipse at 20% 100%,
-      rgba(210, 235, 235, 0.35) 0%,
-      rgba(160, 200, 200, 0.15) 45%,
-      transparent 70%),
+      rgba(210, 235, 235, 0.30) 0%,
+      rgba(160, 200, 200, 0.10) 50%,
+      transparent 80%),
 
     radial-gradient(ellipse at 60% 110%,
-      rgba(190, 225, 225, 0.25) 0%,
-      rgba(140, 180, 180, 0.10) 55%,
-      transparent 75%),
+      rgba(190, 225, 225, 0.22) 0%,
+      rgba(140, 180, 180, 0.08) 60%,
+      transparent 85%),
 
     radial-gradient(ellipse at 90% 100%,
-      rgba(210, 240, 240, 0.20) 0%,
-      rgba(120, 160, 160, 0.08) 60%,
-      transparent 80%);
+      rgba(210, 240, 240, 0.18) 0%,
+      rgba(120, 160, 160, 0.06) 65%,
+      transparent 90%);
+      filter: blur(30px);
+  opacity: 0.85;
 
-  filter: blur(35px);
-  opacity: 0.9;
-
-  animation: fogFloat 25s ease-in-out infinite;
+  animation: fogMove 25s linear infinite;
+  will-change: transform;
 }
 
-@keyframes fogFloat {
-  0% {
-    transform: translateX(-2%) translateY(0%);
+@keyframes fogMove {
+  from {
+    transform: translateX(0);
   }
-  50% {
-    transform: translateX(3%) translateY(-1%);
-  }
-  100% {
-    transform: translateX(-2%) translateY(0%);
+  to {
+    transform: translateX(-50%);
   }
 }
