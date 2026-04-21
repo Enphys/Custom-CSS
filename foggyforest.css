@@ -791,7 +791,7 @@ div.card.bg-light.border {
   filter: blur(18px);
   opacity: 0.9;
 
-  animation: fogDrift 35s linear infinite;
+  animation: fogDrift 5s linear infinite;
 }
 
 @keyframes fogDrift {
