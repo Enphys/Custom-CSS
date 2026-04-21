@@ -753,54 +753,44 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
-/* ===== BASE FOG STYLE (applied per element) ===== */
-.fog1, .fog2, .fog3, .fog4 {
-  position: fixed;
-  bottom: 0;
-  width: 50vw;
-  height: 40vh;
-  pointer-events: none;
-  z-index: 1;
+:root{
+  --float-range: 35px;
+  --float-speed: 2s;
+}
 
+/* draw the images as fixed overlays so they’re on top everywhere */
+body::before,
+body::after{
+  content:"";
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
+  animation: sideFloat var(--float-speed) ease-in-out infinite;
+}
+
+/* LEFT */
+body::before{
+  left: 10px;
+  top: 75%;                 /* move it down the page */
+  transform: translateY(-50%);
+  width: 75px;
+  height: 75px;
   background: radial-gradient(circle at 50% 100%,
       rgba(210, 235, 235, 0.45) 0%,
       rgba(160, 200, 200, 0.25) 35%,
       rgba(100, 140, 140, 0.12) 60%,
       rgba(0, 0, 0, 0) 100%
-  );
-
-  filter: blur(20px);
-  opacity: 1;
-
-  animation: fogMove 10s ease-in-out infinite;
+  animation-direction: alternate;
 }
 
-/* ===== POSITIONING (even + grounded) ===== */
-.fog1 { left: -20%; animation-delay: 0s; }
-.fog2 { left: 10%;  animation-delay: -2.5s; }
-.fog3 { left: 40%;  animation-delay: -5s; }
-.fog4 { left: 70%;  animation-delay: -7.5s; }
-
-/* ===== ANIMATION (LIKE YOUR BALL SYSTEM) ===== */
-@keyframes fogMove {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-35px);
-  }
-}
-
-/* ===== MOBILE FIX ===== */
-@media (max-width: 768px) {
-  .fog1, .fog2, .fog3, .fog4 {
-    width: 70vw;
-    height: 35vh;
-    filter: blur(16px);
-  }
-
-  .fog1 { left: -30%; }
-  .fog2 { left: 0%; }
-  .fog3 { left: 30%; }
-  .fog4 { left: 60%; }
+/* float animation */
+@keyframes sideFloat{
+  from { transform: translateY(-50%) translateY(0); }
+  to   { transform: translateY(-50%) translateY(calc(-1 * var(--float-range))); }
 }
