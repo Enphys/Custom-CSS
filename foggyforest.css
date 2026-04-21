@@ -771,4 +771,6 @@ div.card.bg-light.border {
   background-position: bottom center;
 
   opacity: 0.35;
+
+  transform: scale(1.1);
 }
