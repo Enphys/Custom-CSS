@@ -770,28 +770,28 @@ div.card.bg-light.border {
   background-color: transparent;
 
   background-image:
-    radial-gradient(circle at 20% 100%,
-      rgba(210, 235, 235, 0.35) 0%,
-      rgba(160, 200, 200, 0.15) 40%,
-      rgba(0, 0, 0, 0) 70%),
+  radial-gradient(ellipse at 20% 90%,
+    rgba(210, 235, 235, 0.35) 0%,
+    rgba(160, 200, 200, 0.18) 35%,
+    rgba(0, 0, 0, 0) 70%),
 
-    radial-gradient(circle at 60% 100%,
-      rgba(190, 225, 225, 0.28) 0%,
-      rgba(140, 180, 180, 0.12) 50%,
-      rgba(0, 0, 0, 0) 75%),
+  radial-gradient(ellipse at 60% 95%,
+    rgba(190, 225, 225, 0.28) 0%,
+    rgba(140, 180, 180, 0.14) 40%,
+    rgba(0, 0, 0, 0) 75%),
 
-    radial-gradient(circle at 90% 100%,
-      rgba(210, 240, 240, 0.22) 0%,
-      rgba(120, 160, 160, 0.10) 55%,
-      rgba(0, 0, 0, 0) 80%);
+  radial-gradient(ellipse at 85% 90%,
+    rgba(210, 240, 240, 0.22) 0%,
+    rgba(120, 160, 160, 0.12) 45%,
+    rgba(0, 0, 0, 0) 80%);
 
   background-repeat: repeat-x;
   background-size: 100% 100%;
 
-  filter: blur(18px);
+  filter: blur(14px);
   opacity: 0.9;
 
-  animation: fogDrift 5s linear infinite !important;
+  animation: fogDrift 5s linear infinite, fogPulse 12s ease-in-out infinite;
 
   will-change: background-position;
   transform: translateZ(0);
@@ -803,5 +803,14 @@ div.card.bg-light.border {
   }
   to {
     background-position: -200% 100%, -200% 100%, -200% 100%;
+  }
+}
+
+@keyframes fogPulse {
+  0%, 100% {
+    transform: translateZ(0) scale(1);
+  }
+  50% {
+    transform: translateZ(0) scale(1.03);
   }
 }
