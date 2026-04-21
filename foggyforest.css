@@ -753,33 +753,61 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
-/* Container for the image */
-.wave-container {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #01101D;
+}
+.box {
   position: relative;
-  background: radial-gradient(circle at 50% 100%,
-        rgba(210, 235, 235, 0.35) 0%,
-        rgba(160, 200, 200, 0.18) 35%,
-        rgba(100, 140, 140, 0.08) 60%,
-        rgba(0, 0, 0, 0) 100%
-    ); no-repeat center center;
-  background-size: cover;
+  width: 50%;
+  height: 50%;
 }
-
-/* The rolling wave overlay */
-.wave-overlay {
+.box:before {
   position: absolute;
-  bottom: 0;
-  width: 200%; /* Must be wider than container to roll */
-  height: 100px;
-  background: url('https://svgwave.in') repeat-x; /* Use a wave SVG */
-  animation: roll 5s linear infinite;
+  content: '';
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(.7);
+  filter: blur(0);
+  opacity: 1;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.box:hover:before {
+  transform: translate(-50%, -50%) scale(1);
+  filter: blur(50px);
+}
+.box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.box:before,
+.box-inner {
+  background-color: transparent;
+
+  background-image: 
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop stop-color='%23d6f0f0' stop-opacity='.35' offset='0%25'/%3e%3cstop stop-color='%239fc8c8' stop-opacity='.15' offset='50%25'/%3e%3cstop stop-color='%23000000' stop-opacity='0' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' d='M0 120 C 400 80, 800 160, 1200 120 C 1400 100, 1500 110, 1600 120 L1600 198 L0 198 Z'/%3e%3c/svg%3e"),
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop stop-color='%23d6f0f0' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%239fc8c8' stop-opacity='.10' offset='60%25'/%3e%3cstop stop-color='%23000000' stop-opacity='0' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' d='M0 130 C 500 90, 900 170, 1600 130 L1600 198 L0 198 Z'/%3e%3c/svg%3e"),
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop stop-color='%23d6f0f0' stop-opacity='.20' offset='0%25'/%3e%3cstop stop-color='%239fc8c8' stop-opacity='.08' offset='70%25'/%3e%3cstop stop-color='%23000000' stop-opacity='0' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' d='M0 140 C 600 100, 1000 180, 1600 140 L1600 198 L0 198 Z'/%3e%3c/svg%3e");
+
+  background-repeat: repeat-x;
+  background-size: 1600px 100%;
+  background-position: 0 100%, 0 100%, 0 100%;
+
+  animation: fogWaves 45s linear infinite;
+  filter: blur(8px);
+  opacity: 0.9;
 }
 
-/* Keyframes to move the wave horizontally */
-@keyframes roll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* Half width to loop perfectly */
+@keyframes waves {
+  from {
+    background-position: 0 100%, -300px 100%, -600px 100%;
+  }
+  to {
+    background-position: 1600px 100%, 1300px 100%, 1000px 100%;
+  }
 }
