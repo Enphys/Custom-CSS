@@ -756,23 +756,24 @@ div.card.bg-light.border {
 /* ===== BASE FOG ===== */
 .fog {
   position: fixed;
-  bottom: 0;
+  bottom: -15vh;   /* 👈 pushes fog lower so it hugs bottom */
   width: 45vw;
-  height: 35vh;
+  height: 45vh;
   pointer-events: none;
-  z-index: 0;
+
+  z-index: 1;      /* 👈 IMPORTANT: above background, below UI */
 
   background: radial-gradient(circle at 50% 100%,
-      rgba(210, 235, 235, 0.35) 0%,
-      rgba(160, 200, 200, 0.18) 35%,
-      rgba(100, 140, 140, 0.08) 60%,
+      rgba(210, 235, 235, 0.40) 0%,
+      rgba(160, 200, 200, 0.22) 35%,
+      rgba(100, 140, 140, 0.10) 60%,
       rgba(0, 0, 0, 0) 100%
   );
 
-  filter: blur(18px);
-  opacity: 0.9;
+  filter: blur(22px);
+  opacity: 1;
 
-  animation: fogFloat 18s ease-in-out infinite;
+  animation: fogFloat 22s ease-in-out infinite;
 }
 
 /* ===== POSITIONING (even spacing, no transforms) ===== */
@@ -784,16 +785,13 @@ div.card.bg-light.border {
 /* ===== ANIMATION (ONLY Y MOVEMENT HERE) ===== */
 @keyframes fogFloat {
   0% {
-    transform: translateY(0);
-    opacity: 0.75;
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(-25px);
-    opacity: 0.95;
+    transform: translateY(-45px);
   }
   100% {
-    transform: translateY(0);
-    opacity: 0.75;
+    transform: translateY(0px);
   }
 }
 
@@ -809,4 +807,8 @@ div.card.bg-light.border {
   .fog2 { left: 5%; }
   .fog3 { left: 35%; }
   .fog4 { left: 65%; }
+}
+
+body {
+  background-attachment: fixed;
 }
