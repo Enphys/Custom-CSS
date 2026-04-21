@@ -766,8 +766,9 @@ div.card.bg-light.border {
 
   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/036/048/962/small/fog-smoke-design-clean-alpha-free-png.png");
   background-repeat: no-repeat;
-  background-size: contain;
+
+  background-size: cover;
   background-position: bottom center;
 
-  opacity: 0.35; /* adjust this for strength */
+  opacity: 0.35;
 }
