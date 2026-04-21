@@ -753,68 +753,71 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
-:root{
-  --float-range: 35px;
-  --float-speed: 2s;
-}
-
-/* draw the images as fixed overlays so they’re on top everywhere */
-body::before,
-body::after{
-  content:"";
+/* ===== BASE FOG STYLE ===== */
+.fog {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 99999;
+  bottom: -10vh;
+  width: 40vw;
+  height: 35vh;
   pointer-events: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
-  animation: sideFloat var(--float-speed) ease-in-out infinite;
+  z-index: 0;
+
+  background: radial-gradient(circle at 50% 100%,
+      rgba(210, 235, 235, 0.35) 0%,
+      rgba(160, 200, 200, 0.18) 35%,
+      rgba(100, 140, 140, 0.08) 60%,
+      rgba(0, 0, 0, 0) 100%
+  );
+
+  filter: blur(18px);
+  opacity: 0.9;
+
+  animation: fogFloat 18s ease-in-out infinite;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    bottom: -120px;
-    left: 0;
-    width: 100%;
-    height: 60vh;
-
-    pointer-events: none;
-    z-index: 999;
-
-    background:
-        radial-gradient(circle at 10% 100%,
-            rgba(220,245,245,0.25) 0%,
-            rgba(170,215,215,0.12) 45%,
-            rgba(0,0,0,0) 75%
-        ),
-        radial-gradient(circle at 30% 100%,
-            rgba(220,245,245,0.20) 0%,
-            rgba(170,215,215,0.10) 45%,
-            rgba(0,0,0,0) 75%
-        ),
-        radial-gradient(circle at 55% 100%,
-            rgba(220,245,245,0.18) 0%,
-            rgba(170,215,215,0.08) 45%,
-            rgba(0,0,0,0) 75%
-        ),
-        radial-gradient(circle at 80% 100%,
-            rgba(220,245,245,0.16) 0%,
-            rgba(170,215,215,0.07) 45%,
-            rgba(0,0,0,0) 75%
-        );
-
-    background-repeat: no-repeat;
-    filter: blur(18px);
-    opacity: 0.9;
-
-    animation: fogFloat 10s ease-in-out infinite alternate;
+/* ===== POSITIONING (your 4 “bubbles”) ===== */
+.fog1 {
+  left: -10%;
+  animation-delay: 0s;
 }
 
-@keyframes sideFloat {
-    from { transform: translateX(-40px) translateY(0px); }
-    to   { transform: translateX(40px) translateY(-20px); }
+.fog2 {
+  left: 20%;
+  animation-delay: -4s;
+}
+
+.fog3 {
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: -9s;
+}
+
+.fog4 {
+  right: -10%;
+  animation-delay: -13s;
+}
+
+/* ===== MOTION ===== */
+@keyframes fogFloat {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: translateY(-25px) scale(1.05);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.75;
+  }
+}
+
+/* ===== MOBILE TUNING ===== */
+@media (max-width: 768px) {
+  .fog {
+    width: 60vw;
+    height: 30vh;
+    filter: blur(14px);
+  }
 }
