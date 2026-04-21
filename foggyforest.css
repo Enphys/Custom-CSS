@@ -753,13 +753,6 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #01101D;
-}
 .box:before {
   position: absolute;
   content: '';
