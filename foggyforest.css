@@ -262,13 +262,13 @@ div.card.mb-3 img,
 div.w-50:nth-child(1) > a:nth-child(1) > img:nth-child(1) {
     border-radius: 20px;
     transition: 0.25s;
-    border: 2px solid #FFAA1D;
+    border: 2px solid #4E7E79ff;
     filter: brightness(120%) contrast(110%);
 }
 div.card.mb-3 img:hover {
     border-radius: 50%;
     transition: 0.35s;
-    border: 3px dashed #4E7E79ff;
+    border: 3px dashed #FFAA1D;
 }
 
 div.w-50:nth-child(1) > a:nth-child(1) > img:nth-child(1):hover {
