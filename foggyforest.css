@@ -756,9 +756,9 @@ div.card.bg-light.border {
 body::after {
     content: "";
     position: fixed;
-    bottom: 10%;
-    left: 10px;
-    width: 50%;
+    bottom: -10vh;
+    left: -15vh;
+    width: 40%;
     height: 35vh;
     pointer-events: none;
     z-index: 0;
