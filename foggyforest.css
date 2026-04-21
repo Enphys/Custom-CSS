@@ -797,33 +797,61 @@ div.card.bg-light.border {
   transform: translateZ(0);
 }
 
-.fog-layer::before,
-.fog-layer::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image: inherit;
-  background-size: inherit;
-  background-repeat: repeat-x;
-
-  animation: fogDrift 30s linear infinite;
-}
-
-.fog-layer::after {
-  transform: translateX(100%);
-}
-
-@keyframes fogDrift {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-100%); }
-}
-
 @keyframes fogDrift {
   from {
     background-position: 0 100%, 0 100%, 0 100%;
   }
   to {
     background-position: -1600px 100%, -1600px 100%, -1600px 100%;
+  }
+}
+
+.fog-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  height: 45vh;
+  pointer-events: none;
+  z-index: 0;
+  display: flex;
+}
+
+.fog-layer {
+  width: 100%;
+  height: 100%;
+
+  background-image:
+    radial-gradient(circle at 20% 100%,
+      rgba(210, 235, 235, 0.35) 0%,
+      rgba(160, 200, 200, 0.15) 40%,
+      rgba(0, 0, 0, 0) 70%),
+
+    radial-gradient(circle at 60% 100%,
+      rgba(190, 225, 225, 0.28) 0%,
+      rgba(140, 180, 180, 0.12) 50%,
+      rgba(0, 0, 0, 0) 75%),
+
+    radial-gradient(circle at 90% 100%,
+      rgba(210, 240, 240, 0.22) 0%,
+      rgba(120, 160, 160, 0.10) 55%,
+      rgba(0, 0, 0, 0) 80%);
+
+  filter: blur(25px);
+  opacity: 0.9;
+
+  animation: fogMove 30s linear infinite;
+}
+
+.fog-layer--2 {
+  animation-delay: -15s;
+}
+
+@keyframes fogMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
