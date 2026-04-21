@@ -753,44 +753,23 @@ div.card.bg-light.border {
     color: #e2ddd2;
 }
 
-:root{
-  --float-range: 35px;
-  --float-speed: 2s;
-}
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    width: 40%;
+    height: 35vh;
+    pointer-events: none;
+    z-index: 0;
 
-/* draw the images as fixed overlays so they’re on top everywhere */
-body::before,
-body::after{
-  content:"";
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 99999;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
-  animation: sideFloat var(--float-speed) ease-in-out infinite;
-}
+    background: radial-gradient(circle at 50% 100%,
+        rgba(210, 235, 235, 0.35) 0%,
+        rgba(160, 200, 200, 0.18) 35%,
+        rgba(100, 140, 140, 0.08) 60%,
+        rgba(0, 0, 0, 0) 100%
+    );
 
-/* LEFT */
-body::before{
-  left: 10px;
-  top: 75%;                 /* move it down the page */
-  transform: translateY(-50%);
-  width: 75px;
-  height: 75px;
-  background: radial-gradient(circle at 50% 100%,
-      rgba(210, 235, 235, 0.45) 0%,
-      rgba(160, 200, 200, 0.25) 35%,
-      rgba(100, 140, 140, 0.12) 60%,
-      rgba(0, 0, 0, 0) 100%
-  animation-direction: alternate;
-}
-
-/* float animation */
-@keyframes sideFloat{
-  from { transform: translateY(-50%) translateY(0); }
-  to   { transform: translateY(-50%) translateY(calc(-1 * var(--float-range))); }
+    filter: blur(18px);
+    opacity: 0.9;
 }
