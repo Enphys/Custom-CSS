@@ -788,26 +788,21 @@ div.card.bg-light.border {
   background-repeat: repeat-x;
   background-size: 120% 100%;
 
-  filter: blur(25px);
+  filter: blur(18px);
   opacity: 0.9;
 
   animation: fogDrift 5s linear infinite;
 }
 
-.fog-layer {
-  will-change: background-position;
-  transform: translateZ(0);
-}
-
 @keyframes fogDrift {
   from {
-    background-position: 0% 100%, 0% 100%, 0% 100%;
+    transform: translateX(0);
   }
   to {
-    background-position: 200% 100%, 150% 100%, 100% 100%;
+    transform: translateX(200px);
   }
 }
 
 .fog-layer {
-  animation: fogDrift 35s linear infinite !important;
+  animation: fogDrift 20s linear infinite !important;
 }
