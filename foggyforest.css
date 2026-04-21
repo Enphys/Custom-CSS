@@ -763,14 +763,16 @@ div.card.bg-light.border {
   width: 200%;
   height: 45vh;
 
-  display: flex;
-
   pointer-events: none;
   z-index: 0;
 }
 
 .fog-layer {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 110%; /* 👈 critical change */
   height: 100%;
 
   background-image:
@@ -792,12 +794,12 @@ div.card.bg-light.border {
   filter: blur(25px);
   opacity: 0.9;
 
-  transform: translateX(0);
-  animation: fogMove 25s linear infinite;
+  animation: fogMove 30s linear infinite;
 }
 
 .fog-layer:nth-child(2) {
-  animation-delay: -12.5s;
+  left: 100%;
+  animation-delay: -15s;
 }
 
 @keyframes fogMove {
