@@ -780,6 +780,21 @@ body::after {
     opacity: 0.9;
 }
 
+body::before,
+body::after{
+  content:"";
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
+  animation: sideFloat var(--float-speed) ease-in-out infinite;
+}
+
 /* float animation */
 @keyframes sideFloat{
   from { transform: translateY(-50%) translateY(0); }
