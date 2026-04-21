@@ -811,9 +811,3 @@ div.card.bg-light.border {
 .fog-layer {
   animation: fogDrift 35s linear infinite !important;
 }
-
-.fog-layer {
-  z-index: 99999 !important;
-  opacity: 1 !important;
-  filter: none !important;
-}
