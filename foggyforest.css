@@ -799,9 +799,9 @@ div.card.bg-light.border {
 
 @keyframes fogDrift {
   from {
-    background-position: 0 100%, 0 100%, 0 100%;
+    background-position: 0 0, 0 0, 0 0;
   }
   to {
-    background-position: 1600px 100%, 1200px 100%, 800px 100%;
+    background-position: 600px 0, 400px 0, 200px 0;
   }
 }
