@@ -791,13 +791,12 @@ div.card.bg-light.border {
   filter: blur(25px);
   opacity: 0.9;
 
-  animation: fogDrift 5s linear infinite;
-}
+  animation: fogDrift 5s linear infinite !important;
 
-.fog-layer {
   will-change: background-position;
   transform: translateZ(0);
 }
+
 
 @keyframes fogDrift {
   from {
@@ -806,15 +805,4 @@ div.card.bg-light.border {
   to {
     background-position: 200% 100%, 150% 100%, 100% 100%;
   }
-}
-
-.fog-layer {
-  animation: fogDrift 35s linear infinite !important;
-}
-
-.fog-layer {
-  position: fixed;
-  inset: 0;
-  background: red;
-  animation: fogDrift 2s linear infinite;
 }
