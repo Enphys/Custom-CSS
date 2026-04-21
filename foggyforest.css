@@ -759,6 +759,13 @@ div.card.bg-light.border {
   --float-speed: 2s;
 }
 
+body::before{
+  transform: translateY(-50%);
+  width: 75px;
+  height: 75px;
+  animation-direction: alternate;
+}
+
 body::after {
     content: "";
     position: fixed;
