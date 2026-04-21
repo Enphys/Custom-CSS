@@ -786,7 +786,7 @@ div.card.bg-light.border {
       rgba(0, 0, 0, 0) 80%);
 
   background-repeat: repeat-x;
-  background-size: 160% 100%;
+  background-size: 200% 100%;
 
   filter: blur(25px);
   opacity: 0.9;
@@ -802,6 +802,6 @@ div.card.bg-light.border {
     background-position: 0 0, 0 0, 0 0;
   }
   to {
-    background-position: 600px 0, 400px 0, 200px 0;
+    background-position: -100% 0, -80% 0, -60% 0;
   }
 }
