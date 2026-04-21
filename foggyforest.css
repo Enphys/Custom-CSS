@@ -262,7 +262,7 @@ div.card.mb-3 img,
 div.w-50:nth-child(1) > a:nth-child(1) > img:nth-child(1) {
     border-radius: 20px;
     transition: 0.25s;
-    border: 2px solid #4E7E79ff;
+    border: 2px solid #FFAA1D;
     filter: brightness(120%) contrast(110%);
 }
 div.card.mb-3 img:hover {
