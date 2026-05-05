@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">);
 
 /*credit. if you remove this ill be sad*/
 ol.breadcrumb.col-lg-9.ml-auto.text-break::after {
@@ -8,7 +8,7 @@ ol.breadcrumb.col-lg-9.ml-auto.text-break::after {
 }
 
 body {
-    font-family: 'Papyrus', sans-serif;
+    font-family: 'Caveat', sans-serif;
     background-image: url("https://64.media.tumblr.com/138e5877b82d5fd08249cb2211bd851e/2e5c722d3d55e0db-51/s1280x1920/c4b63c635ccf836abf7e05fc0593d9f703b9b6b2.jpg"); /* REPLACE WITH YOUR UPLOADED VERSION */
     color: #FFAA1D!important;
 }
