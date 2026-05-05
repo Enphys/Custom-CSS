@@ -224,7 +224,7 @@ a.dropdown-item {
 .tooltip-inner {
     text-transform: lowercase;
     font-weight: 300!important;
-    font-family: 'Karla'!important;
+    font-family: 'Delius'!important;
     font-size: .75rem!important;
     letter-spacing: 1px;
     border-radius: 7%;
@@ -323,7 +323,6 @@ div.card-body.bg-light.p-0.text-center {
     border-radius: 8px;
 }
 div.card-body.bg-light.p-0.text-center small {
-    text-transform: uppercase;
     font-weight: 100;
 }
 div.card-body.bg-light.p-0.text-center img {
@@ -338,7 +337,6 @@ div.text-light.bg-dark.d-block.text-truncate.pl-2.pr-2.rounded-top {
 }
 div.text-light.bg-dark.d-block.text-truncate.pl-2.pr-2.rounded-top .b {
     font-weight: 300;
-    text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
     transition: 0.25s;
@@ -488,7 +486,6 @@ td.b {
 
 th {
     text-align: center;
-    text-transform: uppercase;
     border-radius: 8px;
 }
 th a {
