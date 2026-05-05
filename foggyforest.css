@@ -121,6 +121,7 @@ i.fa.fa-minus.fa-lg {
 }
 #sidebar #card-user h3 a {
     font-weight: 100!important;
+    font-size: 100%!important;
 }
 #sidebar #card-user h3 a:hover {
     letter-spacing: 3px;
