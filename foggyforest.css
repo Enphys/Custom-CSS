@@ -121,7 +121,7 @@ i.fa.fa-minus.fa-lg {
 }
 #sidebar #card-user h3 a {
     font-weight: 100!important;
-    font-size: 120%!important;
+    font-size: 130%!important;
 }
 #sidebar #card-user h3 a:hover {
     letter-spacing: 3px;
@@ -555,7 +555,7 @@ i.fas.fa-pen.mr-2:hover {
 }
 
 .alert-info .alert-link {
-    color: #eaf2f1!important;
+    color: #ffaa1d!important;
 }
 
 .alert-info img,
