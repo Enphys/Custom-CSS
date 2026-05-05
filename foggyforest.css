@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
 /*credit. if you remove this ill be sad*/
 ol.breadcrumb.col-lg-9.ml-auto.text-break::after {
@@ -8,7 +8,7 @@ ol.breadcrumb.col-lg-9.ml-auto.text-break::after {
 }
 
 body {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Delius', cursive;
     font-size: 20px;
     line-height: 1.6;
     background-image: url("https://64.media.tumblr.com/138e5877b82d5fd08249cb2211bd851e/2e5c722d3d55e0db-51/s1280x1920/c4b63c635ccf836abf7e05fc0593d9f703b9b6b2.jpg"); /* REPLACE WITH YOUR UPLOADED VERSION */
